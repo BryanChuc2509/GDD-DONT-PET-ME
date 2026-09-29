@@ -1,10 +1,11 @@
+
 # Géneros de Videojuegos
 
 ## Cómo utilizar esta sección
 
 El **género** describe el tipo general de experiencia que ofrece el videojuego. No elijas un género solamente porque "suena parecido": revisa la descripción y comprueba si las acciones principales del jugador realmente corresponden.
 
-> [!tip] Regla
+> [!tip] 💡 Regla
 > Elige **un género principal** y, si es necesario, uno o varios géneros secundarios. Un juego puede mezclar géneros, pero debe quedar claro cuál es su experiencia dominante.
 
 ## Acción
@@ -71,7 +72,7 @@ Resolver problemas lógicos, espaciales, matemáticos, de patrones o de manipula
 
 Busca generar tensión, miedo, vulnerabilidad o incertidumbre mediante diseño audiovisual, narrativa y mecánicas.
 
-> [!note] Importante
+> [!note] ✏️ Importante
 > "Terror" describe una intención de experiencia. Puede combinarse con acción, aventura, supervivencia u otros géneros.
 
 ## Supervivencia
@@ -106,7 +107,7 @@ Varios participantes compiten hasta que queda un jugador o equipo superviviente,
 
 Videojuego diseñado para soportar una gran cantidad de jugadores conectados a un mundo persistente.
 
-> [!warning] No confundas
+> [!warning] ⚠️ No confundas
 > "Multijugador" no significa automáticamente MMO. Un juego cooperativo para cuatro jugadores es multijugador, pero no necesariamente MMO.
 
 ## Otros géneros
@@ -115,8 +116,16 @@ Si el juego no encaja claramente en las categorías anteriores, documenta aquí 
 
 ### Elección del proyecto
 
-**Género principal:**  
-**Justificación:**  
+**Género principal:** Plataformas
+**Justificación:** Tenemos planeado que el personaje se pueda mover entre los escenarios de su travesia mediante saltos, plataformas y obstaculos, siendo la mécanica principal que el jugador necesita para poder progresar en la historia del juego
 
-**Géneros secundarios:**  
+**Géneros secundarios:** 
+
+* Rompecabezas
+* Aventura
+
+
 **Justificación:**
+
+* Rompecabezas: Se tiene pensado que el juego utilice Puzzles cada cierto tiempo en ciertos escenarios que funcionen como acertijos donde el jugador pueda interactuar con su entorno y descubrir una manera de resolverlo para continuar avanzando en el juego.
+* Aventura: El avance de la historia se va presentando mediante la exploración e interacción con el entorno para poder avanzar entre los diversos escenarios y poder cumplir con el objetivo de salir del bosque.

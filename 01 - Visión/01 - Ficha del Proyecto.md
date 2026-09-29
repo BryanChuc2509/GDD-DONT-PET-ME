@@ -6,41 +6,48 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 
 ## Información general
 
-| Campo | Información |
-|---|---|
-| **Nombre del proyecto** | <!-- Nombre oficial o nombre temporal --> |
-| **Nombre clave** | <!-- Identificador interno si existe --> |
-| **Versión del GDD** | 0.1.0 |
-| **Estado del proyecto** | Concepto / Preproducción / Producción / Pruebas / Publicado |
-| **Equipo** | <!-- Integrantes --> |
-| **Responsable del proyecto** | <!-- Persona responsable --> |
-| **Fecha de inicio** | <!-- AAAA-MM-DD --> |
-| **Última actualización** | <!-- AAAA-MM-DD --> |
-| **Repositorio** | <!-- Enlace --> |
+| Campo                              | Información                                                  |
+| ---------------------------------- | ------------------------------------------------------------- |
+| **Nombre del proyecto**      | Don't Pet Me                                                  |
+| **Nombre clave**             | Don't Pet Me                                                  |
+| **Versión del GDD**         | 0.1.0                                                         |
+| **Estado del proyecto**      | Concepto / Preproducción / Producción / Pruebas / Publicado |
+| **Equipo**                   | Estación 05                                                  |
+| **Responsable del proyecto** | Bryan Gamaliel Chuc Viana                                     |
+| **Fecha de inicio**          | 25/09/2026                                                    |
+| **Última actualización**   | 28/09/2026                                                    |
+| **Repositorio**              |                                                               |
 
 ## Identidad del videojuego
 
-**Género principal:**  
+**Género principal: Plataformas.** 
+
 > Consulta [[01 - Géneros]] y elige el género que mejor describa la experiencia dominante.
 
-**Subgéneros:**  
+**Subgéneros:**
+
 > Consulta [[02 - Subgéneros y Combinaciones]] y selecciona solamente los que aporten información útil.
 
 **Biblioteca de clasificación:** [[00 - Biblioteca de Clasificación]]
 
-**Plataforma objetivo:**  
+**Plataforma objetivo:**
+
 > Consulta [[03 - Plataformas y Consolas]] antes de elegir.
 
-**Modo de juego:**  
+**Modo de juego:**
+
 > Consulta [[05 - Modos de Juego]].
 
-**Perspectiva:**  
+**Perspectiva:**
+
 > Consulta [[04 - Perspectivas y Cámaras]].
 
-**Clasificaciones y etiquetas adicionales:**  
+**Clasificaciones y etiquetas adicionales:**
+
 > Consulta [[06 - Clasificaciones y Etiquetas]].
 
-**Tecnología principal:**  
+**Tecnología principal:**
+
 > Motor, lenguaje y herramientas principales.
 
 ## Elevator Pitch
@@ -52,7 +59,7 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 
 ## Estado actual
 
-- [ ] Concepto definido
+- [X] Concepto definido
 - [ ] Alcance inicial definido
 - [ ] Mecánica principal definida
 - [ ] Prototipo funcional
@@ -64,6 +71,5 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 ## Criterio de éxito del proyecto
 
 ¿Qué tendría que suceder para considerar que el videojuego cumplió su propósito?
-
 
 > **Navegación:** [[00 - Índice]] · ← [[00 - Índice]] · [[02 - Visión del Juego]] →
