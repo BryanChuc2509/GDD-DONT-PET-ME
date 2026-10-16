@@ -8,49 +8,88 @@ Documenta las entidades controladas por el juego y su comportamiento.
 
 ### Nombre
 
-**Rol de combate:**
+Araña de Rincón
 
-**Comportamiento:**
+**Rol de combate:**  Enemigo básico de patrulla y control de zona.
 
-**Vida:**
+**Comportamiento:** Patrulla áreas oscuras o rincones del suelo y estantes en trayectos rectos predecibles. No persigue proactivamente al jugador a menos que este entre en su cono de visión directo.
 
-**Daño:**
+**Vida:** 1 disparo de semilla (se aturde temporalmente, no muere)
 
-**Defensas:**
+**Daño:** Muerte instantánea por contacto (reinicio en el último punto de control).
 
-**Velocidad:**
+**Defensas:** Ninguna.
 
-**Rango de detección:**
+**Velocidad:** Lenta
 
-**Ataques:**
+**Rango de detección:** Corto
 
-**Debilidades:**
+**Ataques:** Contacto directo / Mordedura al tocar a Mochi.
 
-**Recompensa:**
+**Debilidades:** Un disparo de semilla la aturde durante 4 segundos, permitiendo a Mochi saltarle por encima o deslizarse a su lado de forma segura.
+
+**Recompensa:** Despeja el paso temporalmente hacia semillas de girasol cercanas.
 
 **Estados de IA:**
 
 ```text
-Patrullar → Detectar → Perseguir → Atacar
-                  ↓
-                Perder objetivo → Buscar
+Vigilar -> Detectar -> Atacar
+|
+v
+Aturdido (por Semilla) -> Recuperar Patrulla
 ```
+
+
+### Nombre
+
+Aspiradora Inteligente
+
+**Rol de combate:** Enemigo persistente / Amenaza de persecución ambiental.
+
+**Comportamiento:** Se desplaza por los pasillos y la cocina mapeando el terreno. Al detectar a Mochi, entra en modo de succión y persecución activa. Puede romper o remover pequeños obstáculos del entorno.
+
+**Vida:** Inmune a ataques.
+
+**Daño:** Muerte instantánea (succiona a Mochi si entra en su radio de absorción frontal).
+
+**Defensas:** Carcasa blindada (los disparos de semillas rebotan sin hacerle efecto).
+
+**Velocidad:** Rápida.
+
+**Rango de detección:** Medio.
+
+**Ataques:** Persecución frontal / Succión por flujo de aire en un cono frontal.
+
+**Debilidades:** Poca maniobrabilidad en curvas cerradas. Se le puede hacer chocar contra cajas, zapatos o trampas si Mochi dispara semillas a interruptores o usa esquivas de último segundo.
+
+**Recompensa:** Desbloquea el paso a la siguiente zona al quedar atascada temporalmente tras un choque.
+
+**Estados de IA:**
+
+**Plaintext**
+
+```
+Patrullar -> Detectar -> Perseguir -> Atacar (Succionar)
+|
+v
+Perder objetivo / Choque -> Buscar / Desatascar
+```
+
 
 ## Plantilla de NPC
 
-**Nombre:**
+Familiares de Mochi
 
-**Función:**
+**Función:** Aliados narrativos / Tutorial de memoria emocional.
 
-**Ubicación:**
+**Ubicación:** Prólogo (Bosque).
 
-**Interacción:**
+**Interacción:** Aparecen en cinemáticas cortas para recordar la motivación de Mochi de regresar al hogar.
 
-**Diálogos:**
+**Diálogos:** No definidos.
 
-**Condiciones:**
+**Condiciones:** Se activan al inicio del juego.
 
-**Recompensas / información:**
-
+**Recompensas / información:** Establecen la meta principal del juego.
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Niveles]] · [[04 - Objetos y Coleccionables]] →
