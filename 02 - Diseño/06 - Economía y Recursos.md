@@ -19,7 +19,7 @@ Documenta cualquier recurso cuantificable: dinero, vida, energía, munición, ex
 **Fuentes:**
 
 - Semilleros naturales en el prólogo.
-- Comederos y bolsas de comida para hámster abiertas en la habitación de Reo.
+- Comederos y bolsas de comida para hámster abiertas en la habitación de Leo.
 - Útiles escolares y de oficina abandonados en el suelo y muebles.
 
 **Sumideros:**
