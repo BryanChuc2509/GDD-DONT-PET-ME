@@ -80,7 +80,7 @@ Videojuegos ejecutados mediante tecnologías web.
 ## Elección del proyecto
 
 **Plataforma principal:** PC
-**¿Por qué?** Nos ofrece la flexibilidad ideal de hardware y herramientas para desarrollar un juego de plataformas con entornos 2.5D e iluminación detallada. Además, el uso de teclado y mouse o control garantiza la precisión exacta que requiere la mecánica de saltos y la resolución de rompecabezas, permitiéndonos también mantener un flujo de desarrollo y pruebas mucho más ágil y sin las restricciones de certificación de otras plataformas.
+**¿Por qué?** Nos ofrece la flexibilidad ideal de hardware y herramientas para desarrollar un juego de plataformas con entornos 3D e iluminación detallada. Además, el uso de teclado y mouse o control garantiza la precisión exacta que requiere la mecánica de saltos y la resolución de rompecabezas, permitiéndonos también mantener un flujo de desarrollo y pruebas mucho más ágil y sin las restricciones de certificación de otras plataformas.
 
 **Plataformas secundarias:** Ninguna
 **¿Qué cambios requerirían?** No aplica, ya que al enfocar todos los esfuerzos en una sola plataforma optimizamos el tiempo del equipo y aseguramos el cumplimiento de los objetivos del proyecto.

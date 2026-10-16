@@ -54,14 +54,26 @@ El jugador puede controlar gran parte de la orientación de la cámara.
 
 La posición de la cámara está determinada por el diseño.
 
-## Cámara dinámica
+## Cámara dinámica 
 
 La cámara cambia automáticamente según acciones, eventos o contexto.
 
 ## Decisión del proyecto
 
-**Perspectiva principal:**  
-**Tipo de cámara:**  
-**¿Puede cambiar durante el juego?:**  
+**Perspectiva principal:** 
+
+	Tercera persona
+
+
+**Tipo de cámara:**
+
+	Cámara Fija, con seguimiento automático detrás del personaje
+
+
+**¿Puede cambiar durante el juego?:**
+
+Sí, puede cambiar dependiendo de algunos escenarios para una mejor experiencia de usuario. La cámara base es Fija en tercera persona, pero puede cambiar dinámicamente en momentos específicos según lo necesite el nivel
 
 **Justificación de diseño:**
+
+La tercera persona es la opción que mejor se adecua para el género de plataformas 3D. Esta opción permite que el jugador pueda ver a Mochi, su diseño y animaciones, y sentirse más cómodo con las distancias en saltos y dobles saltos. También refuerza el contexto del juego, un tamaño diminuto del hámster frente a un mundo con elementos gigantes
