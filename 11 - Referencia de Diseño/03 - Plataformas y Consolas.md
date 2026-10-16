@@ -1,3 +1,5 @@
+ 
+
 # Plataformas y Consolas
 
 ## Cómo elegir
@@ -11,6 +13,7 @@ Elige la plataforma según las necesidades reales del proyecto, no simplemente p
 Computadoras personales.
 
 **Características habituales:**
+
 - Teclado y mouse.
 - Controladores.
 - Amplia variedad de hardware.
@@ -66,21 +69,21 @@ Videojuegos ejecutados mediante tecnologías web.
 
 ## Consola vs PC vs móvil
 
-| Aspecto | PC | Consola | Móvil |
-|---|---|---|---|
-| Entrada | Teclado/mouse/control | Control | Táctil/control |
-| Hardware | Muy variable | Más controlado | Muy variable |
-| Pantalla | Variable | TV/monitor | Pequeña/mediana |
-| Rendimiento | Variable | Predecible | Variable |
-| Interfaz | Flexible | Distancia de pantalla | Táctil |
+| Aspecto     | PC                    | Consola               | Móvil           |
+| ----------- | --------------------- | --------------------- | ---------------- |
+| Entrada     | Teclado/mouse/control | Control               | Táctil/control  |
+| Hardware    | Muy variable          | Más controlado       | Muy variable     |
+| Pantalla    | Variable              | TV/monitor            | Pequeña/mediana |
+| Rendimiento | Variable              | Predecible            | Variable         |
+| Interfaz    | Flexible              | Distancia de pantalla | Táctil          |
 
 ## Elección del proyecto
 
-**Plataforma principal:**  
-**¿Por qué?**
+**Plataforma principal:** PC
+**¿Por qué?** Nos ofrece la flexibilidad ideal de hardware y herramientas para desarrollar un juego de plataformas con entornos 2.5D e iluminación detallada. Además, el uso de teclado y mouse o control garantiza la precisión exacta que requiere la mecánica de saltos y la resolución de rompecabezas, permitiéndonos también mantener un flujo de desarrollo y pruebas mucho más ágil y sin las restricciones de certificación de otras plataformas.
 
-**Plataformas secundarias:**  
-**¿Qué cambios requerirían?**
+**Plataformas secundarias:** Ninguna
+**¿Qué cambios requerirían?** No aplica, ya que al enfocar todos los esfuerzos en una sola plataforma optimizamos el tiempo del equipo y aseguramos el cumplimiento de los objetivos del proyecto.
 
-> [!important] Para proyectos académicos
+> [!important] ❗ Para proyectos académicos
 > Si el equipo tiene tiempo limitado, comenzar con **una plataforma principal** suele reducir problemas de compatibilidad y alcance.
