@@ -114,7 +114,7 @@ Un juego puede combinar varios géneros.
 
 ### Elección del proyecto
 
-**Subgénero principal:** Plataformas 2.5D
+**Subgénero principal:** Plataformas 3D
 **¿Por qué?** Un plataforma 3D encaja perfectamente con la idea de un hamster queriendo escapar de la casa. El juego se beneificiaría de utilizar este estilo considerando la jugabilidad que se planea implementar. Se puede jugar con las dimensiones de tamaño y reforzar la idea de lo enorme que pueden parecer las cosas para un hamster. Por otro lado, se planea que existan plataformas que el jugador deba superar para avanzar en la historia.
 
 **Combinaciones adicionales:** Acción-Aventura

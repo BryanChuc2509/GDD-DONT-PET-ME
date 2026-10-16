@@ -9,6 +9,7 @@ La experiencia está diseñada principalmente para una sola persona.
 Dos o más jugadores colaboran para conseguir objetivos comunes.
 
 **Preguntas:**
+
 - ¿Es local o en línea?
 - ¿Todos tienen las mismas capacidades?
 - ¿Qué ocurre si un jugador abandona?
@@ -18,6 +19,7 @@ Dos o más jugadores colaboran para conseguir objetivos comunes.
 Los jugadores compiten entre sí.
 
 **Preguntas:**
+
 - ¿Cuál es la condición de victoria?
 - ¿Existe clasificación?
 - ¿Cómo se evita una ventaja injusta?
@@ -42,7 +44,11 @@ El juego puede incluir ambos tipos de interacción en diferentes modos.
 
 ### Elección del proyecto
 
-**Modo principal:**  
-**Jugadores simultáneos:**  
-**Local / En línea:**  
-**Justificación:**
+**Modo principal: Un Jugador**
+**Jugadores simultáneos: No aplica**
+**Local / En línea: Local**
+**Justificación:** 
+
+Se **optó** por un **único** personaje para garantizar una experiencia cohesiva. Dado que el **título** plantea una trama lineal, esta **decisión** permite alinear los objetivos del jugador.
+
+Asimismo, las **mecánicas están diseñadas a medida para** este personaje, **optimizando** la **curva** de **dificultad** y **evitando** la complejidad innecesaria de balancear **múltiples** roles o  **dinámicas multijugador** .
