@@ -6,10 +6,10 @@ Registra los cambios importantes realizados al GDD. Esto permite conocer cómo e
 
 ## Formato
 
-| Versión | Fecha | Cambios principales | Responsable |
-|---|---|---|---|
-| 0.1.0 | | Creación del documento | |
-| | | | |
+| Versión | Fecha      | Cambios principales                                                                                                                | Responsable         |
+| -------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| 0.1.0    | 25/09/2026 | Creación del documento. Se define la Visión: ficha del proyecto, visión del juego, público y plataforma, y pilares de diseño. | Bryan Chuc Gamaliel |
+|          |            |                                                                                                                                    |                     |
 
 ## Convención sugerida
 
@@ -19,6 +19,5 @@ Registra los cambios importantes realizados al GDD. Esto permite conocer cómo e
 
 > [!example] Ejemplo
 > `1.2.3` → versión mayor 1, versión menor 2, corrección 3.
-
 
 > **Navegación:** [[00 - Índice]] · ← [[03 - Registro de Decisiones]] · [[00 - Índice]] →
