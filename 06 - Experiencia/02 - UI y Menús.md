@@ -58,7 +58,7 @@ Durante el juego
 
 **Acciones disponibles:** Es informativo. Solo muestra la información, el jugador no interactúa con él.
 
-**Estados:** El contador parpadea al recoger o gastar una canica. Los íconos del tutorial aparecen una sola vez y desaparecen. La retícula solo se muestra al apuntar. 
+**Estados:** El contador parpadea al recoger o gastar una canica. Los íconos del tutorial aparecen una sola vez y desaparecen. La retícula solo se muestra al apuntar.
 
 **Transiciones:** Se oculta durante las cinemáticas y en la pantalla de pausa.
 
@@ -73,7 +73,6 @@ Durante el juego
 **Estados:** El juego queda detenido mientras el menú está abierto. Si no hay un checkpoint previo, se reinicia desde el inicio del nivel.
 
 **Transiciones:** Esc o el botón Start abren y cierran la pausa. “Volver al menú principal” pide confirmación.
-
 
 #### - Configuración
 
@@ -114,4 +113,5 @@ Documenta acciones destructivas o irreversibles y cómo se confirman.
 | Salir del juego                                   | Mensaje breve de confirmación con opciones Sí / No                                                                          | Evita cerrar el juego por error |
 | Restablecer configuración                        | Mensaje: “¿Restablecer todos los valores por defecto?”                                                                     | Cambia varios ajustes a la vez  |
 
+>
 > **Navegación:** [[00 - Índice]] · ← [[01 - UX y Flujo del Jugador]] · [[03 - Accesibilidad]] →
