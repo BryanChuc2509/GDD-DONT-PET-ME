@@ -41,53 +41,55 @@ Documenta cada mecánica con suficiente detalle para que otro integrante pueda i
 
 ### Mecánica 01
 
-Almacenamiento y Disparo de mejillas
+Almacenamiento y Disparo de mejillas (con Fijado de Cámara)
 
 **Propósito:** 
 
-Proveer un sistema de inventario y ataque a distancia integrado a la anatomía de un hámster, prescindiendo de armas convencionales.
+Proveer un sistema de inventario y ataque a distancia integrado a la anatomía de un hámster, prescindiendo de armas convencionales y adaptado a una cámara de seguimiento cinemático.
 
 **Activación:**
 
-Presionar `E` para recoger objetos; mantener `SHIFT` para apuntar con una parábola visual y hacer `CLICK IZQUIERDO` para escupir.
+Presionar `E` para recoger objetos del entorno; mantener `CLIC DERECHO` para activar el modo de apuntado con fijado de cámara (lock-on/enfoque focalizado hacia dianas o con parábola de disparo) y presionar `CLIC IZQUIERDO` para escupir el proyectil seleccionado.
 
 **Reglas:**
 
-- Mochi solo puede almacenar un número limitado de objetos en sus mejillas.
-- Las semillas funcionan como proyectiles de impacto para golpear botones o aturdir enemigos.
-- No se puede disparar en mitad de ciertas animaciones (como escalar).
+- Mochi solo puede almacenar un número limitado de objetos en sus mejillas según su capacidad.
+- **Cámara y Fijado (Lock-on):** Dado que la cámara es fija y de seguimiento dinámico automático (el jugador no la controla libremente con el ratón), al mantener `CLIC DERECHO` la cámara realiza un zoom sutil y un encuadre de fijado (*lock-on*) centrándose en el interruptor, mecanismo o enemigo más cercano en su cono visual, o proyectando la trayectoria predictiva frente a Mochi.
+- Las semillas actúan como proyectiles de impacto balístico para activar botones remotos o aturdir enemigos.
+- Mientras mantiene el fijado (`CLIC DERECHO`), la velocidad de desplazamiento de Mochi se reduce para permitir ajustes finos de posición.
+- No se puede disparar en mitad de ciertas animaciones (como escalando, rodando o colgado del globo).
 
 **Entrada:**
 
-`E` (Recoger) / `SHIFT + Click` (Apuntar y disparar).
+`E` (Recoger) / `CLIC DERECHO (Mantener)` para apuntar y fijar + `CLIC IZQUIERDO` para disparar.
 
 **Estado inicial:**
 
-Mejillas vacías
+Mejillas vacías o con munición almacenada; modo de navegación estándar de cámara.
 
 **Estado final:**
 
-Objeto proyectado contra el objetivo; reducción del inventario bucal.
+Proyectil expulsado hacia el objetivo fijado; reducción de la munición/objeto en las mejillas y retorno al encuadre dinámico normal de la cámara.
 
 **Recursos utilizados:**
 
-Semillas / Objetos interactivos del escenario.
+Semillas / Objetos arrojadizos del inventario bucal.
 
 **Recompensa:**
 
-Activación de mecanismos lejanos o aturdimiento de amenazas.
+Activación precisa de mecanismos a distancia o neutralización momentánea de amenazas sin perder visibilidad en un entorno con cámara de seguimiento.
 
 **Penalización:**
 
-Quedarse sin semillas en zonas que requieren pulsar interruptores remotos.
+Gasto de munición limitado; si el jugador se queda sin semillas en salas con interruptores elevados, deberá buscar suministros en el entorno.
 
 **Interacciones con otras mecánicas:**
 
-Si Mochi rueda o salta, la parábola de disparo se desestabiliza.
+Si Mochi rueda, salta o se desliza con `SHIFT`, el apuntado con fijado se interrumpe inmediatamente.
 
 **Casos límite:**
 
-Si el jugador intenta comer mientras apunta, la acción de apuntar se cancela.
+Si no hay objetivos en rango frontal, el fijado mantendrá la orientación del vector hacia donde mira Mochi con una parábola libre guiada por el cursor. Si el jugador intenta comer mientras apunta, la acción de fijado se cancela.
 
 <!-- Copiar la plantilla anterior -->
 
@@ -106,7 +108,7 @@ Pulsar `ESPACIO` en el suelo; volver a pulsar `ESPACIO` en el aire. Mantener `ES
 **Reglas:**
 
 - El segundo salto reinicia la trayectoria vertical pero mantiene la velocidad horizontal.
-- Al caer desde grandes alturas, si se presiona la tecla de agacharse/deslizarse justo antes de impactar, Mochi ejecuta una rodada que conserva la velocidad en lugar de frenarse.
+- Al caer desde grandes alturas, si se presiona la tecla de agacharse/deslizarse (`SHIFT`) justo antes de impactar, Mochi ejecuta una rodada que conserva la velocidad en lugar de frenarse.
 
 **Entrada:**
 
@@ -150,7 +152,7 @@ Permitir a Mochi cruzar vacíos gigantescos entre muebles balanceándose al esti
 
 **Activación:**
 
-Teniendo el hilo seleccionado en el inventario de las mejillas, apuntar a un anclaje compatible y presionar el botón de disparo/acción.
+Teniendo el hilo seleccionado en el inventario de las mejillas, apuntar a un anclaje compatible manteniendo `CLIC DERECHO` (fijado de cámara en el anclaje) y presionar `CLIC IZQUIERDO` para lanzar el hilo.
 
 **Reglas:**
 
@@ -159,7 +161,7 @@ Teniendo el hilo seleccionado en el inventario de las mejillas, apuntar a un anc
 
 **Entrada:**
 
-`SHIFT + Click` (con Hilo seleccionado).
+`CLIC DERECHO (Fijar anclaje) + CLIC IZQUIERDO (Lanzar)` con Hilo seleccionado.
 
 **Estado inicial:**
 
@@ -241,8 +243,8 @@ Si Mochi llega al techo de una habitación (una superficie plana sin salientes),
 
 ## Mecánicas secundarias
 
-**Deslizamiento y Agacharse:**
-   Permite reducir el perfil del hámster para pasar por debajo de rendijas de puertas, muebles o cables colgantes.
+**Deslizamiento y Agacharse (`SHIFT`):**
+   Al correr y presionar `SHIFT`, Mochi realiza un deslizamiento fluido que conserva la inercia para pasar por debajo de rendijas de puertas, muebles bajos o cables colgantes. Si se pulsa estando quieto, Mochi se agacha reduciendo su perfil y ocultándose de amenazas. También permite ejecutar una rodada amortiguadora al tocar tierra tras un salto.
 **Escalada de Superficies Porosas:**
    Mochi se adhiere a telas, ropa desparramada y persianas para ascender verticalmente mientras mantenga contacto.
 
