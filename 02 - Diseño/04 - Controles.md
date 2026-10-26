@@ -2,29 +2,30 @@
 
 ## Descripción de la sección
 
-Define la relación entre las acciones del jugador y las entradas físicas del dispositivo.
+Define la relación entre las acciones del jugador y las entradas físicas del dispositivo (exclusivo para PC: Teclado y Ratón).
 
-## Mapa de controles
+## Mapa de controles (PC)
 
-| Acción                        | Teclado          | Mouse                 | Control                          | Táctil           |
-| ------------------------------ | ---------------- | --------------------- | -------------------------------- | ----------------- |
-| Mover                          | W, A, S, D       | —                    | Stick Izquierdo                  | Joystick virtual  |
-| Saltar / Doble salto           | ESPACIO          | —                    | Botón Inferior (A / Cruz)       | Botón Salto      |
-| Recoger con la boca            | E                | —                    | Botón Frontal (X / Cuadrado)    | Botón Recoger    |
-| Apuntar                        | SHIFT (mantener) | Movimiento del cursor | Gatillo Izquierdo (LT / L2)      | Botón Apuntar    |
-| Disparar / Escupir             | —               | CLICK IZQUIERDO       | Gatillo Derecho (RT / R2)        | Toque en pantalla |
-| Inventario de mejillas         | Q                | —                    | Botón Superior (Y / Triángulo) | Icono Inventario  |
-| Deslizarse / Rodar / Agacharse | C o CTRL         | —                    | Botón B / Círculo              | Botón Deslizar   |
+| Acción | Teclado | Ratón (Mouse) | Comportamiento / Detalle |
+| :--- | :--- | :--- | :--- |
+| **Moverse** | `W`, `A`, `S`, `D` | — | Desplazamiento omnidireccional en el plano del escenario |
+| **Saltar / Doble salto** | `ESPACIO` | — | Impulso vertical / segundo impulso aéreo con inercia |
+| **Deslizarse / Rodar / Agacharse** | `SHIFT` (o `CTRL` / `C`) | — | Deslizarse en carrera, agacharse quieto o rodar al tocar tierra |
+| **Recoger con la boca** | `E` | — | Almacena objetos y recursos en las mejillas |
+| **Apuntar / Fijar cámara (*Lock-on*)** | — | `CLIC DERECHO` (mantener) | Activa encuadre de fijado hacia dianas/switches y muestra parábola |
+| **Disparar / Escupir** | — | `CLIC IZQUIERDO` | Escupe el objeto seleccionado hacia el objetivo fijado |
+| **Inventario de mejillas** | `Q` | Rueda del ratón (*Scroll*) | Rueda o selector de objetos almacenados |
 
 ## Principios de control
 
 - **Respuesta instantánea:** El salto y el doble salto tienen cero retraso para asegurar aterrizajes precisos sobre superficies diminutas.
-- **Sin combinaciones complejas:** El plataformeo se basa en reflejos y timing natural, no en combinaciones laberínticas de botones.
-- **Claridad de apuntado:** Al pulsar `SHIFT`, la cámara se acerca ligeramente y proyecta un arco de trayectoria claro para el disparo de semillas.
+- **Sin combinaciones complejas:** El plataformeo se basa en reflejos y timing natural, no en combinaciones laberínticas de teclas.
+- **Claridad de apuntado con fijado de cámara:** Al mantener `CLIC DERECHO`, la cámara fija automáticamente el blanco u objetivo interactivo más próximo (*lock-on*) o alinea el encuadre proyectando una parábola visual limpia para disparar con precisión mediante `CLIC IZQUIERDO`.
+- **Fluidez ergonómica (`SHIFT`):** El uso de `SHIFT` para deslizarse en carrera, agacharse en reposo y ejecutar rodadas de amortiguación brinda un control orgánico e intuitivo, manteniendo la mano izquierda cómoda sobre `WASD` y `Espacio`.
 
 ## Reasignación
 
-El jugador podrá reasignar libremente las teclas en el menú de opciones para mayor accesibilidad en PC.
+El jugador podrá reasignar libremente las teclas y botones del ratón en el menú de opciones para mayor accesibilidad y comodidad en PC.
 
 ## Entrada y retroalimentación
 

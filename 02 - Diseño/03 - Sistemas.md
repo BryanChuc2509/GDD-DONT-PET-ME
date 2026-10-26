@@ -15,52 +15,52 @@ Los sistemas son conjuntos de reglas y componentes que trabajan juntos: combate,
 
 ## Plantilla de sistema
 
-### Nombre
+### Sistema de Inventario de Mejillas y Disparo
 
 **Objetivo:**
 
-Proveer al jugador de una forma orgánica y temática de transportar herramientas y munición dentro de la boca del roedor.
+Proveer al jugador de una forma orgánica y temática de transportar herramientas y munición dentro de la boca del roedor, complementada con un sistema de apuntado con fijado (*lock-on*) asistido adaptado a la cámara de seguimiento automático.
 
 **Entradas:**
 
-Pulsar `E` (recoger), `Q` (rueda/selector de inventario), `SHIFT + Click` (expulsar/disparar).
+Pulsar `E` (recoger), `Q` (rueda/selector de inventario), `CLIC DERECHO (mantener)` (apuntar y fijar objetivo con cámara), `CLIC IZQUIERDO` (expulsar/disparar objeto activo).
 
 **Procesamiento / reglas:**
 
-* Comprueba si el objeto en suelo es interactuable y si hay espacio en las mejillas.
-* Modifica visualmente el modelo 3D de Mochi inflando sus mejillas al guardar elementos.
-
+* Comprueba si el objeto en suelo es interactuable y si hay espacio disponible en las mejillas.
+* Modifica visualmente el modelo 3D de Mochi inflando sus mejillas al almacenar elementos.
+* **Sistema de Fijado y Cámara (Lock-on):** Debido a que la cámara no es controlada libremente por el ratón (es una cámara fija de seguimiento dinámico ligada al movimiento de Mochi), al mantener `CLIC DERECHO` el sistema proyecta un cono de detección frontal:
+  - Si detecta un elemento interactuable (interruptores, dianas, trampas o enemigos), la cámara realiza un suave encuadre de fijado (*lock-on focus*) centrando la atención en el objetivo y trazando la parábola balística directa.
+  - Si no hay dianas en el rango frontal, la cámara se acerca levemente y proyecta una parábola balística libre guiada por el puntero respecto a la orientación de Mochi.
+* Al presionar `CLIC IZQUIERDO`, el sistema instancia el proyectil balístico y aplica el impulso cinemático correspondiente hacia el vector fijado.
 * Asigna comportamiento contextual a cada ítem (semilla = proyectil; hilo = gancho; clip = llave; pila = energía; globo = elevación).
 
 **Salidas:**
 
-Proyectiles disparados, objetos utilizados en el escenario, cambios cosméticos en el rostro de Mochi.
+Proyectiles disparados, activación de dianas o mecanismos, objetos utilizados en el escenario, cambios visuales en el rostro de Mochi y transición dinámica en el encuadre de la cámara.
 
 **Estados posibles:**
 
 - Vacío
-
 - Capacidad Parcial
-
 - Capacidad Llena
-
--Apuntando proyectil
+- Apuntando con fijado de cámara (*Lock-on* activo)
 
 **Dependencias:**
 
-Controlador del personaje, motor de proyectiles y colisiones.
+Controlador del personaje, sistema de cámara de seguimiento / cinemática, motor de físicas de proyectiles y colisiones.
 
 **Interacciones:**
 
-Al escupir una semilla a un interruptor, dispara el evento del puzzle ambiental.
+Al escupir una semilla a un interruptor fijado, dispara el evento del puzzle ambiental o aturde momentáneamente a un enemigo. Al activar una acción de movilidad con `SHIFT` (deslizarse), el estado de apuntado se cancela automáticamente.
 
 **Datos que necesita:**
 
-Tipo de ítem interactuado, posición del jugador, vector de cámara (apuntado).
+Tipo de ítem interactuado, posición del jugador, orientación de Mochi, vector y objetivo fijado por la cámara (*lock-on target*).
 
 **Datos que genera:**
 
-Instancia de proyectil / Uso de herramienta consumible.
+Instancia de proyectil con vector balístico / Uso de herramienta consumible.
 
 **Riesgos:**
 
