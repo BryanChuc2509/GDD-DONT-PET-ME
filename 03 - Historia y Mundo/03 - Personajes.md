@@ -42,11 +42,11 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Rol:** Protagonista principal jugable.
 
-**Función jugable:** Control directo del jugador: ejecutor de plataformas, recolección bucal, empuje de físicas y disparo de proyectiles.
+**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint y planeo breve, escalar superficies de tela e interactuar con objetos del entorno.
 
 **Función narrativa:** El héroe reacio atrapado en una comedia trágica. Su convicción y dignidad chocan constantemente con la ridiculez de su tamaño y las trampas domésticas.
 
-**Descripción física:** Hámster de pelaje canela y vientre blanco, orejas redondas, ojos negros brillantes y mejillas hiperelásticas capaces de expandirse notablemente al almacenar objetos.
+**Descripción física:** Hámster de pelaje canela y vientre blanco, orejas redondas, ojos negros brillantes y mejillas características de su especie. No utiliza las mejillas como inventario.
 
 **Personalidad:** Valiente, hiperactivo, protector con sus hermanos y con un orgullo desproporcionado respecto a su tamaño.
 
@@ -60,7 +60,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Arco del personaje:** Pasa de ser un roedor asustadizo en un entorno desconocido a un maestro del escape acrobático doméstico.
 
-**Habilidades:** Salto y doble salto elástico, nado en inercia con rodadas, almacenamiento bucal de objetos y puntería al escupir proyectiles.
+**Habilidades:** Salto y doble salto elástico, sprint y planeo breve con una reserva de combustible compartida, escalada de superficies designadas y capacidad para empujar objetos del entorno.
 
 **Debilidades:** Fragilidad absoluta ante cualquier daño ambiental o animal (**muerte de un solo golpe**) e ingenuidad ante la tecnología humana.
 
@@ -106,7 +106,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Rol:** Personajes secundarios y motor emocional.
 
-**Función jugable:** Guiar al jugador en el tutorial del prólogo aprendiendo a liderar y recolectar las primeras 12 semillas.
+**Función jugable:** Aparecer en la introducción narrativa que presenta el hogar de Mochi y el vínculo con sus hermanos; no participan en un tutorial jugable.
 
 **Función narrativa:** Representan la inocencia pura y la vida silvestre arrebatada; recuerdan al jugador por qué Mochi debe regresar a casa cueste lo que cueste.
 
@@ -116,7 +116,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Motivaciones:** Mantenerse cerca de Mochi y comer semillas frescas.
 
-**Objetivos:** Aprender a recolectar y volver a la seguridad de la madriguera.
+**Objetivos:** Permanecer junto a Mochi y volver a la seguridad de la madriguera antes de la captura.
 
 **Conflicto:** Quedan desamparados en el bosque tras la captura repentina de Mochi.
 
@@ -136,8 +136,10 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 Documenta qué NPC existen, qué hacen y cómo interactúan con el jugador:
 
+- **Jefe de las Hormigas (Jefe de zona - final del escritorio):**
+  Encuentro que marca el cierre de la zona del escritorio y bloquea el avance hacia los libros colgantes. El desafío se relaciona con activar el ventilador usando las pilas que Mochi encuentra; las pistas del entorno indican el objetivo y el lugar donde colocarlas.
 - **Arañas de Rincón (Enemigos menores - Nivel 1):**  
-  Arácnidos estáticos que custodian grietas y rincones del escritorio. No se pueden combatir cuerpo a cuerpo. Al dispararles una semilla a la cabeza quedan aturdidas durante 3 segundos, abriendo una ventana segura para que Mochi cruce su área sin morir.
+  Arácnidos que custodian grietas y rincones del escritorio. Representan un peligro que Mochi debe leer y superar con movimiento, saltos y rutas seguras; las semillas no se usan para atacarlas.
 - **El Gato Dormilón (Amenaza ambiental de sigilo - Nivel 2):**  
   Felino que descansa en el pasillo superior. Reacciona al ruido y al movimiento rápido. Mochi debe agacharse y caminar despacio a su alrededor; si corre o rompe un objeto cerca, la pata del gato se dispara en un golpe letal instantáneo.
 - **Robot Aspirador Hostil (Trampa móvil autónoma - Nivel 2):**  
