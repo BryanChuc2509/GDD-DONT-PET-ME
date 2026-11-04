@@ -6,7 +6,8 @@ Define cómo se presenta la historia al jugador y cómo funcionan los diálogos.
 
 ## Métodos narrativos
 
-- **Cinemáticas Slapstick:** Breves secuencias animadas (10-20s) al inicio y en transiciones clave, con estética caricaturesca, pausas cómicas y deformaciones expresivas (ojos saltones).
+- **Cómic introductorio:** Una secuencia breve de viñetas muestra la vida de Mochi en el bosque, la captura por Leo y su traslado hasta la jaula. La narración y los subtítulos cuentan lo que sucede; no hay gameplay en el bosque. Al terminar el cómic, el juego inicia directamente en la jaula con el tutorial integrado.
+- **Transiciones narrativas:** Los cambios importantes, como el salto de la ventana y la caída al balcón, se presentan con recursos breves de imagen, sonido y corte, manteniendo el tono slapstick.
 - **Texto y Narrativa Ambiental:** Elementos de utilería humana que cuentan la negligencia de Leo: post-its con mensajes irónicos (*"Leer urgente"* pegado en un libro intonso de Bases de Datos), marcas de quemaduras por cables pelados y el fondo de pantalla de Windows XP haciéndose pasar por un bosque.
 - **Audio Diegético Contrastado:** Oposición entre la calma pastoral del prólogo (pájaros, brisa, hojas) y los sonidos invasivos del hábitat humano (bocinas de auto, motor del robot aspirador, ronquidos del gato y el crujido metálico de la jaula).
 - **Vocalizaciones Animales:** Mochi y sus hermanos no hablan; comunican emoción, esfuerzo y frustración mediante chillidos, resoplidos y castañeo de dientes.
@@ -14,17 +15,17 @@ Define cómo se presenta la historia al jugador y cómo funcionan los diálogos.
 
 ## Estructura de diálogo
 
-### Escena / Conversación: La Captura en el Bosque (Prólogo)
+### Cómic: La captura en el bosque
 
-**Participantes:** Leo (niño humano), Madre de Leo (voz lejana en off), Mochi (expresiones animales).
+**Personajes:** Mochi, Copo, Trufa y Leo. La madre de Leo puede escucharse brevemente fuera de campo.
 
-**Objetivo de la conversación:** Marcar la ruptura abrupta de la vida silvestre y el inicio forzado del cautiverio.
+**Objetivo:** Presentar el hogar de Mochi, su vínculo con sus hermanos y el inicio de su cautiverio.
 
-**Contexto:** Mochi acaba de recolectar la duodécima semilla y cuida a sus hermanitos Copo y Trufa cerca de una zona de picnic.
+**Formato:** Viñetas ilustradas con narración y subtítulos sincronizados. Las expresiones y acciones de los hámsteres cuentan la parte visual; el texto explica los cambios de escena y la captura.
 
-**Opciones del jugador:** Ninguna (cinemática de cierre de tutorial).
+**Desarrollo:** La secuencia muestra a Mochi con Copo y Trufa en el bosque, la llegada de la familia de Leo al picnic y la captura. La voz de la madre pregunta: *"—¿A dónde vas, Leo?"*. Leo exclama: *"—¡Ya tengo otro! ¡Qué bien!"*. Las viñetas y la narración muestran el traslado en auto y el encierro, con sonidos de pestillos.
 
-**Consecuencias:** Se escucha a lo lejos: *"—¿A dónde vas, Leo?"*. Una mano colosal cae sobre Mochi; sus ojos se salen de sus órbitas y Leo exclama: *"—¡Ya tengo otro! ¡Qué bien!"*. Pantalla negra, sonido de auto y pestillos metálicos. Mochi amanece enjaulado.
+**Interacción:** No hay control del personaje ni recolección en el bosque. Al terminar el cómic, Mochi despierta en la jaula y comienza el gameplay con el tutorial.
 
 ## Tono
 
