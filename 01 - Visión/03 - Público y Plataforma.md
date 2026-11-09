@@ -6,7 +6,7 @@ Define para quién se diseña el videojuego y dónde se jugará. Las decisiones 
 
 ## Público objetivo
 
-**Edad aproximada:** 
+**Edad aproximada:**
 
 15 a 30 años, con énfasis en adolescentes, jovenes y jóvenes adultos
 
@@ -47,11 +47,11 @@ El juego como mínimo debe poder funcionar en equipos de gama media o superior.
 
 **Duración esperada de una sesión:**
 
-Se plantea que sea de 10 a 20 minutos 
+Se plantea que sea de 10 a 20 minutos
 
 **Duración total estimada del juego:**
 
-30 a 35 minutos de juego (10 minutos aprox por los 3 niveles)
+20 a 25 minutos de juego
 
 ## Modelo de distribución
 

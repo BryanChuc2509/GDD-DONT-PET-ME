@@ -20,7 +20,7 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 
 ## Identidad del videojuego
 
-**Género principal:** 
+**Género principal:**
 
 	Plataformas
 
@@ -34,13 +34,13 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 
 **Biblioteca de clasificación:** [[00 - Biblioteca de Clasificación]]
 
-**Plataforma objetivo:** 
+**Plataforma objetivo:**
 
 	PC
 
 > Consulta [[03 - Plataformas y Consolas]] antes de elegir.
 
-**Modo de juego:** 
+**Modo de juego:**
 
 	Un Jugador
 
@@ -74,7 +74,7 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 - [X] Concepto definido
 - [X] Alcance inicial definido
 - [X] Mecánica principal definida
-- [ ] Prototipo funcional
+- [X] Prototipo funcional
 - [ ] Vertical slice
 - [ ] Producción
 - [ ] Pruebas

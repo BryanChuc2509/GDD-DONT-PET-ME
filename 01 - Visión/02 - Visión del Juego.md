@@ -8,59 +8,55 @@ Aquí se define la **idea central** del videojuego. Esta sección funciona como 
 
 **El videojuego trata sobre:**
 
-Mochi, un pequeño hámster capturado durante un picnic familiar, que debe escapar de una casa llena de peligros para volver al bosque con sus hermanos. El jugador vive su travesía en la vista de un pequeño roedor, donde objetos cotidianos (muebles, cables, juguetes, una aspiradora inteligente) se convierten en obstáculos grandes para Mochi por su pequeño tamaño y su debilidad como hámster al poder morir por cualquier cosa. A traves de su recorrido tendrá que hacer parkour, lanzar canicas y tomar  buenas decisiomes para poder escapar.
+Mochi, un pequeño hámster capturado durante un picnic familiar, debe escapar de la casa de Leo y encontrar el camino de regreso al bosque con su familia. Desde su pequeña perspectiva, los muebles y objetos cotidianos se convierten en enormes plataformas y peligros. Para avanzar, el jugador recorre la habitación y el pasillo, salta, trepa por algunas superficies, interactúa con el entorno y resuelve acertijos mientras evita trampas y amenazas. La aventura combina plataformas 3D, exploración y humor absurdo.
 
 > Explica la fantasía principal que el jugador debe experimentar.
 
 ## Experiencia deseada
 
-Completa:
-
-- **Quiero que el jugador se sienta:** Pequeño, ágil y astuto; divertido y relajado, pero con la mente enfocada en tener cuidado para no morir por cualquier cosa
-- **Quiero que el jugador piense:** En como poder usar su entorno a favor y poder llegar de un lado a otro
-- **Quiero que el jugador haga:** Saltos, doble saltos, empujar algunos elementos, disparar canicas, esquivar elementos, escapar de una aspiradora y explorar los escenarios.
-- **Quiero que el jugador recuerde:** Cómo puede llegar a ser el mundo desde la perspectiva de un hamster y lo frágil que puede llegar a ser la vida
+- **Quiero que el jugador se sienta:** Pequeño y vulnerable frente a un entorno enorme, pero también ágil e ingenioso; que disfrute el humor y se mantenga atento a los peligros.
+- **Quiero que el jugador piense:** Cómo aprovechar las plataformas y los objetos del entorno, y cuándo avanzar o buscar una ruta segura.
+- **Quiero que el jugador haga:** Recorrer la casa mediante saltos y escaladas, interactuar con objetos, resolver acertijos y esquivar trampas y amenazas, incluida la aspiradora del pasillo.
+- **Quiero que el jugador recuerde:** La escala de la casa vista desde un hámster, los desafíos inesperados y el deseo de Mochi de volver con su familia.
 
 ## Fantasía del jugador
 
 > [!question] Pregunta clave
 > ¿Qué fantasía estamos permitiendo cumplir al jugador?
 
-S
-
-entirse como un pequeño hámster aventurero que sobrevive en un mundo enorme y peligroso , utilizando su agilidad, ingenio y los objetos del entorno para escapar de una casa y regresar al bosque.
+Sentirse como un pequeño hámster aventurero que sobrevive a una casa enorme y peligrosa usando su agilidad e ingenio para escapar y regresar al bosque con su familia.
 
 ## Propuesta de valor
 
 ¿Por qué alguien querría jugar este videojuego?
 
-Porque ofrecemos una idea un poco absurda, pero divertida de plataformas 3D donde el jugador puede explorar, hacer parkour y disfrutar de situaciones absurdas mientras intenta escapar de la casa siendo un hámster pequeño. Buscaremos ofrecer puzzles que combinen humor y que rompan con la monotonía de la mayoría de juegos de este género.
+Porque combina plataformas 3D, exploración y acertijos con la perspectiva de un hámster diminuto. Los objetos domésticos se transforman en plataformas y peligros, mientras las trampas y situaciones inesperadas aportan un humor absurdo a la fuga de Mochi.
 
 ## Características principales
 
 Lista las características que definen la experiencia.
 
-1. Plataformas 3D en tercera persona con salto y doble salto
-2. Un pequeño hámster como protagonista.
-3. Mécanica del lanzamiento de semillas y los ventiladores para superar algunos obstaculos
-4. Situaciones absurdas que generen sonrisas y risas
-5. Perspectiva desde la vista de un hámster
-6. Narrativa progresiva
-7. Resolución de puzzles para progresar y no hacerlo tan monótono.
+1. Plataformas 3D protagonizadas por Mochi, un pequeño hámster.
+2. Recorrido de la habitación y el pasillo a escala de un roedor.
+3. Saltos, escalada en superficies designadas e interacción contextual con objetos.
+4. Acertijos ambientales, incluido el reto de las pilas y el ventilador.
+5. Trampas y situaciones inesperadas tratadas con humor absurdo.
+6. La aspiradora que persigue a Mochi durante su recorrido por el pasillo.
+7. Una historia centrada en escapar de la casa y volver con su familia.
 
 ## Diferenciadores
 
 ¿Qué hace que este videojuego sea reconocible frente a otros del mismo género?
 
-Principalmente por el protagonista que es un hámster, la mécanica de lanzar semillas u objetos por la boca, siendo fiel a la naturaleza propia de un hamster. Por otro lado, también el enfoque de ser un hámster y que puedas morir en cualquier momento por ser un pequeño roedor, añadiendo cierta tensión o miedo para no morir al controlarlo. 
+La identidad del juego nace de vivir la fuga desde la escala de un hámster: los objetos domésticos se vuelven enormes y hasta los recorridos cotidianos se convierten en retos de plataformas. El humor absurdo de las trampas y amenazas contrasta con la vulnerabilidad de Mochi y su objetivo de volver con su familia.
 
 ## Límites del concepto
 
 ¿Qué cosas **NO** es este videojuego?
 
-* Un juego de combate, violencia o terror
+* Un juego centrado en el combate o el uso de armas.
 * Un juego multijugador, cooperativo, competitivo ni en línea.
-* Un mundo abierto: la progresión debe ser lineal y basado en escenarios progresivos
+* Un mundo abierto: la progresión es lineal y se desarrolla por escenarios.
 * Un simulador de mascotas
 * Un juego pensado para otras plataformas que no sean PC
 
