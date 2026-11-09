@@ -14,7 +14,7 @@ Araña de Rincón
 
 **Comportamiento:** Patrulla áreas oscuras o rincones del suelo y estantes en trayectos rectos predecibles. No persigue proactivamente al jugador a menos que este entre en su cono de visión directo.
 
-**Vida:** 1 disparo de semilla (se aturde temporalmente, no muere)
+**Resistencia:** Un disparo de semilla la aturde temporalmente; un salto desde arriba la mata.
 
 **Daño:** Muerte instantánea por contacto (reinicio en el último punto de control).
 
@@ -26,9 +26,9 @@ Araña de Rincón
 
 **Ataques:** Contacto directo / Mordedura al tocar a Mochi.
 
-**Debilidades:** Un disparo de semilla la aturde durante 4 segundos, permitiendo a Mochi saltarle por encima o deslizarse a su lado de forma segura.
+**Debilidades:** Un disparo de semilla la aturde durante 4 segundos, permitiendo a Mochi pasar junto a ella. Si Mochi cae sobre ella desde arriba, la aplasta y la mata.
 
-**Recompensa:** Despeja el paso temporalmente hacia semillas de girasol cercanas.
+**Recompensa:** Al matarla con un salto desde arriba, despeja el paso de forma permanente hacia las semillas de girasol cercanas.
 
 **Estados de IA:**
 
@@ -37,6 +37,7 @@ Vigilar -> Detectar -> Atacar
 |
 v
 Aturdido (por Semilla) -> Recuperar Patrulla
+Muerta (por salto desde arriba)
 ```
 
 

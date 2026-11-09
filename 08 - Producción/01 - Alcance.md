@@ -23,7 +23,7 @@ Define qué se va a construir y, sobre todo, qué queda fuera del proyecto.
 - Nivel jugable del bosque (se sustituye por la introducción narrativa).
 
 * Multijugador, cooperativo, competitivo u online.
-* Combate, enemigos que se derrotan o violencia.
+* Sistemas de combate, ataques con armas o violencia gráfica. Se incluye únicamente matar aplastando desde arriba a los enemigos designados como vulnerables, como acción de movimiento.
 * Mundo abierto, exploración libre por toda la casa o más escenarios adicionales.
 * Diálogos extensos, doblaje, sistemas de RPG, crafteo o árbol de habilidades.
 * Múltiples ranuras de guardado, logros o tablas de clasificación.
