@@ -6,39 +6,37 @@ Define cómo se conserva el progreso y qué opciones puede modificar el jugador.
 
 ## Guardado
 
-**Tipo:** 
-
-Automático.
+**Tipo:** Automático.
 
 **Cuándo se guarda:**
 
-* Se tiene pensando que haya checkpoints en ciertas partes del mapa antes de pasar por una plataforma en la que se pueda perder rápido.
-* De igual manera, habrá checkpoints al completar cada escenario (habitación).
+* Al activar los checkpoints definidos en la habitación y el pasillo.
+* Al completar un puzzle importante o actualizar el punto de reaparición, si el diseño técnico lo requiere.
 
 **Qué datos se guardan:**
 
-* El escenario
-* El inventario que tenga
-* El estado de los elementos como los puzzles o interruptores para no repetirlos si ya se han realizado.
+* Nivel y checkpoint actuales.
+* Estado de los puzzles necesarios para la progresión.
+* Saldo de semillas, si debe conservarse entre sesiones.
+* Preferencias de configuración.
 
 **Cantidad de ranuras:**
 
-Una sola ranura. Es suficiente tener únicamente una ranura para no complejizar el proyecto. 
+Una sola ranura local, suficiente para el recorrido lineal y el alcance actual.
 
 **Qué ocurre si el guardado falla:**
 
-* El juego continúa sin interrumpir al jugador y reintenta guardar en el siguiente checkpoint.
-* Se muestra un mensaje breve y no intrusivo, por ejemplo: “No se pudo guardar el progreso.”
+* Se muestra un aviso breve si no se puede guardar.
+* El fallo no debe presentarse como un guardado exitoso; se conserva el último guardado válido cuando sea posible.
 
 ## Configuración
 
-| Categoría    | Opciones                                                                                                     |
-| ------------- | ------------------------------------------------------------------------------------------------------------ |
-| Audio         | Volumen general, volumen de música, volumen de efectos de sonido.                                           |
-| Video         | Resolución, modo pantalla completa o ventana y calidad gráfica (baja, media, alta)                         |
-| Controles     | Sensibilidad de la cámara, invertir eje Y y visualización del mapa de controles de teclado/mouse           |
-| Accesibilidad | Tamaño del texto, tamaño de los íconos del HUD y reducción de efectos de cámara                        |
-| Jugabilidad   | Mostrar u ocultar los íconos de ayuda de controles y activar u ocultar la retícula al apuntar las canicas. |
+| Categoría | Opciones |
+| --- | --- |
+| Audio | Volumen general, música y efectos. |
+| Video | Resolución y modo pantalla completa o ventana. La calidad gráfica se mantendrá adecuada para el 3D sencillo del proyecto. |
+| Controles | Sensibilidad de cámara y referencia de controles de teclado y ratón. |
+| Accesibilidad | Tamaño del texto y señales visuales legibles para instrucciones y peligros. |
 
 ## Restablecimiento
 
