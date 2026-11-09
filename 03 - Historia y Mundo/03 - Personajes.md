@@ -42,25 +42,25 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Rol:** Protagonista principal jugable.
 
-**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint y planeo breve, escalar superficies de tela e interactuar con objetos del entorno.
+**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint, planeo breve independiente del combustible del sprint, escalada de superficies de tela e interacción con objetos del entorno.
 
 **Función narrativa:** El héroe reacio atrapado en una comedia trágica. Su convicción y dignidad chocan constantemente con la ridiculez de su tamaño y las trampas domésticas.
 
-**Descripción física:** Hámster de pelaje canela y vientre blanco, orejas redondas, ojos negros brillantes y mejillas características de su especie. No utiliza las mejillas como inventario.
+**Descripción física:** Hámster pequeño de pelaje color canela, vientre blanco, orejas redondas y ojos negros.
 
 **Personalidad:** Valiente, hiperactivo, protector con sus hermanos y con un orgullo desproporcionado respecto a su tamaño.
 
-**Motivaciones:** El amor por sus hermanos y el anhelo irrenunciable de regresar a su madriguera en el bosque.
+**Motivaciones:** El amor por sus hermanos y el deseo de regresar al bosque para reunirse con ellos.
 
-**Objetivos:** Fugar de la jaula, cruzar la habitación de Leo y hallar la salida al exterior de la casa.
+**Objetivos:** Escapar de la jaula y de la casa de Leo, y regresar al bosque con Copo y Trufa.
 
 **Conflicto:** Es un animal de 100 gramos expuesto a peligros colosales donde el menor error le causa la muerte inmediata (One-hit kill).
 
 **Relaciones:** Hermano mayor y guardián de Copo y Trufa; víctima cautiva de Leo.
 
-**Arco del personaje:** Pasa de ser un roedor asustadizo en un entorno desconocido a un maestro del escape acrobático doméstico.
+**Arco del personaje:** Pasa de despertar cautivo en un entorno desconocido a usar su agilidad e ingenio para superar las trampas de la casa y acercarse a su hogar.
 
-**Habilidades:** Salto y doble salto elástico, sprint y planeo breve con una reserva de combustible compartida, escalada de superficies designadas y capacidad para empujar objetos del entorno.
+**Habilidades:** Salto y doble salto elástico, sprint en el suelo con combustible propio, planeo de hasta 1 segundo por tramo en el aire sin consumir ni depender de ese combustible, escalada de superficies designadas y capacidad para empujar objetos. Puede aplastar desde arriba a los enemigos designados como vulnerables.
 
 **Debilidades:** Fragilidad absoluta ante cualquier daño ambiental o animal (**muerte de un solo golpe**) e ingenuidad ante la tecnología humana.
 
@@ -74,29 +74,29 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Rol:** Antagonista principal ("El Gigante Inconsciente").
 
-**Función jugable:** Detonante del prólogo (captura) y fuente ambiental de caos doméstico (desorden, cables pelados, bebidas volcadas).
+**Función jugable:** Detonante de la historia y origen de las trampas caseras que Mochi encuentra en la habitación.
 
-**Función narrativa:** Encarna la amenaza del amor infantil negligente: un niño que no busca dañar a Mochi por maldad, sino que lo ve como un juguete coleccionable al que encierra en un entorno letal.
+**Función narrativa:** Niño aficionado a las bromas y a grabar retos para su canal de videos. No quiere lastimar a Mochi, pero no comprende el peligro de sus bromas y trampas para un animal pequeño.
 
 **Descripción física:** Niño humano de aproximadamente 10 años, desgreñado, con ropa deportiva manchada y manos gigantescas y torpes.
 
 **Personalidad:** Impulsivo, ruidoso, desordenado y fácilmente distraído por videojuegos y golosinas.
 
-**Motivaciones:** Tener mascotas para presumir y jugar cuando se aburre.
+**Motivaciones:** Conservar a Mochi como mascota y crear bromas y retos para sus videos.
 
-**Objetivos:** Mantener a Mochi dentro de su habitación como su nueva adquisición.
+**Objetivos:** Evitar que Mochi escape, después de que otras mascotas ya lograron hacerlo.
 
-**Conflicto:** No comprende que su estilo de vida descuidado y su cuarto son una sentencia de muerte para un roedor.
+**Conflicto:** No comprende que sus mecanismos anti-escape y bromas pueden ser mortales para Mochi.
 
-**Relaciones:** Dueño y carcelero involuntario de Mochi; hermano mayor en una familia suburbana.
+**Relaciones:** Dueño y carcelero involuntario de Mochi; hijo de la familia que busca al ratón en la casa.
 
-**Arco del personaje:** Permanece como una presencia colosal fuera de cámara o en segundo plano, cuya sombra y ruidos desatan eventos en los niveles.
+**Arco del personaje:** Se mantiene como una presencia humana colosal, principalmente fuera de cámara; sus bromas y trampas dan forma a los obstáculos de la habitación.
 
 **Habilidades:** Fuerza y tamaño descomunales en comparación con el protagonista.
 
-**Debilidades:** Falta de atención y descuido crónico (deja jaulas mal cerradas y tareas sin hacer).
+**Debilidades:** Impulsividad y falta de conciencia sobre las consecuencias de sus bromas para una mascota tan pequeña.
 
-**Frases o tono de diálogo:** Voces en off lejanas y gritos entusiastas: *"—¡Ya tengo otro! ¡Qué bien!"*, *"—¿A dónde vas, Leo?"*.
+**Frases o tono de diálogo:** Voces humanas a distancia durante la captura y en el entorno. El tono de Leo es entusiasta, como si capturar a Mochi fuera una nueva ocurrencia.
 
 **Referencias visuales:** Silueta caricaturesca de niños traviesos del cine animado (ej. Sid de *Toy Story*, pero sin intenciones malévolas directas).
 
@@ -116,7 +116,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Motivaciones:** Mantenerse cerca de Mochi y comer semillas frescas.
 
-**Objetivos:** Permanecer junto a Mochi y volver a la seguridad de la madriguera antes de la captura.
+**Objetivos:** Permanecer junto a Mochi y volver a la seguridad del hogar en el bosque.
 
 **Conflicto:** Quedan desamparados en el bosque tras la captura repentina de Mochi.
 
@@ -136,14 +136,16 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 Documenta qué NPC existen, qué hacen y cómo interactúan con el jugador:
 
-- **Jefe de las Hormigas (Jefe de zona - final del escritorio):**
-  Encuentro que marca el cierre de la zona del escritorio y bloquea el avance hacia los libros colgantes. El desafío se relaciona con activar el ventilador usando las pilas que Mochi encuentra; las pistas del entorno indican el objetivo y el lugar donde colocarlas.
+- **Nido de hormigas (Reto de zona - escritorio):**
+  El nido bloquea el avance hacia los libros colgantes. Para superar el reto, Mochi consigue las pilas necesarias y enciende un ventilador; las pistas del entorno indican el objetivo y dónde colocar las pilas.
 - **Arañas de Rincón (Enemigos menores - Nivel 1):**  
   Arácnidos que custodian grietas y rincones del escritorio. Representan un peligro que Mochi debe leer y superar con movimiento, saltos y rutas seguras; las semillas no se usan para atacarlas.
-- **El Gato Dormilón (Amenaza ambiental de sigilo - Nivel 2):**  
-  Felino que descansa en el pasillo superior. Reacciona al ruido y al movimiento rápido. Mochi debe agacharse y caminar despacio a su alrededor; si corre o rompe un objeto cerca, la pata del gato se dispara en un golpe letal instantáneo.
-- **Robot Aspirador Hostil (Trampa móvil autónoma - Nivel 2):**  
-  Aparato de limpieza circular que patrulla en trayectorias continuas por el pasillo. Su turbina succiona y aniquila a Mochi al contacto frontal, pero su superficie superior plana puede ser utilizada como plataforma móvil de transporte si se aborda con un salto sincronizado.
+- **Aspiradora inteligente (Amenaza de persecución - Pasillo):**
+  Los padres de Leo la programaron para cazar al ratón que ronda la casa. Al detectar a Mochi, lo confunde con el ratón y lo persigue. Mochi debe escapar de ella mientras esquiva las trampas del pasillo.
+- **Ratoneras, escobas y pelotas (Peligros del escenario - Pasillo):**
+  Las ratoneras fueron colocadas por los padres de Leo; las escobas caen y las pelotas ruedan por el recorrido. Son obstáculos ambientales, no personajes.
+- **Silueta del águila (Amenaza narrativa futura):**
+  Aparece cuando Mochi sale de la casa, como presagio de un peligro posterior. No es un encuentro jugable en la versión actual.
 
 
 

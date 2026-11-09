@@ -6,41 +6,41 @@ Aquí se documenta la narrativa que sostiene la experiencia. La historia debe ex
 
 ## Premisa
 
-Mochi, un valiente y diminuto hámster silvestre, es capturado por un niño humano de 10 años (Leo) y confinado en su desastroso dormitorio. Tras una breve introducción que muestra su vida en el bosque y la captura, el jugador toma el control en la jaula. Armado con su agilidad, sus saltos y su capacidad para esprintar o planear por un instante, Mochi intenta escapar atravesando los colosales peligros de una casa donde cada intento de salvación desemboca en una situación cómicamente peor.
+Mochi, un pequeño hámster silvestre, vive tranquilo con sus hermanos menores, Copo y Trufa, hasta que Leo, un niño de unos 10 años, lo captura durante un picnic familiar para llevárselo a casa como mascota. El jugador toma el control cuando Mochi despierta en una jaula. Para escapar y regresar al bosque con sus hermanos, tendrá que usar su agilidad e ingenio frente a las trampas caseras de Leo y a los peligros cotidianos de una casa descomunal vista desde su tamaño.
 
 ## Sinopsis
 
-Tras ser arrancado de su pacífica vida en el bosque junto a sus hermanos Copo y Trufa, Mochi despierta en una jaula dentro de la habitación de Leo. La aventura jugable comienza allí: mientras aprende a moverse, saltar y escapar, descubre cómo los objetos cotidianos se convierten en obstáculos gigantescos. Ya fuera de la jaula, atraviesa el escritorio, escala libros y telas, esquiva peligros y corre por un pasillo donde caen pelotas, hasta encontrar una salida segura. Al final alcanza la ventana y cree haber escapado; sin embargo, cae en el balcón interior y descubre que aún debe sobrevivir al gato dormido y al implacable robot aspirador.
+La aventura comienza cuando Mochi despierta en la jaula de Leo y logra escapar. En la habitación supera trampas caseras, el desafío del nido de hormigas y una zona de libros colgantes. Una salida que parece conducir al exterior resulta ser otro engaño: Mochi sigue dentro de la casa. En el pasillo, la aspiradora inteligente lo confunde con el ratón que la familia intenta atrapar y lo persigue entre ratoneras, escobas que caen y pelotas rodantes. Al alcanzar la sala, Mochi está más cerca de la salida, pero todavía le queda camino para volver al bosque y reunirse con Copo y Trufa.
 
 ## Estructura narrativa
 
 ### Acto / Etapa 1: La Vida Libre y el Secuestro (Cómic introductorio)
 
-Un cómic breve, acompañado de narración y subtítulos, presenta el claro del bosque como el hogar de Mochi y sus hermanos menores Copo y Trufa. Durante un picnic, la mano colosal de Leo desciende entre los arbustos y captura a Mochi en una escena cómica. La narración y las viñetas muestran cómo lo trasladan y lo encierran. El bosque establece su origen y su motivación, pero no es un nivel jugable. Al terminar el cómic, el juego comienza directamente en la jaula, donde se integra el tutorial.
+Un cómic breve presenta el bosque como el hogar de Mochi y sus hermanos menores Copo y Trufa. Durante un picnic familiar, Leo encuentra a Mochi y se lo lleva para tenerlo como mascota. La secuencia establece el vínculo entre los hermanos y la motivación del protagonista. El bosque aparece solo en esta introducción: no es un nivel jugable. Al terminar el cómic, el juego comienza con Mochi dentro de la jaula de Leo.
 
 ### Acto / Etapa 2: La Fuga de la Jaula y el Cuarto (Nivel 1)
 
-Mochi despierta en la jaula y aprende allí los controles y movimientos básicos antes de escapar. El cuarto se recorre en cuatro zonas: la jaula, el escritorio, los libros colgantes y el pasillo de pelotas que caen, donde debe encontrar un hueco seguro. Al final del escritorio, un jefe de las hormigas bloquea el avance; para resolver el desafío del ventilador, Mochi debe reunir las pilas necesarias y activarlo. Después supera las zonas de libros y pelotas hasta llegar a la salida. Una luz que parece una salida puede resultar ser solo la pantalla de una computadora.
+Mochi despierta en la jaula y aprende los movimientos básicos mientras busca cómo escapar. En la habitación, los muebles y objetos cotidianos se vuelven obstáculos enormes; las trampas caseras de Leo pueden activarse de forma inesperada. En el escritorio, un nido de hormigas bloquea el avance: Mochi debe conseguir las pilas y encender un ventilador para superar el reto. Después cruza la zona de libros colgantes y llega a un lugar que parece una salida, pero descubre que todavía está dentro de la casa.
 
-### Acto / Etapa 3: El Gran Salto y el Engaño (Transición y Nivel 2)
+### Acto / Etapa 3: La persecución del pasillo (Nivel 2)
 
-Mochi alcanza la ventana, supera el obstáculo que bloquea la salida y salta heroicamente, sintiendo la brisa de la libertad. ¡Corte a negro! El salto era una trampa del destino: cae en el balcón interior del pasillo de la casa. La narrativa pasa de la ilusión de libertad a una tensa supervivencia de un solo golpe, debiendo avanzar en sigilo ante un gato dormido y esquivar a un robot aspirador que lo quiere devorar.
+En el pasillo, los padres de Leo llevan semanas intentando atrapar a un ratón y han colocado ratoneras; también hay escobas que caen y pelotas que ruedan. La aspiradora inteligente, programada para cazar al ratón, confunde a Mochi con él y lo persigue. Mochi debe escapar hasta la sala. Al salir por una puerta, una silueta de águila anuncia un peligro mayor: el regreso al bosque todavía está lejos.
 
 ## Eventos principales por zona
 
 | Orden | Zona / evento | Resumen narrativo y participación del jugador |
 |---|---|---|
-| 1 | Cómic introductorio: el bosque y la captura | La narración y los subtítulos presentan el hogar de Mochi, a sus hermanos y la captura por Leo. Termina con Mochi encerrado; no hay gameplay en el bosque. |
-| 2 | Jaula | El juego inicia con Mochi en la jaula. El jugador aprende los controles y escapa al cuarto. |
-| 3 | Escritorio y jefe de las hormigas | Mochi atraviesa los obstáculos del escritorio y se enfrenta al jefe de las hormigas al final de la zona. Reúne las pilas necesarias para activar el ventilador y abrir el paso. |
-| 4 | Libros colgantes | Mochi escala y cruza la zona de libros y superficies de tela hasta continuar el recorrido. |
-| 5 | Pasillo de las pelotas | Esquiva las pelotas que caen y busca un hueco seguro para llegar al final del cuarto. |
-| 6 | Ventana y transición | Mochi alcanza la ventana, cree que ha escapado y salta; el corte revela que cayó en el balcón interior del pasillo. |
-| 7 | Pasillo de la casa | Mochi recupera el control y debe sobrevivir al gato dormido y al robot aspirador. |
+| 1 | Cómic introductorio: el bosque y la captura | Se presenta la vida de Mochi con Copo y Trufa y la captura durante el picnic familiar de Leo. El bosque no tiene gameplay. |
+| 2 | Jaula y habitación de Leo | Mochi aprende a moverse, escapa de la jaula y cruza la habitación, llena de objetos enormes y trampas caseras. |
+| 3 | Escritorio y nido de hormigas | Para superar el reto del nido que bloquea el avance, Mochi consigue pilas y enciende un ventilador. |
+| 4 | Libros colgantes y falsa salida | Mochi supera la zona de libros y las trampas de Leo; el lugar que parece conducir a la libertad resulta seguir dentro de la casa. |
+| 5 | Pasillo | La aspiradora confunde a Mochi con el ratón que buscan los padres de Leo. Mochi esquiva la persecución, las ratoneras, las escobas que caen y las pelotas rodantes. |
+| 6 | Llegada a la sala | Mochi supera el pasillo y llega al punto de cierre del recorrido jugable actual. |
+| 7 | Salida de la casa (continuación propuesta) | En la historia completa, Mochi sale de la casa y una silueta de águila anticipa el largo camino que aún lo separa del bosque. |
 
 ## Finales
 
-- **Final de Tramo (Demo / Fase Actual):** Mochi esquiva la patrulla del robot aspirador, sortea las garras del gato dormido y alcanza la cornisa de las escaleras principales hacia la planta baja. Mira el abismo de la casa con resignación cómica, listo para seguir su odisea de escape.
+- **Cierre de la versión actual / MVP:** Mochi llega a la sala tras escapar de la aspiradora y las trampas del pasillo. En la continuación de la historia planteada en la entrega 3, al salir de la casa aparece la silueta de un águila: regresar al bosque y reunirse con sus hermanos todavía le exigirá un largo recorrido.
 
 > [!warning] ⚠️ Spoilers
 > Si el documento será compartido con estudiantes o colaboradores, considera separar información sensible de la documentación general.

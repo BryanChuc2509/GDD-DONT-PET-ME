@@ -8,54 +8,54 @@ Define el contexto donde ocurre el videojuego: lugares, culturas, reglas, histor
 
 **Época:** Contemporánea (era digital / tecnológica).
 
-**Lugar:** Una típica casa suburbana de clase media/alta. La historia comienza con una breve presentación del bosque donde vivía Mochi; el juego inicia en la jaula del dormitorio infantil de Leo y continúa por el cuarto, el balcón interior y el pasillo de habitaciones.
+**Lugar:** Una casa familiar contemporánea. La historia comienza con una breve presentación del bosque donde vivía Mochi; el juego inicia en la jaula del dormitorio de Leo y continúa por la habitación, el pasillo y la sala.
 
-**Contexto:** Todo el mundo es observado y vivido a ras de suelo desde la microperspectiva de un hámster de 10 centímetros. Los objetos cotidianos (laptops Mac, libros de texto, tazas, zapatillas eléctricas, reglas y ropa sucia) se transforman en arquitectura monumental, puentes improvisados o amenazas letales. El tono combina humor absurdo, sátira sobre el desorden humano y comedia trágica.
+**Contexto:** Todo el mundo se vive a ras de suelo desde la perspectiva de un hámster pequeño y frágil. Los muebles, libros, cables y otros objetos cotidianos se transforman en arquitectura monumental, plataformas improvisadas o amenazas. Las bromas y trampas caseras de Leo hacen que nada en su habitación sea del todo previsible. El tono combina humor absurdo, sátira del descuido humano y comedia física.
 
 **Reglas especiales del mundo:**
 
-- Lo que para un humano es un descuido ordinario (derramar bebida energizante sobre un cable pelado), para Mochi es un campo minado mortal.
+- Un libro que se desploma o una plataforma giratoria, preparados como bromas de Leo, pueden ser trampas mortales para Mochi.
 - No hay magia ni fantasía heroica: la tensión y el absurdo nacen del contraste entre la fragilidad biológica de un roedor y el colosal caos de los artefactos humanos.
 
 ## Historia del mundo
 
 ### Antes del juego
 
-Mochi nació en un claro de bosque cercano a un parque donde vivía en libertad junto a sus hermanos menores, Copo y Trufa, dedicado a la recolección de semillas y ajeno a la domesticación humana.
+Mochi vive en libertad en el bosque junto a sus hermanos menores, Copo y Trufa. Es valiente, inquieto y protector con ellos. El bosque es su hogar y el lugar al que quiere regresar.
 
 ### Durante el juego
 
-Leo (un niño de 10 años) y su familia van de picnic al bosque. Al ver a Mochi entre los arbustos, Leo lo atrapa impulsivamente para tenerlo de mascota ("¡Ya tengo otro! ¡Qué bien!"). Una breve secuencia narrativa muestra la captura y el traslado en coche; el juego no incluye un nivel jugable en el bosque. Mochi despierta en una jaula dentro del caótico dormitorio, donde comienza el tutorial y donde la negligencia y el desorden humano se convierten en una trampa mortal de la que debe escapar.
+Durante un picnic familiar, Leo encuentra a Mochi y lo captura para llevárselo a casa como mascota. Leo es aficionado a las bromas y graba retos y trampas caseras para sus videos; como otras mascotas ya lograron escapar, llena su habitación de mecanismos anti-escape. No pretende hacerle daño, pero no comprende el peligro que representan sus bromas para un animal tan pequeño. El bosque aparece en la introducción narrativa, no como nivel jugable. Mochi despierta en una jaula y empieza su fuga por la habitación.
 
 ### Después del juego
 
-La odisea de Mochi consiste en atravesar la casa piso por piso sorteando mascotas domésticas y aparatos autónomos hasta alcanzar una salida al patio exterior que le permita volver al bosque con sus hermanos.
+Mochi debe atravesar la habitación y el pasillo para llegar a la sala y encontrar una salida. La aspiradora inteligente lo confunde con el ratón que los padres de Leo buscan en la casa. Su objetivo final es regresar al bosque y reunirse con Copo y Trufa; llegar a la sala cierra el recorrido de la versión actual, no su viaje completo.
 
 ## Lugares
 
 | Lugar                | Descripción                                                                                            | Función jugable                                                                                      | Importancia narrativa                                                           |
 | -------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| El Claro del Bosque | Entorno natural, ramas caídas, hojas secas y arbustos bajo luz suave. | Aparece únicamente en la introducción narrativa; no es una zona jugable ni un tutorial. | Representa el hogar de Mochi y explica su motivación para volver con sus hermanos. |
-| La Jaula de Leo | Cubículo de plástico y alambre con rueda oxidada y bebedero de bola. | Inicio jugable y tutorial integrado de movimiento, salto y habilidades de Mochi. | Símbolo del cautiverio absurdo y punto de partida de la fuga. |
-| El Escritorio Humano | Superficie colosal con laptop, cables, libros apilados y objetos cotidianos. | Plataformeo de precisión, interacción con objetos y encuentro con el jefe de las hormigas al final de la zona. Mochi reúne pilas para activar el ventilador y abrirse paso. | Primera gran prueba de supervivencia que exhibe la negligencia de Leo. |
-| Los Libros Colgantes | Libros y superficies de tela o hilos suspendidos sobre el recorrido. | Zona de plataformeo y escalada; las superficies escalables se identifican con una textura tejida. | Prueba el dominio de las habilidades enseñadas en la jaula. |
-| El Pasillo de las Pelotas | Tramo del cuarto donde pelotas caen o ruedan y bloquean el avance. | Secuencia de evasión: Mochi debe leer el peligro y encontrar un hueco seguro. | Culmina el recorrido por el cuarto antes de la salida hacia la ventana. |
-| El Balcón y Pasillo | Baldosas, zócalos altos, cables en cortocircuito y puertas cerradas. | Nivel de tensión y sigilo: esquivar al gato y a la patrulla del robot aspirador. | El golpe de realidad: el mundo humano es una red de trampas mucho más grande. |
+| El Bosque | Hábitat natural donde Mochi vive con Copo y Trufa. | Solo aparece en la introducción narrativa; no es una zona jugable. | Es el hogar al que Mochi quiere regresar. |
+| La Jaula de Leo | Recinto doméstico donde despierta Mochi. | Inicio jugable y tutorial integrado de movimiento y salto. | Representa el cautiverio y da inicio a la fuga. |
+| La Habitación de Leo | Dormitorio con escritorio, muebles, libros y mecanismos caseros. | Plataformeo y exploración; incluye el reto del nido de hormigas, las pilas y el ventilador, además de trampas que se activan de improviso. | Presenta las bromas anti-escape de Leo y el tamaño colosal del entorno. |
+| Los Libros Colgantes | Libros y superficies suspendidas sobre el recorrido. | Zona de plataformeo y escalada; las superficies escalables se identifican con una textura tejida. | Lleva a una falsa salida y revela que Mochi todavía sigue dentro de la casa. |
+| El Pasillo | Zona con ratoneras, escobas que caen y pelotas que ruedan. | Tramo de evasión y persecución por la aspiradora inteligente, que confunde a Mochi con el ratón. | La búsqueda del ratón por parte de la familia convierte el pasillo en un peligro adicional. |
+| La Sala | Espacio al que Mochi llega después de superar el pasillo. | Cierre del recorrido de la versión actual y punto de continuación de la historia. | La silueta de un águila anticipa que el peligro sigue incluso más allá de la casa. |
 
 ## Facciones
 
 | Facción                                 | Objetivo                                                                                  | Relación con el jugador                                                      |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Roedores Silvestres (Mochi, Copo, Trufa) | Vivir en libertad y recolectar alimento en comunidad.                                     | Mochi es el protagonista; Copo y Trufa son sus protegidos y motor emocional.  |
-| Humanos (Leo y familia)                  | Coleccionar y confinar animales como si fueran juguetes.                                  | Antagonistas colosales e inconscientes del peligro que representan.           |
-| Fauna Doméstica (El Gato)               | Dormir plácidamente y cazar por instinto a cualquier intruso que haga ruido en el suelo. | Depredador letal de un solo golpe que exige sigilo extremo.                   |
-| Plagas Domésticas (Arañas de rincón)  | Proteger sus telarañas en recovecos oscuros del escritorio.                              | Obstáculos territoriales que se deben esquivar o superar con las habilidades de movimiento. |
-| Tecnología Doméstica (Robot Aspirador) | Limpiar el pasillo de forma implacable siguiendo rutas fijas.                             | Amenaza móvil autónoma que absorbe y destruye a Mochi si entra en su radio. |
+| Roedores Silvestres (Mochi, Copo y Trufa) | Vivir en libertad y permanecer juntos. | Mochi es el protagonista; el vínculo con sus hermanos motiva su regreso al bosque. |
+| Humanos (Leo y su familia) | Leo quiere conservar a Mochi como mascota y grabar bromas; sus padres buscan al ratón que ronda la casa. | No actúan por maldad deliberada, pero sus decisiones y mecanismos ponen a Mochi en peligro. |
+| Hormigas y arañas | Mantener sus zonas y reaccionar ante intrusos. | Amenazas que Mochi debe superar mediante movimiento e ingenio; el nido de hormigas bloquea el escritorio. |
+| Tecnología doméstica (aspiradora inteligente) | Cazar al ratón que anda por la casa, siguiendo su programación. | Confunde a Mochi con el ratón y lo persigue por el pasillo. |
+| Fauna silvestre (águila) | No especificado en esta etapa. | Su silueta al final anticipa un peligro futuro; no participa en el recorrido actual. |
 
 ## Coherencia del mundo
 
-- **Escala 1:1 Rigurosa:** Las dimensiones humanas no se adaptan al hámster; un libro de 800 páginas tiene la masa y altura de un monolito de piedra.
+- **Escala desde la perspectiva de Mochi:** Los objetos domésticos se perciben como obstáculos y estructuras enormes por el pequeño tamaño y fragilidad del protagonista.
 - **Sin Armamento Militar o Fantástico:** Mochi no usa armas. Se vale de su anatomía, su agilidad y objetos cotidianos del entorno para superar obstáculos y resolver puzzles. Las semillas se recogen como moneda, no como proyectiles.
-- **Lógica de Peligro Realista:** Los líquidos conducen electricidad, el agua ahoga a un roedor pequeño, las alturas extremas aplastan y las caídas no perdonan.
+- **Peligro cotidiano:** Trampas, objetos que caen, mecanismos inesperados y aparatos domésticos pueden ser mortales para un hámster. La comedia de las bromas no reduce el peligro real que representan.
 
 > **Navegación:** [[00 - Índice]] · ← [[01 - Premisa y Trama]] · [[03 - Personajes]] →
