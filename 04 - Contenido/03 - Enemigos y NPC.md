@@ -2,95 +2,137 @@
 
 ## Descripción de la sección
 
-Documenta las entidades controladas por el juego y su comportamiento.
+Documenta los personajes no controlados por el jugador, las amenazas y sus interacciones con Mochi. Las decisiones tomadas para el diseño actual prevalecen sobre variantes antiguas de la entrega 3.
 
-## Plantilla de enemigo
+## Reglas comunes
 
-### Nombre
+- El contacto con un enemigo es mortal para Mochi, salvo que caiga desde arriba sobre un enemigo designado como vulnerable.
+- Mochi puede matar aplastando desde arriba únicamente a los enemigos declarados vulnerables. El contacto lateral o desde abajo sigue siendo peligroso.
+- Las semillas son moneda coleccionable: no son munición y no aturden ni atacan enemigos.
+- El minijefe de las hormigas se supera con el reto de las pilas y el ventilador; sus ataques y apariencia exactos están por definir.
 
-Araña de Rincón
+## Enemigos
 
-**Rol de combate:**  Enemigo básico de patrulla y control de zona.
+### Araña de Rincón
 
-**Comportamiento:** Patrulla áreas oscuras o rincones del suelo y estantes en trayectos rectos predecibles. No persigue proactivamente al jugador a menos que este entre en su cono de visión directo.
+**Rol:** Enemigo menor y amenaza de contacto en la habitación.
 
-**Resistencia:** Un disparo de semilla la aturde temporalmente; un salto desde arriba la mata.
+**Comportamiento:** Se mantiene o patrulla cerca de rincones y zonas oscuras. El patrón exacto de detección y movimiento debe ser legible para el jugador.
 
-**Daño:** Muerte instantánea por contacto (reinicio en el último punto de control).
+**Daño:** El contacto con Mochi causa muerte instantánea.
 
-**Defensas:** Ninguna.
+**Vulnerabilidad:** Puede morir si Mochi cae sobre ella desde arriba.
 
-**Velocidad:** Lenta
+**Interacciones:** No recibe daño ni se aturde con semillas.
 
-**Rango de detección:** Corto
+**Estado de diseño:** Definida como amenaza menor; sus rangos de detección y tiempos de patrulla quedan por balancear.
 
-**Ataques:** Contacto directo / Mordedura al tocar a Mochi.
+### Aspiradora Inteligente
 
-**Debilidades:** Un disparo de semilla la aturde durante 4 segundos, permitiendo a Mochi pasar junto a ella. Si Mochi cae sobre ella desde arriba, la aplasta y la mata.
+**Rol:** Amenaza de persecución del pasillo.
 
-**Recompensa:** Al matarla con un salto desde arriba, despeja el paso de forma permanente hacia las semillas de girasol cercanas.
+**Origen:** Los padres de Leo la programaron para cazar al ratón que ronda la casa.
 
-**Estados de IA:**
+**Comportamiento:** Al detectar a Mochi, lo confunde con el ratón y lo persigue por el pasillo.
 
-```text
-Vigilar -> Detectar -> Atacar
-|
-v
-Aturdido (por Semilla) -> Recuperar Patrulla
-Muerta (por salto desde arriba)
-```
+**Daño:** La succión alcanza a Mochi si queda dentro de su zona frontal de peligro y causa muerte instantánea.
 
+**Vulnerabilidad:** No se derrota aplastándola ni con semillas; el jugador debe escapar y aprovechar el entorno para avanzar.
 
-### Nombre
+**Estado de diseño:** Amenaza principal del pasillo. El alcance de detección, la velocidad y la duración de la persecución quedan por balancear.
 
-Aspiradora Inteligente
+### Oruga peluche
 
-**Rol de combate:** Enemigo persistente / Amenaza de persecución ambiental.
+**Rol:** Enemigo de patrulla.
 
-**Comportamiento:** Se desplaza por los pasillos y la cocina mapeando el terreno. Al detectar a Mochi, entra en modo de succión y persecución activa. Puede romper o remover pequeños obstáculos del entorno.
+**Apariencia:** Oruga de peluche de color blanco.
 
-**Vida:** Inmune a ataques.
+**Comportamiento:** Se desplaza siguiendo recorridos fijos y aparece de forma dispersa en distintas partes del mapa, no como presencia continua ni limitada a una sola zona. La lógica exacta de detección y reacción ante Mochi queda por definir.
 
-**Daño:** Muerte instantánea (succiona a Mochi si entra en su radio de absorción frontal).
+**Daño:** El contacto con Mochi es mortal según la regla general de enemigos.
 
-**Defensas:** Carcasa blindada (los disparos de semillas rebotan sin hacerle efecto).
+**Vulnerabilidad:** Pendiente de confirmar si Mochi puede matarlo aplastándolo desde arriba.
 
-**Velocidad:** Rápida.
+**Estado de diseño:** La especie, el material, el color y su presencia dispersa por el mapa están definidos. Las ubicaciones exactas, la detección y la vulnerabilidad quedan pendientes.
 
-**Rango de detección:** Medio.
+### Minijefe de las hormigas
 
-**Ataques:** Persecución frontal / Succión por flujo de aire en un cono frontal.
+**Rol:** Minijefe del escritorio de la habitación.
 
-**Debilidades:** Poca maniobrabilidad en curvas cerradas. Se le puede hacer chocar contra cajas, zapatos o trampas si Mochi dispara semillas a interruptores o usa esquivas de último segundo.
+**Comportamiento:** Un grupo de hormigas bloquea el avance de Mochi. El comportamiento de ataque y la composición visual del encuentro quedan por definir.
 
-**Recompensa:** Desbloquea el paso a la siguiente zona al quedar atascada temporalmente tras un choque.
+**Cómo se supera:** Mochi consigue las pilas y activa el ventilador para despejar el paso.
 
-**Estados de IA:**
+**Vulnerabilidad:** No se derrota saltando encima. La resolución definida es activar el ventilador.
 
-**Plaintext**
+**Estado de diseño:** El encuentro y su solución están definidos a nivel general; faltan el diseño concreto, los ataques y la implementación del ventilador.
 
-```
-Patrullar -> Detectar -> Perseguir -> Atacar (Succionar)
-|
-v
-Perder objetivo / Choque -> Buscar / Desatascar
-```
+### Lanzador de pelotas de tenis (personaje por identificar)
 
+**Rol:** Amenaza de la sección ascendente de la estantería.
 
-## Plantilla de NPC
+**Comportamiento:** Lanza pelotas de tenis a través de la estantería mientras Mochi asciende.
 
-Familiares de Mochi
+**Cómo se supera:** Mochi calcula el momento, se refugia en los huecos de la estantería y continúa subiendo. No debe saltar por encima de las pelotas.
 
-**Función:** Aliados narrativos / Tutorial de memoria emocional.
+**Identidad:** Personaje aún sin nombre ni diseño confirmado. Donkey Kong es solo una referencia para la idea de lanzar objetos; aquí se usan pelotas de tenis, no barriles.
 
-**Ubicación:** Prólogo (Bosque).
+**Estado de diseño:** El patrón general del reto está definido; faltan la identidad del personaje y los detalles de sus lanzamientos.
 
-**Interacción:** Aparecen en cinemáticas cortas para recordar la motivación de Mochi de regresar al hogar.
+## Retos que no son enemigos
 
-**Diálogos:** No definidos.
+### Memorama de baldosas
 
-**Condiciones:** Se activan al inicio del juego.
+**Tipo:** Puzzle de memoria al final de la habitación.
 
-**Recompensas / información:** Establecen la meta principal del juego.
+**Función:** Un personaje muestra una secuencia de cuadros que se iluminan en distintos colores. Mochi la memoriza y luego salta sobre los cuadros en el mismo orden para activar el mecanismo.
+
+**Personaje asociado:** Aún sin identificar; presenta o activa la secuencia.
+
+**Estado de diseño:** El funcionamiento general está definido; faltan la identidad del personaje, el número de cuadros y la longitud de la secuencia.
+
+### Trampas de Leo
+
+**Tipo:** Peligros del escenario.
+
+**Ejemplos de la entrega 3:** Libros que caen, plataformas giratorias o falsas y mecanismos que se activan de repente.
+
+**Regla:** Pueden sorprender al jugador, pero deben dar señales legibles y respetar los criterios de aviso de peligro del GDD.
+
+### Peligros del pasillo
+
+**Tipo:** Peligros del escenario, no personajes.
+
+**Ejemplos:** Ratoneras colocadas por los padres de Leo, escobas que caen y pelotas que ruedan.
+
+**Función:** Añaden obstáculos al recorrido mientras Mochi escapa de la aspiradora.
+
+## NPC
+
+### Copo y Trufa
+
+**Función:** Hermanos menores de Mochi y motor emocional de la aventura.
+
+**Ubicación:** Introducción narrativa en el bosque; no participan en el recorrido jugable actual.
+
+**Interacción:** Se presentan junto a Mochi antes de su captura. Su vínculo explica por qué Mochi quiere regresar al bosque.
+
+### Personaje del memorama (por identificar)
+
+**Función:** Presenta o activa el memorama de baldosas al final de la habitación.
+
+**Interacción:** Muestra una secuencia de cuadros que se iluminan en distintos colores. Mochi debe memorizarla y repetirla saltando sobre los cuadros en el mismo orden.
+
+**Estado de diseño:** Su identidad y apariencia están por definir.
+
+### Leo y su familia
+
+**Función:** Personajes humanos de la historia, principalmente fuera de cámara.
+
+**Interacción:** Leo captura a Mochi y sus bromas originan trampas en la habitación. Sus padres buscan al ratón que recorre la casa, lo que explica la programación de la aspiradora y las ratoneras.
+
+## Elementos futuros de la historia
+
+La silueta de un águila aparece en la historia de la entrega 3 después de que Mochi sale de la casa. Es un anticipo narrativo, no un enemigo ni un encuentro jugable del alcance actual, que cierra con la llegada a la sala.
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Niveles]] · [[04 - Objetos y Coleccionables]] →
