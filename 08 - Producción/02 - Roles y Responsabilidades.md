@@ -8,9 +8,9 @@ Define quién es responsable de cada área y evita que tareas importantes queden
 
 | Integrante    | Rol principal                      | Responsabilidades                                                                                                                                                             |
 | ------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bryan Chuc    | Líder de proyecto y programación | Coordinar al equipo y el cronograma, implementar movimiento, doble salto, canicas y sistema de checkpoints en Unity, e integrar el build final.                               |
+| Bryan Chuc    | Líder de proyecto y programación | Coordinar al equipo y el cronograma, implementar el movimiento y las interacciones principales, el sistema de checkpoints en Unity e integrar el build final. |
 | Dhayan Lee    | QA y Programación                 | Implementar cámara, IA de la aspiradora y dispositivos inteligentes. Realizar pruebas de calidad y que el videojuego funcione correctamente.                                 |
-| Gio Medina    | Arte y Diseño                     | Diseñar y armar los escenarios (jaula, habitación, pasillo y sala) y definir el tutorial integrado. Dibujar los escenarios y elementos necesarios en papel.                 |
+| Gio Medina    | Arte y Diseño                     | Diseñar y armar los niveles de la habitación (incluida la jaula) y el pasillo; definir el tutorial integrado y dibujar los escenarios y elementos necesarios. |
 | Bruno LLovera | Narrativa y Audio                  | Escribir la introducción narrativa y el cierre de la historia, seleccionar música y efectos, hacer el tráiler y gestionar la publicación en itch.io y las redes sociales. |
 | Ahui          | Diseño de Niveles y Programación |                                                                                                                                                                               |
 
@@ -33,8 +33,8 @@ Cada entregable importante debe tener una persona responsable de coordinarlo, au
 | ------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
 | Documento de diseño                        | Gio Medina               | Todo el equipo                                                  |
 | Personaje Mochi (modelo y animaciones)      | Gio Medina               | Bryan Chuc (integración en Unity)                              |
-| Movimiento y canicas (prototipo jugable)    | Bryan Chuc               | Ahui (ajustes de diseño)                                       |
-| Jaula y habitación (vertical slice)        | Gio Medina               | Ahui (armado en Unity), Bryan Chuc y Dhayan Lee (programación) |
+| Movimiento e interacción con pilas y ventilador (prototipo jugable) | Bryan Chuc | Ahui (ajustes de diseño) |
+| Habitación, incluida la jaula (vertical slice) | Gio Medina | Ahui (armado en Unity), Bryan Chuc y Dhayan Lee (programación) |
 | Persecución de la aspiradora en el pasillo | Dhayan Lee               | Ahui (diseño del nivel), Gio Medina (arte)                     |
 | Cámara y dispositivos inteligentes         | Dhayan Lee               | Bryan Chuc                                                      |
 | Menús, HUD, guardado y configuración      | Ahui                     | Gio Medina (arte de interfaz)                                   |

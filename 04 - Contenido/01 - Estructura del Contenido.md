@@ -12,25 +12,23 @@ Don't Pet Me
 └── Recorrido jugable lineal
     ├── Nivel 1: La habitación de Leo
     │   ├── Jaula (inicio y tutorial)
-    │   ├── Escritorio
-    │   ├── Minijefe de las hormigas
+    │   ├── Escritorio (minijefe de las hormigas)
     │   ├── Libros colgantes
-    │   ├── Estantería con pelotas de tenis
-    │   └── Memorama de baldosas
+    │   └── Pelotas de tenis y huecos de refugio (cierre con memorama)
     └── Nivel 2: El pasillo
         └── Persecución de la aspiradora y trampas hasta la salida del nivel
 
 Continuación de la historia: regresar al bosque con Copo y Trufa
 ```
 
-La jaula es la primera zona del nivel de la habitación, no un nivel aparte. El memorama ocurre al final de la habitación, antes de entrar al pasillo.
+La jaula es la primera zona del nivel de la habitación, no un nivel aparte. El memorama cierra la cuarta zona antes de entrar al pasillo.
 
 ## Contenido estimado
 
 | Tipo | Cantidad / estado |
 | --- | --- |
 | Niveles jugables | 2: habitación de Leo y pasillo |
-| Zonas | Jaula, escritorio, minijefe de las hormigas, libros colgantes, estantería con pelotas y memorama; luego el pasillo |
+| Zonas | Cuatro en la habitación: jaula, escritorio, libros colgantes y pelotas con refugios. Luego sigue el nivel del pasillo. |
 | Enemigos | Araña de rincón, oruga de peluche Walker y aspiradora inteligente |
 | Minijefes | 1 encuentro de hormigas; se supera con el puzzle de las pilas y el ventilador |
 | Personajes por identificar | Lanzador de pelotas de tenis y personaje asociado al memorama |
