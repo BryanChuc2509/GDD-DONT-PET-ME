@@ -14,6 +14,7 @@ Menú principal
 │   ├── Audio
 │   ├── Video
 │   ├── Controles
+│   └── Accesibilidad básica
 └── Salir
 
 Durante el juego
@@ -32,7 +33,7 @@ Durante el juego
 
 **Elementos:** Mochi como imagen, fondo con un detalle de la habitación, botones grandes (Nueva partida, Continuar, Configuración, Salir) y número de versión.
 
-**Acciones disponibles:** Iniciar una nueva partida, continuar desde el último checkpoint, abrir la configuración o salir del juego. Se puede navegar con mouse, teclado o gamepad.
+**Acciones disponibles:** Iniciar una nueva partida, continuar desde el último checkpoint, abrir la configuración o salir del juego. Se navega con teclado y ratón.
 
 **Estados:** “Continuar” aparece deshabilitado si no existe un progreso guardado. El botón seleccionado se resalta con un cambio de tamaño o brillo.
 
@@ -42,23 +43,23 @@ Durante el juego
 
 **Propósito:** Contar la captura de Mochi en el picnic y su objetivo de volver al bosque, sin necesidad de jugar ese nivel.
 
-**Elementos:** Imágenes fijas o viñetas con poco texto, música de fondo y un botón para avanzar (presionar X para omitir).
+**Elementos:** Viñetas con poco texto y una indicación para avanzar u omitir la introducción.
 
-**Acciones disponibles:**  Omitir la introducción.
+**Acciones disponibles:** Avanzar las viñetas u omitir la introducción.
 
-**Estados:** Se debe dejar presionado la tecla "X" por 3 segundos para omitir.
+**Estados:** La indicación para avanzar u omitir debe ser visible y fácil de entender.
 
 **Transiciones:** Al terminar, entra directamente a la jaula (tutorial).
 
 #### HUD (interfaz en juego)
 
-**Propósito:** Mostrar la información mínima necesaria sin tapar la escena .
+**Propósito:** Mostrar la información mínima necesaria sin tapar la escena.
 
-**Elementos:** Contador de canicas o semillas en la boca (ícono de mejilla con número), indicador de interacción que aparece al acercarse a un objeto, íconos breves de controles durante el tutorial, ícono de checkpoint y reticula discreta para apuntar al disparar canicas.
+**Elementos:** Saldo de semillas, indicador contextual al acercarse a un objeto interactuable, indicaciones breves del tutorial y señal de activación del checkpoint. No muestra munición ni retícula de apuntado.
 
 **Acciones disponibles:** Es informativo. Solo muestra la información, el jugador no interactúa con él.
 
-**Estados:** El contador parpadea al recoger o gastar una canica. Los íconos del tutorial aparecen una sola vez y desaparecen. La retícula solo se muestra al apuntar.
+**Estados:** El saldo cambia al recoger semillas. Las indicaciones del tutorial aparecen en el momento oportuno y desaparecen una vez que dejan de ser necesarias.
 
 **Transiciones:** Se oculta durante las cinemáticas y en la pantalla de pausa.
 
@@ -72,17 +73,18 @@ Durante el juego
 
 **Estados:** El juego queda detenido mientras el menú está abierto. Si no hay un checkpoint previo, se reinicia desde el inicio del nivel.
 
-**Transiciones:** Esc o el botón Start abren y cierran la pausa. “Volver al menú principal” pide confirmación.
+**Transiciones:** `ESC` abre y cierra la pausa. “Volver al menú principal” pide confirmación.
 
 #### - Configuración
 
 **Propósito:** Permitir que cada jugador ajuste el juego a su equipo y a sus preferencias.
 
-**Elementos:** Pestañas de Audio, Video y Controles
+**Elementos:** Pestañas de Audio, Video, Controles y Accesibilidad.
 
 * **Audio:** deslizadores de volumen general, música y efectos de sonido.
-* **Video:** resolución, modo pantalla completa o ventana, calidad gráfica y activar o desactivar VSync.
-* **Controles:** Cambiar algunos controles a preferencia
+* **Video:** resolución y modo pantalla completa o ventana.
+* **Controles:** Consultar y, si se conserva en el alcance, reasignar los controles de teclado y ratón.
+* **Accesibilidad:** Tamaño del texto y opciones básicas confirmadas para la versión final.
 
 **Acciones disponibles:** Cambiar valores, restablecer a valores por defecto, aplicar y volver.
 
@@ -92,13 +94,13 @@ Durante el juego
 
 #### Pantalla de final
 
-**Propósito:** Cerrar la aventura con la escapada de Mochi y dar una sensación de recompensa.
+**Propósito:** Cerrar el recorrido jugable actual con la salida de Mochi del pasillo.
 
-**Elementos:** Escena final, mensaje breve de agradecimiento, créditos del equipo y botones para volver al menú o salir.
+**Elementos:** Cierre breve y botones para volver al menú o salir. La continuación narrativa fuera de la casa no se presenta como un nivel jugable de esta versión.
 
-**Acciones disponibles:** Ver los créditos, volver al menú principal o salir.
+**Acciones disponibles:** Volver al menú principal o salir.
 
-**Estados:** Los créditos se pueden omitir.
+**Estados:** La transición de cierre no debe ocultar el estado final del recorrido.
 
 **Transiciones:** Regresa al menú principal.
 

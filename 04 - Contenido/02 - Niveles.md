@@ -2,186 +2,107 @@
 
 ## Descripción de la sección
 
-Cada nivel debe documentar su propósito jugable, estructura, dificultad, contenido y condiciones de entrada/salida.
+Documenta el objetivo, el orden de las zonas y los desafíos de cada nivel jugable. El contenido sigue la progresión indicada para la habitación y el pasillo.
 
-## Plantilla de nivel
+## Nivel 1 — La habitación de Leo
 
-### Nombre del nivel
+**Objetivo principal:** Escapar de la jaula, recorrer la habitación y superar sus desafíos hasta abrir el paso al pasillo.
 
-La Habitación del Niño
+**Objetivos secundarios:** Recoger semillas como moneda y explorar rutas opcionales.
 
-**Objetivo principal:** Escapar de la jaula, atravesar la habitación superando los obstáculos del escritorio y la zona de escalada, y alcanzar el marco de la ventana para salir.
+**Mecánicas utilizadas:** Movimiento, salto, sprint con combustible propio y planeo independiente de ese combustible, escalada en superficies designadas, interacción contextual con objetos y puzzle de memoria resuelto saltando sobre baldosas.
 
-**Objetivos secundarios:** 
+### Zona 1: Jaula (inicio y tutorial)
 
-* Recolectar las 3 hojas del bosque escondidas (incluyendo la oculta debajo de la cama).
-* Juntar la mayor cantidad de semillas de girasol repartidas en el entorno.
+Mochi despierta en la jaula después de la captura. El jugador aprende el movimiento y el salto mientras encuentra la forma de salir. La jaula es parte de la habitación, no un nivel separado.
 
-**Duración estimada:** 3-6  minutos
+### Zona 2: Escritorio
 
-**Dificultad:** Baja 
+Mochi avanza por los muebles y objetos cotidianos a escala colosal. Puede empujar objetos para abrirse camino y encontrar las pilas requeridas en el desafío siguiente.
 
-**Mecánicas introducidas:** 
+### Zona 3: Minijefe de las hormigas
 
-* Movimiento básico, salto simple y doble salto.
-* Mecánica de disparo a distancia: escupir semillas almacenadas en las mejillas  para accionar interruptores y aturdir enemigos.
-* Uso de la regla de plástico como trampolín/fórmula de impulso.
-* Uso del Hilo para columpiarse en las pinzas para papel sujetas.
+El minijefe de las hormigas bloquea el avance. Mochi debe encontrar y colocar las pilas en el ventilador para activarlo y superar el encuentro. La solución definida es usar el ventilador; no se asumen ataques ni una forma de derrotarlo mediante saltos.
 
-**Mecánicas utilizadas:** Plataformeo de precisión, interacción con física del entorno (empujar objetos/libros), balanceo con hilo, salto en trampolines y disparo de proyectiles (semillas).
+La apariencia y los ataques del minijefe, la cantidad y ubicación de las pilas y el efecto exacto del ventilador quedan por definir.
 
-**Enemigos / obstáculos:** 
+### Zona 4: Libros colgantes
 
-* Arañas de rincón (enemigos de patrulla en zonas oscuras).
-* El Charco Electrificado (lata de energizante sobre cable pelado; daño mortal instantáneo).
-* Teclas sueltas de la laptop Mac (plataformas sonoras que pueden desorientar/llamar la atención).
-* Pila de objetos  inestable (caída y desprendimiento).
+Mochi cruza los libros y las superficies escalables del recorrido para alcanzar la siguiente sección de la habitación.
 
-**Recompensas:** 
+### Zona 5: Estantería y pelotas de tenis
 
-* Semillas de girasol (munición y puntuación).
-* Ítem clave: Seguro/llave de la jaula.
+Un personaje lanza pelotas de tenis mientras Mochi asciende por la estantería. Debe encontrar y alcanzar a tiempo los huecos de la estantería y meterse en ellos para evitar los impactos, y luego continuar subiendo. La solución no consiste en saltar por encima de las pelotas.
 
-**Puntos de guardado:** 
+La identidad y el diseño del personaje están por definir. Donkey Kong es solo una referencia para la idea de lanzar objetos; aquí se usan pelotas de tenis, no barriles.
 
-* Al salir de la jaula (tras el primer salto guiado).
-* Sobre la laptop Mac encendida.
-* Al pie de la montaña de objetos apilados.
+### Zona 6: Memorama de baldosas
 
-**Condición de entrada:** Cinemática inicial donde Mochi observa el bosque a través de la ventana desde el interior de su jaula cerrada.
+Un personaje todavía sin identificar presenta una secuencia: ciertos cuadros del suelo se iluminan en distintos colores y en un orden determinado. Mochi debe memorizar qué cuadros se iluminan y en qué orden; después, salta sobre esos mismos cuadros en la secuencia correcta para activar el mecanismo y abrir el paso al pasillo.
 
-**Condición de salida:** Alcanzar el marco de la ventana y activar la interacción para pasar a la siguiente zona.
+La cantidad de cuadros, la longitud y velocidad de la secuencia, los intentos permitidos y la identidad del personaje quedan por definir.
 
-**Eventos narrativos:** 
+**Enemigos y obstáculos del nivel:**
 
-* Apertura: Mochi empuja la puerta mal cerrada de su jaula al recuperar el control y comenzar su aventura.
-* Sátira 1 (La Barricada de Estudio): Mochi debe derribar un libro gigante de Arquitectura de Bases de Datos  que el dueño nunca leyó para usarlo como rampa.
-* Sátira 2 : Mochi escala una montaña de objetos atraído por una "luz  brillante" creyendo que es el bosque, solo para descubrir que es el fondo de pantalla de Windows  en un monitor secundario.
+- Araña de rincón, amenaza de contacto.
+- Walker, oruga de peluche blanca que patrulla rutas fijas y aparece de forma dispersa por el mapa. Sus ubicaciones y vulnerabilidad al aplastamiento están por definir.
+- Minijefe de las hormigas en el escritorio.
+- Personaje aún sin identificar que lanza pelotas de tenis en la estantería.
+- Libros, plataformas y otros mecanismos trampa.
 
-**Mapa / diagrama:** Inicio (Jaula) -> Zona A (Laptop / Charco Electrificado) -> Zona B (Libro de Bases de Datos) -> Escalada (Ropa / Monitor XP) -> Salida (Marco de la Ventana)
+**Coleccionables y objetos clave:** Semillas como moneda; pilas para activar el ventilador.
 
-## Flujo del nivel
+**Puntos de control:** Ubicaciones por definir en la habitación.
+
+**Condición de entrada:** Termina la introducción narrativa y Mochi despierta en la jaula.
+
+**Condición de salida:** Mochi resuelve el memorama y abre el acceso al pasillo.
+
+**Orden del recorrido:**
 
 ```text
-Inicio -> Zona A (Escritorio) -> Desafío (Puzzle del Charco Electrificado) -> Zona B (Escalada de objetos) -> Recompensa (Semillas) -> Final (Marco de la Ventana)
+Jaula → Escritorio → Minijefe de las hormigas
+→ Libros colgantes → Estantería con pelotas de tenis
+→ Memorama de baldosas → Pasillo
 ```
 
+## Nivel 2 — El pasillo
 
-### Nombre del nivel
+**Objetivo principal:** Cruzar el pasillo, escapar de la aspiradora y sus trampas, y llegar a la salida del nivel.
 
-El Pasillo
+**Mecánicas introducidas:** Leer una persecución activa y encontrar refugio o rutas seguras entre los peligros.
 
-**Objetivo principal:** Atravesar el pasillo de la casa esquivando la persecución de la aspiradora inteligente y superando trampas domésticas para alcanzar la puerta de la cocina.
+**Mecánicas utilizadas:** Movimiento, salto, sprint y planeo. El planeo no consume ni depende del combustible del sprint.
 
-**Objetivos secundarios:**
+**Enemigos y obstáculos:**
 
-* Recolectar el ítem lore "Foto Familiar" debajo del mueble recibidor.
-* Juntar la mayor cantidad de semillas de girasol repartidas por la ruta.
+- Aspiradora inteligente, programada por los padres de Leo para perseguir al ratón que ronda la casa; confunde a Mochi con su objetivo.
+- Ratoneras colocadas para atrapar al ratón.
+- Escobas que caen y pelotas que ruedan por el pasillo.
+- Walker puede aparecer patrullando en puntos dispersos del mapa.
 
-**Duración estimada:** 4-7 minutos
+**Coleccionables:** Semillas como moneda. La fotografía familiar bajo el mueble recibidor queda como coleccionable opcional propuesto, pendiente de confirmación.
 
-**Dificultad:** Media 
+**Puntos de control:** Ubicaciones por definir entre los tramos de mayor riesgo.
 
-**Mecánicas introducidas:**
+**Condición de entrada:** Mochi completa la habitación y abre el paso al pasillo.
 
-* Mecánica de persecución activa  mientras el peligro avanza tras Mochi.
-* Interacción para provocar colisiones (usar disparos de semillas para activar trampas o desviadores contra la aspiradora).
+**Condición de salida:** Mochi supera la persecución y alcanza la salida del pasillo. La sala y el regreso al bosque no son niveles adicionales de este recorrido.
 
-**Mecánicas utilizadas:** Movimiento básico, doble salto, disparo de semillas a interruptores, plataformas en movimiento (cajones entreabiertos y cables de lámparas).
+**Orden del recorrido:**
 
-**Enemigos / obstáculos:**
-
-* Aspiradora inteligente (enemigo principal con patrullaje activo y persecución continua al detectar a Mochi).
-* Ratoneras mecánicas (trampas fijas de daño mortal con tiempo de activación rápido).
-* Alfombra suelta (zona de frenado/tropiezo que reduce temporalmente la velocidad de Mochi).
-* Cuadros colgados inestables (plataformas de pared que colapsan al pisarlas).
-
-**Recompensas:**
-
-* Semillas de girasol.
-* Ítem clave: Foto Familiar (lore opcional sobre el niño).
-
-**Puntos de guardado:**
-
-* Tras escapar de la primera persecución de la aspiradora (junto al perchero de sacos).
-* Sobre el mueble recibidor (antes de la zona de ratoneras).
-* Al pie de la puerta de la cocina.
-
-**Condición de entrada:** Cinemática de transición tras cruzar el marco de la ventana de la habitación y  salir al piso del pasillo.
-
-**Condición de salida:** Pasar por la rendija inferior de la puerta de la cocina mientras la aspiradora choca contra la base de la puerta.
-
-**Eventos narrativos:**
-
-* Apertura: La aspiradora inteligente se enciende automáticamente en la base de carga y confunde a Mochi con una pelusa e iniciando la persecución.
-* Sátira 1 : La aspiradora escanea a Mochi con un láser rojo y muestra en su pequeña pantalla LCD un ícono de "Basura Detectada", acelerando su motor.
-* Sátira 2 ): Mochi debe navegar un caos de cajas y objetos desordenados en el suelo, usando los cables como lianas mientras la aspiradora devora y destruye las agujetas a su paso.
-
-**Mapa / diagrama:** Inicio (Caída del pasillo) -> Zona A (Persecución Inicial) -> Desafío (Ratoneras / Mueble Recibidor) -> Zona B (Laberinto de Zapatos / Perchero) -> Recompensa (Foto Familiar / Semillas) -> Salida (Rendija Puerta de Cocina)
-
-## **Flujo del nivel**
-
-Inicio -> Zona A (Persecución Aspiradora) -> Desafío (Zona de Ratoneras y Alfombra) -> Zona B (Escalada Mueble Recibidor / Zapatos) -> Recompensa (Foto Familiar) -> Final (Rendija de la Cocina)
-
-
-### Nombre del nivel
-
-La Cocina
-
-**Objetivo principal:** Navegar por la cocina sorteando peligros culinarios, superficies resbalosas y  alcanzar la ventana de la puerta trasera para escapar al exterior.
-
-**Objetivos secundarios:**
-
-* Conseguir la "Llave de la Puerta Trasera" dentro del tarro de galletas.
-* Juntar la mayor cantidad de semillas de girasol sobre las barras de la cocina.
-
-**Duración estimada:** 5-8 minutos
-
-**Dificultad:** Media
-
-**Mecánicas introducidas:**
-
-* Plataformeo en superficies resbalosas de aceite/agua.
-* Corrientes ascendentes de vapor.
-
-**Mecánicas utilizadas:** Doble salto, disparo de semillas a distancia, balanceo con hilo, deslizamiento y trampolines (tapas de ollas con resorte).
-
-**Enemigos / obstáculos:**
-
-* Quemadores de la estufa encendidos, utencilios de cocina y vapor ardiente .
-* Charcos de aceite derramado.
-* Aspiradora Inteligente.
-
-**Recompensas:**
-
-* Semillas de girasol.
-* Ítem clave: Llave de la Puerta Trasera.
-
-**Puntos de guardado:**
-
-* Al ingresar a la cocina.
-* Sobre la mesa central de la cocina.
-* En la barra alta junto al fregadero.
-
-**Condición de entrada:** Deslizarse por debajo de la puerta de la cocina desde el pasillo.
-
-**Condición de salida:** Usar la llave en el seguro de la puerta trasera y saltar hacia el jardín hacia el bosque.
-
-**Eventos narrativos:**
-
-* Apertura: Mochi entra a la cocina deslumbrado por la luz y su posible salida.
-* Sátira 1 : Mochi tiene que pasar ser de utencilios de cocina que puede atentar contra su integridad por lo cual debera ser muy precavido o el sera la cena.
-
-**Mapa / diagrama:** Inicio (Entrada a la cocina) -> Zona A (Estufa / Charcos de Aceite) -> Desafío (Mesa Central ) -> Zona B (Barra Alta ) -> Recompensa (Llave Puerta Trasera) -> Salida (Ventana Puerta Trasera hacia el Bosque)
-
-Inicio -> Zona A (Piso y Estufa) -> Desafío (Sección de Sigilo con el Gato) -> Zona B (Escalada por Utensilios y Tostadora) -> Recompensa (Llave en Tarro de Galletas) -> Final (Escape por Puerta Trasera)
+```text
+Entrada al pasillo → persecución de la aspiradora
+→ ratoneras y obstáculos móviles → salida del nivel
+```
 
 ## Criterios de calidad
 
-- El objetivo es comprensible.
-- Las reglas se pueden aprender.
-- El desafío corresponde al nivel de progresión.
-- Existe retroalimentación suficiente.
-- El jugador entiende por qué tuvo éxito o fracaso.
+- El recorrido tiene dos niveles: la habitación y el pasillo. La jaula es la primera zona de la habitación.
+- El orden de zonas en la habitación se mantiene: jaula, escritorio, minijefe de las hormigas, libros colgantes, estantería con pelotas de tenis y memorama.
+- El jugador se refugia en huecos de la estantería para evitar las pelotas; no se le indica saltar por encima.
+- El memorama enseña una secuencia de cuadros iluminados y se resuelve saltando los mismos cuadros en el mismo orden.
+- Las semillas funcionan como moneda, no como munición.
+- Walker es una oruga de peluche blanca con patrullas fijas dispersas por el mapa.
 
 > **Navegación:** [[00 - Índice]] · ← [[01 - Estructura del Contenido]] · [[03 - Enemigos y NPC]] →

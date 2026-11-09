@@ -105,7 +105,7 @@ Pulsar `ESPACIO` en el suelo.
 
 **Reglas:**
 
-- Al saltar sobre un enemigo vulnerable, Mochi lo aturde o aparta y puede rebotar para continuar el recorrido.
+- Al caer desde arriba sobre un enemigo vulnerable, Mochi lo aplasta y lo mata; el rebote le permite continuar el recorrido.
 
 **Entrada:**
 
@@ -133,7 +133,7 @@ Un mal cálculo provoca caer a zonas letales (charcos, vacío, trampas).
 
 **Interacciones con otras mecánicas:**
 
-Se combina con el sprint para ganar impulso y con la escalada de superficies de tela.
+Se combina con el sprint para ganar impulso, con el planeo para ampliar el alcance de un salto y con la escalada de superficies de tela.
 
 **Casos límite:**
 
@@ -145,55 +145,103 @@ Sprint con Combustible
 
 **Propósito:**
 
-Dar al jugador dos usos alternativos de una sola reserva de combustible: aumentar la velocidad al correr por el suelo y planear brevemente en el aire para extender un salto y ralentizar la caída.
+Permitir que Mochi aumente temporalmente su velocidad al correr por el suelo mediante una reserva de combustible exclusiva del sprint.
 
 **Activación:**
 
-Mantener `SHIFT` mientras Mochi se desplaza por el suelo para esprintar o mientras está en el aire para planear.
+Mantener `SHIFT` mientras Mochi se desplaza por el suelo.
 
 **Reglas:**
 
-- Sprint y planeo consumen la misma reserva; el jugador debe decidir si gasta combustible en velocidad antes del salto o lo conserva para usarlo en el aire.
-- En el aire, mantener `SHIFT` activa el planeo: Mochi obtiene control horizontal limitado y desciende más despacio, pero no asciende ni queda suspendido.
-- El planeo dura como máximo **1 segundo por tramo en el aire** y termina antes si se suelta `SHIFT` o se agota el combustible. El doble salto no reinicia ese límite.
-- El sprint consume combustible mientras está activo. El planeo consume combustible de esa misma reserva durante el tiempo que está activo.
-- El combustible se regenera con el tiempo al dejar de usar `SHIFT`, tanto si Mochi está en el suelo como en el aire. No se consume al caminar, saltar o escalar.
-- Si no queda combustible al despegar, no se puede activar el planeo en ese salto; el jugador deberá esperar a que la reserva se recupere antes de usarlo.
-- La capacidad y las tasas de consumo y recuperación se determinarán mediante pruebas de balance para que el uso prolongado del sprint pueda dejar insuficiente combustible para planear.
+- El sprint solo se activa en el suelo y consume combustible mientras está activo.
+- El combustible se regenera con el tiempo mientras el sprint no está activo, tanto en el suelo como en el aire. Caminar, saltar, planear y escalar no lo consumen.
+- Si se agota el combustible mientras el sprint está activo, Mochi vuelve a su velocidad normal. No puede volver a esprintar hasta que la reserva se recupere.
+- El combustible del sprint no afecta la disponibilidad, duración ni alcance del planeo.
+- La capacidad y las tasas de consumo y recuperación se determinarán mediante pruebas de balance para ajustar el uso del sprint.
 
 **Entrada:**
 
-`SHIFT` (mantener en el suelo para esprintar; mantener en el aire para planear; soltar para dejar de consumir y regenerar combustible).
+`SHIFT` (mantener mientras Mochi se desplaza por el suelo para esprintar).
 
 **Estado inicial:**
 
-Mochi tiene combustible disponible y se encuentra en el suelo o en el aire.
+Mochi se desplaza por el suelo y tiene combustible disponible.
 
 **Estado final:**
 
-En el suelo, Mochi vuelve a su velocidad normal al soltar `SHIFT` o agotar el combustible. En el aire, el planeo termina al soltar `SHIFT`, agotar el combustible o alcanzar 1 segundo de planeo en el tramo actual en el aire.
+Mochi vuelve a su velocidad normal al soltar `SHIFT` o agotar el combustible.
 
 **Recursos utilizados:**
 
-Una sola reserva compartida de combustible, mostrada mediante un indicador en el HUD.
+La reserva de combustible del sprint, mostrada mediante un indicador en el HUD.
 
 **Recompensa:**
 
-Mayor velocidad temporal en el suelo o más distancia y control durante un salto.
+Mayor velocidad temporal en el suelo para recorrer tramos y tomar impulso antes de un salto.
 
 **Penalización:**
 
-Gastar todo el combustible en el sprint deja a Mochi sin planeo si lo necesita al saltar; agotar la reserva en el aire termina el planeo y puede dejarlo corto de su destino.
+Gastar todo el combustible impide esprintar hasta que la reserva se recupere.
 
 **Interacciones con otras mecánicas:**
 
-El sprint puede dar impulso antes de un salto, pero ese gasto reduce lo disponible para planear. El planeo complementa el salto y el doble salto, pero no protege contra peligros letales.
+El sprint puede dar impulso antes de un salto. Su combustible es independiente del planeo y no protege contra peligros letales.
 
 **Casos límite:**
 
-Si el combustible se agota mientras `SHIFT` sigue presionado, la acción activa se interrumpe. En el aire, alcanzar el límite de 1 segundo impide seguir planeando durante ese mismo tramo en el aire, aunque quede combustible; el doble salto no reinicia el límite y se podrá esprintar nuevamente al tocar el suelo.
+Si el combustible se agota mientras `SHIFT` sigue presionado, el sprint se interrumpe y no se reactiva hasta que haya combustible disponible.
 
 ### Mecánica 04
+
+Planeo
+
+**Propósito:**
+
+Reducir por un momento la velocidad de caída para extender un salto y ayudar a alcanzar plataformas lejanas o aterrizar con más control.
+
+**Activación:**
+
+Mantener `ESPACIO` cuando Mochi ya está en el aire.
+
+**Reglas:**
+
+- El planeo no consume combustible y está disponible independientemente de la reserva del sprint.
+- Mientras planea, Mochi obtiene control horizontal limitado y desciende más despacio, pero no asciende ni queda suspendido.
+- El planeo dura como máximo **1 segundo por tramo en el aire** y termina antes si se suelta `ESPACIO`. El doble salto no reinicia ese límite.
+
+**Entrada:**
+
+`ESPACIO` (mantener en el aire para planear; soltar para dejar de planear).
+
+**Estado inicial:**
+
+Mochi está en el aire.
+
+**Estado final:**
+
+El planeo termina al soltar `ESPACIO` o alcanzar 1 segundo en el tramo actual en el aire.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+Más distancia y control durante un salto al ralentizar la caída.
+
+**Penalización:**
+
+Un mal cálculo del momento de activar el planeo puede dejar a Mochi corto de su destino cuando se agote el segundo disponible.
+
+**Interacciones con otras mecánicas:**
+
+El planeo complementa el salto y el doble salto. Es independiente del combustible del sprint y no protege contra peligros letales.
+
+**Casos límite:**
+
+Al alcanzar el límite de 1 segundo no se puede volver a planear durante ese mismo tramo en el aire, aunque quede combustible. El doble salto no reinicia el límite; este vuelve a estar disponible al tocar el suelo.
+
+### Mecánica 05
 
 Escalada de Superficies de Tela
 
@@ -242,7 +290,7 @@ El sprint puede ayudar a aproximarse; el combustible no se consume durante la es
 
 Las superficies decorativas que no se puedan escalar deben diferenciarse visualmente de la tela marcada como escalable.
 
-### Mecánica 05
+### Mecánica 06
 
 Aplastar Enemigos desde Arriba
 
@@ -256,7 +304,7 @@ Caer sobre un enemigo desde arriba tras un salto.
 
 **Reglas:**
 
-- Solo los enemigos designados como vulnerables pueden ser eliminados.
+- Solo los enemigos designados como vulnerables pueden ser eliminados al aplastarlos desde arriba.
 - El contacto lateral o desde abajo sigue siendo peligroso y puede causar la muerte.
 - Los jefes o enemigos resistentes requieren resolver su desafío específico; saltar sobre ellos no los derrota automáticamente.
 
@@ -270,7 +318,7 @@ Mochi está en el aire y un enemigo vulnerable está debajo.
 
 **Estado final:**
 
-El enemigo queda aturdido o desplazado brevemente y Mochi puede rebotar o continuar.
+El enemigo muere y Mochi rebota para continuar el recorrido.
 
 **Recursos utilizados:**
 
@@ -278,7 +326,7 @@ Ninguno.
 
 **Recompensa:**
 
-Una oportunidad breve para superar al enemigo y continuar el recorrido.
+Mata al enemigo vulnerable y despeja el paso de forma permanente.
 
 **Penalización:**
 

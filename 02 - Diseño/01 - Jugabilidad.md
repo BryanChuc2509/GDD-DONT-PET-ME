@@ -14,7 +14,7 @@ Describe el ciclo que se repite durante la experiencia.
 
 **Bucle del proyecto:**
 
-`Mochi debe evaluar cada habitación humana como un circuito colosal de plataformas. Sigue semillas que sirven como monedas y guía visual, escala superficies de tela reconocibles, salta sobre los enemigos para apartarlos del camino y administra una reserva compartida de combustible entre el sprint y el planeo para superar tramos exigentes.`
+`Mochi debe evaluar cada habitación humana como un circuito colosal de plataformas. Sigue semillas que sirven como monedas y guía visual, escala superficies de tela reconocibles, salta sobre los enemigos para apartarlos del camino y administra el combustible del sprint para superar tramos exigentes. El planeo funciona de forma independiente, hasta 1 segundo por tramo en el aire.`
 
 En el cuarto, el recorrido se divide en cuatro zonas consecutivas: **1) jaula, 2) escritorio, 3) libros colgantes y 4) pasillo de pelotas que caen**, donde Mochi debe avanzar y encontrar un hueco seguro. Las zonas enseñan y combinan las mecánicas antes de conducir a la salida.
 
@@ -23,7 +23,8 @@ En el cuarto, el recorrido se divide en cuatro zonas consecutivas: **1) jaula, 2
 | Acción                                                     | Propósito                                                                                                                         | Resultado                                                                                                                                                                   |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Desplazamiento y parkour** (`WASD` + `Espacio`) | Saltar abismos, encadenar saltos y escalar superficies de tela.                                                                    | Mochi gana altura y conserva la inercia para recorrer plataformas.                                                                                                          |
-| **Sprint / Planeo** (`Shift`)                       | En el suelo, aumentar temporalmente la velocidad; en el aire, planear brevemente para avanzar un poco más y ralentizar la caída. | Ambas acciones consumen la misma reserva de combustible. El planeo dura como máximo 1 segundo por tramo en el aire; el combustible se regenera al dejar de usar `Shift`. |
+| **Sprint** (`Shift`)                       | Aumentar temporalmente la velocidad al desplazarse por el suelo. | Consume combustible propio; al agotarse, Mochi vuelve a su velocidad normal. |
+| **Planeo** (`Espacio` mantenido en el aire) | Avanzar un poco más y ralentizar la caída durante un salto. | No consume ni depende de combustible; dura como máximo 1 segundo por tramo en el aire. |
 | **Escalar tela**                                      | Trepar por superficies cuya textura tejida comunica que son escalables.                                                            | Mochi asciende mientras conserve contacto con la superficie.                                                                                                                |
 | **Aplastar enemigos** (saltar sobre ellos)            | Aprovechar la altura para aplastar enemigos, no jefes.                                                                            | Abre una oportunidad para continuar sin convertir el juego en uno de combate.                                                                                               |
 | **Recoger semillas** (contacto)                       | Obtener monedas y seguir la ruta sugerida por su distribución.                                                                    | Aumenta el saldo; las semillas no son munición ni se guardan en un inventario.                                                                                             |
@@ -33,13 +34,13 @@ En el cuarto, el recorrido se divide en cuatro zonas consecutivas: **1) jaula, 2
 
 ¿Qué hace el jugador durante los primeros minutos?
 
-La jaula abre con un plano amplio y poco acercado que permite reconocer sus barrotes y el escenario. Al comenzar el control de Mochi, el barrote lateral más cercano a la cámara se vuelve transparente para mantener visible al personaje y el espacio de juego. El tutorial introduce movimiento y salto; después enseña el sprint en el suelo y el planeo en el aire con `Shift`, dejando claro que ambas acciones comparten el combustible y que conviene reservarlo para el salto que lo necesite. También enseña la escalada por una superficie de tela y el salto sobre enemigos.
+La jaula abre con un plano amplio y poco acercado que permite reconocer sus barrotes y el escenario. Al comenzar el control de Mochi, el barrote lateral más cercano a la cámara se vuelve transparente para mantener visible al personaje y el espacio de juego. El tutorial introduce movimiento y salto; después enseña el sprint en el suelo con `Shift` y el planeo en el aire manteniendo `Espacio`, dejando claro que solo el sprint consume combustible y que el planeo está disponible independientemente de la reserva. También enseña la escalada por una superficie de tela y el salto sobre enemigos.
 
 ## Experiencia minuto a minuto
 
 ¿Qué actividades se repiten durante una sesión?
 
-El jugador alterna entre secciones de plataformas de precisión, puzzles físicos (empujar libros o colocar pilas en aparatos), exploración de semillas-moneda y momentos de tensión cómica al esquivar amenazas. En los saltos, decide si gastar combustible en correr antes del despegue o guardarlo para planear hasta un poco más lejos y controlar la caída. Los avisos breves aparecen solo en zonas donde una pista es necesaria; por ejemplo, indican que se necesitan pilas para activar un ventilador. Al obtener el objeto, un indicador visual señala el ventilador o la ranura donde colocarlo.
+El jugador alterna entre secciones de plataformas de precisión, puzzles físicos (empujar libros o colocar pilas en aparatos), exploración de semillas-moneda y momentos de tensión cómica al esquivar amenazas. En los saltos, decide cuándo gastar combustible en correr antes del despegue; el planeo se puede usar de forma independiente para controlar la caída. Los avisos breves aparecen solo en zonas donde una pista es necesaria; por ejemplo, indican que se necesitan pilas para activar un ventilador. Al obtener el objeto, un indicador visual señala el ventilador o la ranura donde colocarlo.
 
 ## Experiencia a largo plazo
 

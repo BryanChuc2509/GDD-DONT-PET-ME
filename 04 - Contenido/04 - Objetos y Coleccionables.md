@@ -12,47 +12,78 @@ Define objetos que el jugador puede recoger, utilizar, equipar, vender, intercam
 
 Semillas de Girasol
 
-**Tipo:** Consumible / Munición / Coleccionable básico.
+**Tipo:** Moneda coleccionable.
 
-**Descripción:** Pequeñas semillas  que Mochi adora comer y guardar en sus abazones.
+**Descripción:** Semillas repartidas por el recorrido y en rincones opcionales del escenario.
 
-**Función:** Sirve como la única munición de Mochi para disparar a distancia, accionar objetos interactivos y aturdir enemigos.
+**Función:** Aumentan el saldo de Mochi y sirven como guía visual hacia la ruta principal. Se pueden usar para comprar una skin básica; reunirlas todas desbloquea una skin especial.
 
-**Cómo se obtiene:** Recogiéndolas del suelo, sobre plataformas, escritorios y barras de cocina a lo largo de los 3 niveles.
+**Cómo se obtiene:** Se recogen automáticamente al tocarlas en los escenarios jugables y sus desvíos.
 
-**Cómo se utiliza:** Se disparan automáticamente desde la boca al presionar el botón de ataque a distancia.
+**Cómo se utiliza:** No se disparan ni se usan para activar mecanismos o atacar enemigos.
 
-**Cantidad máxima:** 7 semillas
+**Cantidad máxima:** Sin límite de almacenamiento.
 
-**Valor:** 1 punto de munición.
+**Valor:** Moneda; el precio de los cosméticos se define durante el balance.
 
 **Rareza:** Común.
 
-**Restricciones:** No se pueden disparar si la reserva de semillas  llega a 0.
+**Restricciones:** No son necesarias para completar los niveles. Las semillas recogidas se conservan al morir y no reaparecen.
 
-**Interacciones:** Impactan contra interruptores de corriente, arañas de rincón y botones de la estufa o objetos.
+**Interacciones:** Se añaden al saldo del HUD al recogerlas.
 
 **Representación visual:** Semillas de girasol con cáscara rayada blanca y negra.
 
 
 ### Nombre
 
-Llaves de accesos.
+Pilas
 
-**Tipo:** Ítem clave de misión.
+**Tipo:** Objeto de objetivo contextual.
 
-**Descripción:** Una llave metálica pequeña que abre la cerradura de las puertas para que mochi pueda escapar.
+**Descripción:** Pilas que Mochi encuentra durante el recorrido por la habitación.
 
-**Función:** Abre la puerta final de La Cocina para permitir que Mochi escape hacia el bosque.
+**Función:** Alimentan el ventilador necesario para superar el encuentro con el minijefe de las hormigas en el escritorio.
 
-**Cómo se obtiene:** Escondida dentro del tarro de galletas en la barra alta del Nivel 3 (La Cocina).
+**Cómo se obtiene:** Se recogen en el escenario de la habitación; la ubicación exacta se determina en el diseño del nivel.
 
-**Cómo se utiliza:** Se usa automáticamente al interactuar con el seguro de la puerta trasera teniendo el objeto en el inventario.
+**Cómo se utiliza:** Se colocan en el ventilador o en su ranura de alimentación mediante interacción contextual.
 
-**Cantidad máxima:** 1
+**Cantidad máxima:** La necesaria para activar el ventilador; la cantidad exacta queda por definir.
 
-**Valor:** Requisito obligatorio para completar el Capítulo 1 y 2.
+**Valor:** Objeto clave del reto; no forma parte de un inventario general.
+
+**Rareza:** Según la cantidad de pilas requeridas para el mecanismo.
+
+**Restricciones:** Su uso se limita al mecanismo del ventilador.
+
+**Interacciones:** Al activar el ventilador, se despeja el camino durante el encuentro con el minijefe de las hormigas para que Mochi pueda continuar.
+
+**Representación visual:** Pilas domésticas pequeñas, claramente distinguibles del fondo y de los coleccionables.
+
+
+### Nombre
+
+Foto Familiar
+
+**Tipo:** Coleccionable narrativo opcional (propuesto para el pasillo).
+
+**Descripción:** Fotografía de la familia de Leo, escondida bajo el mueble recibidor.
+
+**Función:** Revela un detalle del entorno y de la familia; no afecta la progresión.
+
+**Cómo se obtiene:** Explorando debajo del mueble recibidor, si el coleccionable se mantiene en el alcance final.
+
+**Cómo se utiliza:** Se registra al recogerla; no se consume ni se equipa.
+
+**Cantidad máxima:** 1.
+
+**Valor:** Coleccionable de lore.
 
 **Rareza:** Único.
 
-**Restricciones:** Solo se puede recoger si Mochi alcanza la parte superior del escritorio del niño y de la barra de la cocina.
+**Restricciones:** Opcional.
+
+**Interacciones:** Ninguna interacción de juego adicional definida.
+
+**Representación visual:** Fotografía familiar enmarcada o suelta, a escala legible para Mochi.

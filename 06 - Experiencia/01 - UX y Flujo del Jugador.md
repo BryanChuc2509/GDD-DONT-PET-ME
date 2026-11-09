@@ -9,22 +9,26 @@ UX (experiencia de usuario) describe qué tan comprensible, cómoda y coherente 
 ## Flujo principal
 
 ```text
-Inicio → Menú principal → Nueva partida →  Captura (cinemática) → Jaula (Tutorial) → Habitación → Pasillo (persecución) → Sala → Final
-                                ↑                                   ↓
-                                └──────────────────────────────── Pausa ←───────────────────────────────────────────────────────────┘
+Inicio → Menú principal → Nueva partida → Cómic de captura → Jaula (tutorial)
+       → Habitación (escritorio y hormigas → libros colgantes
+         → estantería con pelotas → memorama)
+       → Pasillo (persecución) → Salida del pasillo
+                                 ↑             ↓
+                                 └── Pausa ────┘
 ```
 
-El jugador puede pausar el videojuego en cualquier parte del gameplay. Si ej jugador cae o se muere regresa al último checkpoint sin tener que iniciar por el principio o el menú inicial.
+La jaula es la primera zona de la habitación, no un nivel aparte. El jugador puede pausar durante el gameplay. Si Mochi muere por un peligro, reaparece en el último checkpoint.
 
 ## Primeros minutos
 
-El juego comienza con una pequeña cinematica de como (10-15 segundos) el hamster es atrapado en el bosque. Seguidamente la pantalla se pone negra y comienza dentro de la jaula del cuarto donde se enseñan los controles de forma gradual. Los controles se presentan mediante Pantalla
+El juego comienza con una breve introducción tipo cómic que muestra la captura de Mochi durante el picnic familiar y establece su deseo de volver con Copo y Trufa. Después, Mochi despierta en la jaula y el tutorial introduce las acciones básicas de forma gradual, sin interrumpir innecesariamente el juego.
 
-1. **Moverse y mirar:** Mochi aparece en la jaula con espacio suficiente para caminar y explorar. El jugador aprende a desplazarse con WASD.
-2. **Saltar:** Dentro de la Jaula Existen desniveles, troncos, entre otros elementos relacionados a un hámster que pueden usarse para saltar. Se usa la barra espaciadora para saltar
-3. **Doble salto:** Hay zonas de la jaula que no se alcanza con un solo salto. Se muestra la indicación de presionar salto de nuevo en el aire. 
-4. **Canicas:** Mochi encuentra canicas o semillas dentro de la jaula, las guarda en la boca y aprende a dispararlas contra un objetivo simple, en este caso para poder abrir el seguro de la jaula mal cerrada.
-5. **Escape:** Al usar lo aprendido para abrir la jaula, Mochi sale hacia la habitación, lo que cierra el tutorial y da paso al primer momento cómico y narrativo del juego.
+1. **Movimiento:** El jugador aprende a desplazarse y explorar el espacio de la jaula.
+2. **Salto:** El entorno presenta desniveles sencillos para practicar el salto antes de afrontar plataformas más exigentes.
+3. **Escape:** Mochi sale de la jaula y comienza el recorrido por la habitación. La forma exacta de abrir la jaula se define en el diseño del nivel.
+4. **Lectura del entorno:** Señales visuales ayudan a identificar rutas, peligros, refugios y objetos con los que se puede interactuar.
+5. **Desafíos principales:** El jugador consigue pilas y activa el ventilador para superar el encuentro de las hormigas; después se refugia en huecos de la estantería para evitar las pelotas y repite en orden la secuencia del memorama.
+6. **Persecución:** En el pasillo, la aspiradora persigue a Mochi y el jugador combina movimiento y lectura de los obstáculos para alcanzar la salida.
 
 ## Retroalimentación
 
@@ -33,16 +37,16 @@ Para cada acción importante define:
 **Entrada → Respuesta visual → Respuesta sonora → Resultado**
 
 
-| Acción                         | Entrada                       | Respuesta visual                                                                | Respuesta sonora                                                  | Resultado                                        |
-| ------------------------------- | ----------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------ |
-| Saltar                          | Espacio                       | Una pequeña nube de polvo al saltar                                            | Sonido corto y ligero de                                          | Mochi sube y puede controlar su trayectoria      |
-| Doble salto                     | Doble Espacio                 | Giro rápido de Mochi                                                           | Sonido similar al primer salto pero con cierto efecto de esfuerzo | Impulso extra para alcanzar plataformas altas    |
-| Recoger canica                  | Tecla E                       | Las mejillas de Mochi se hinchan y el contador del HUD aumenta                  | Sonido de “pop” suave                                           | Se suma una canica al inventario                 |
-| Disparar canica                 | Clic izquierdo                | Mochi escupe la canica y el contador baja                                      | Sonido de escupitajo y rebote                                     | La canica activa un mecanismo o empuja un objeto |
-| Interruptor activado            | Canica impacta el objetivo    | El objeto se ilumina y se mueve o habilita alguna plataforma                    | Sonido de clic                                                    | Se abre un nuevo camino                          |
-| Ser detectado por la aspiradora | Entrar en su rango de visión | La aspiradora gira hacia Mochi y se enciende una luz roja                       | Motor que acelera y alarma corta                                  | Comienza la persecución                         |
-| Caída                          | Caer al vacío                | Mochi rebota queda apachurrado con el suelo (No gráfico, a modo de burla/meme) | Sonido gracioso tipo payaso                                       | Regresa al último checkpoint                    |
-| Checkpoint                      | Acercase a un bebedero.       | Pequeño animación de 2 segundos bebiendo agua                                 | Campanita suave                                                   | Checkpoint guardado                              |
+| Acción | Entrada | Respuesta visual | Respuesta sonora | Resultado |
+| --- | --- | --- | --- | --- |
+| Movimiento y salto | Teclas de movimiento y salto | Animación de Mochi y respuesta visible al despegar y aterrizar | Efectos breves asociados al movimiento | El jugador comprende el control y la distancia del salto |
+| Recoger semillas | Tocar una semilla | La semilla desaparece y el saldo del HUD se actualiza | Sonido breve de recolección | Aumenta la moneda; no se añade munición ni un objeto de uso |
+| Interactuar con el ventilador | Acercarse y usar la interacción contextual | Se indica el objeto interactuable y el cambio de estado del mecanismo | Sonido de activación | El ventilador se activa y despeja el paso del encuentro de hormigas |
+| Memorizar las baldosas | Observar la muestra | Los cuadros se iluminan en una secuencia de colores | Señal breve por cada cuadro, si se implementa | El jugador observa el orden antes de repetirlo saltando |
+| Refugiarse de una pelota | Entrar en un hueco de la estantería | La pelota pasa sin alcanzar a Mochi | Sonido de impacto de la pelota en el entorno | El jugador puede continuar ascendiendo |
+| Inicio de persecución | La aspiradora detecta a Mochi | La aspiradora se orienta hacia él y comienza a seguirlo | El motor se vuelve audible o cambia de intensidad | El jugador reconoce que debe escapar |
+| Muerte y reaparición | Tocar un peligro letal o caer | Se muestra brevemente la consecuencia y la transición al checkpoint | Efecto breve de impacto o fallo | Mochi reaparece en el último checkpoint |
+| Activar un checkpoint | Alcanzar el punto de control definido en el nivel | Una señal visual confirma su activación | Señal sonora breve | La reaparición queda actualizada |
 
 ## Fricción intencional
 
@@ -50,11 +54,11 @@ Para cada acción importante define:
 
 **Dificultad que forma parte del diseño:**
 
-* Precisión en los saltos y dobles saltos para llegar a plataformas lejanas.
-* Resolver pequeños acertijos con canicas y objetos del entorno.
-* Leer el comportamiento de la aspiradora para esquivarlo.
-* Mantener el ritmo durante las persecuciones.
-* Algunos trolleos de vez en cuando en cuanto al entorno
+* Calcular los saltos entre plataformas y el momento para avanzar.
+* Observar y repetir correctamente la secuencia del memorama.
+* Leer el ritmo de las pelotas de tenis y usar los huecos como refugio.
+* Escapar de la aspiradora mientras se evitan las trampas del pasillo.
+* Aprender de los peligros inesperados sin tener que repetir tramos largos.
 
 **Dificultad que sería mala experiencia de usuario (y se evita):**
 
@@ -70,14 +74,14 @@ Para cada acción importante define:
 ¿Cómo sabe el jugador:
 
 - Qué hacer?
-  El entorno describe lo que se debe hacer. Se busca utilizar una guía implicita a través de las plataformas para que el jugador sepa hacia donde tiene que ir.
+  El entorno y las indicaciones breves del tutorial explican el objetivo inmediato; la forma de las plataformas ayuda a leer la ruta.
 - Dónde ir?
-  Se busca que las plataformas sean evidentes para indicar el Camino. De igual manera se busca Agregar cierta iluminación para guiar al usuario.
+  Las plataformas y señales visuales distinguen la ruta principal de los desvíos y refugios.
 - Qué puede interactuar?
-  El jugador podrá ver que es un objeto interactuable cuando se acerque y salga un icono o a través de un pequeño brillo/destello distintivo
-- Qué ocurrió?
-  Cada acción tiene respuesta visual y sonora inmediata, por lo que el jugador entiende el efecto de sus decisiones al instante
+  Un indicador contextual aparece al acercarse a un objeto interactuable.
+- ¿Qué ocurrió?
+  Las acciones importantes tienen una respuesta visual y sonora clara, para que el jugador entienda el efecto de sus decisiones.
 - Por qué ganó o perdió?
-  Las derrotas son visibles y claras, se muestra una vista de "Has perdido" con un pequeño mensaje de feedback como "Mochi descubrió que roer los cables no traen nada bueno"
+  Los peligros letales y la reaparición en el checkpoint dejan claro por qué falló el intento. No hace falta interrumpir el flujo con una pantalla de derrota extensa.
 
-  **Navegación:**[[00 - Índice]] · ← [[05 - Audio y Música]] · [[02 - UI y Menús]] →
+> **Navegación:** [[00 - Índice]] · ← [[05 - Audio y Música]] · [[02 - UI y Menús]] →

@@ -9,41 +9,41 @@ Los sistemas son conjuntos de reglas y componentes que trabajan juntos: movimien
 | Sistema | Propósito | Dependencias | Estado |
 | --- | --- | --- | --- |
 | Físicas y Locomoción de Roedor | Controlar desplazamiento, saltos, escalada de tela y rebotes sobre enemigos vulnerables. | Motor de físicas 3D | En proceso |
-| Sprint, Planeo y Combustible | Aplicar sprint en el suelo o planeo breve en el aire con una sola reserva compartida; regenerarla al soltar `SHIFT`. | Controlador del personaje, HUD | Diseñado |
+| Sprint y Planeo | Aplicar sprint con combustible propio en el suelo y planeo de hasta 1 segundo en el aire, independiente de ese combustible. | Controlador del personaje, HUD | Diseñado |
 | Semillas y Cosméticos | Registrar semillas recogidas como moneda y desbloquear skins. | Persistencia, HUD, menú de cosméticos | Diseñado |
 | Checkpoints y Daño Absoluto | Reiniciar ante colisiones letales y conservar el progreso establecido. | Sistema de persistencia | Diseñado |
 | Puzzles Físicos y Objetos de Objetivo | Permitir mover utilería e interactuar con objetos contextuales, como pilas y ranuras. | Motor de físicas, sistema de interacción | En proceso |
 
-## Sistema de Sprint, Planeo y Combustible
+## Sistema de Sprint y Planeo
 
 **Objetivo:**
 
-Permitir al jugador administrar una sola reserva de combustible para esprintar en el suelo o planear brevemente durante un salto.
+Permitir al jugador esprintar en el suelo usando una reserva de combustible propia y planear durante un máximo de 1 segundo por tramo en el aire, sin consumir esa reserva.
 
 **Entradas:**
 
-Mantener o soltar `SHIFT`.
+Mantener `SHIFT` en el suelo para esprintar y mantener `ESPACIO` en el aire para planear.
 
 **Procesamiento / reglas:**
 
 - En el suelo, mantener `SHIFT` aumenta temporalmente la velocidad de desplazamiento mientras quede combustible.
-- En el aire, mantener `SHIFT` activa un planeo con control horizontal limitado y descenso más lento; Mochi no asciende ni queda suspendido.
-- Sprint y planeo consumen el mismo combustible. El planeo dura como máximo 1 segundo por tramo en el aire; el doble salto no reinicia ese límite.
-- El combustible se regenera al soltar `SHIFT`, tanto en el suelo como en el aire; caminar, saltar y escalar no lo consumen.
-- Al agotarse el combustible, la acción activa termina. Si no queda combustible al despegar, no se puede planear en ese salto.
-- La capacidad y las tasas de consumo y regeneración se determinarán mediante pruebas de balance para que el sprint prolongado pueda dejar insuficiente combustible para planear.
+- En el aire, mantener `ESPACIO` activa un planeo con control horizontal limitado y descenso más lento; Mochi no asciende ni queda suspendido. El planeo no consume combustible.
+- El planeo dura como máximo 1 segundo por tramo en el aire; el doble salto no reinicia ese límite.
+- El sprint consume combustible mientras está activo y se detiene al agotarse la reserva. El planeo sigue disponible sin importar cuánto combustible quede.
+- El combustible del sprint se regenera mientras no se está esprintando, tanto en el suelo como en el aire. Caminar, saltar, planear y escalar no lo consumen.
+- La capacidad y las tasas de consumo y regeneración del sprint se determinarán mediante pruebas de balance.
 
 **Salidas:**
 
-Velocidad de movimiento en el suelo, estado y control de planeo en el aire, valor actualizado de combustible e indicador correspondiente en el HUD.
+Velocidad de movimiento en el suelo, estado y control de planeo en el aire, valor de combustible del sprint e indicador correspondiente en el HUD.
 
 **Estados posibles:**
 
 - Desplazamiento normal
 - Esprintando
 - Planeando
-- Recuperando combustible
-- Sin combustible
+- Recuperando combustible del sprint
+- Sin combustible para el sprint
 
 **Dependencias:**
 
@@ -51,23 +51,23 @@ Controlador del personaje, sistema de entrada y HUD.
 
 **Interacciones:**
 
-El sprint facilita atravesar tramos y tomar impulso para saltar; el planeo puede extender un salto y ralentizar la caída. Gastar combustible en una acción reduce lo disponible para la otra. Ninguna protege a Mochi del daño.
+El sprint facilita atravesar tramos y tomar impulso para saltar; el planeo puede extender un salto y ralentizar la caída. El combustible solo afecta al sprint y no limita el planeo. Ninguna acción protege a Mochi del daño.
 
 **Datos que necesita:**
 
-Entrada `SHIFT`, tiempo transcurrido, combustible disponible, tiempo de planeo del salto actual y estado de movimiento (suelo o aire).
+Entradas `SHIFT` y `ESPACIO`, tiempo transcurrido, combustible disponible para el sprint, tiempo de planeo del tramo actual y estado de movimiento (suelo o aire).
 
 **Datos que genera:**
 
-Velocidad o estado de planeo actualizado, tiempo de planeo restante y valor de combustible para el HUD y el guardado.
+Velocidad o estado de planeo actualizado, tiempo de planeo restante y valor del combustible del sprint para el HUD y el guardado.
 
 **Riesgos:**
 
-Que el balance permita esprintar y planear sin tomar decisiones, o que agotar el combustible provoque una caída inevitable sin una oportunidad justa de recuperarlo.
+Que el balance del sprint resulte poco claro o que una duración fija del planeo no dé suficiente control para aterrizar con justicia.
 
 **Criterios de aceptación:**
 
-El jugador puede esprintar en el suelo y planear hasta 1 segundo por tramo en el aire con `SHIFT`; ambas acciones reducen la misma barra de combustible, que se regenera al soltar la tecla. Si gasta la reserva en el sprint, el planeo no se activa hasta recuperar combustible.
+El jugador puede esprintar en el suelo con `SHIFT`, consumiendo una reserva propia que se regenera cuando no esprinta, y planear hasta 1 segundo por tramo en el aire manteniendo `ESPACIO`, sin consumir ni depender de esa reserva.
 
 ## Sistema de Semillas y Cosméticos
 
