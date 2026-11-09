@@ -6,28 +6,26 @@ Define qué información necesita conservar el juego y cómo se estructura.
 
 ## Datos persistentes
 
-- Progreso
-- Configuración
-- Inventario
-- Estadísticas
-- Desbloqueos
-- Otros
+- Nivel y checkpoint actual.
+- Estado de los puzzles de progresión.
+- Saldo de semillas, si se conserva entre sesiones.
+- Preferencias de configuración.
 
 ## Modelo de datos
 
-Describe las entidades y relaciones.
+El guardado local contiene una partida lineal con el nivel, el checkpoint, el estado de progresión y las opciones del jugador. No se requiere una base de datos, cuentas ni sincronización en línea.
 
 ## Formato
 
-**Formato de guardado:**
+**Formato de guardado:** Archivo local sencillo; formato por confirmar durante la implementación.
 
-**Ubicación:**
+**Ubicación:** Almacenamiento local de la aplicación en Windows.
 
-**Versionado de datos:**
+**Versionado de datos:** Versión sencilla del esquema para identificar cambios incompatibles.
 
 ## Migraciones
 
-¿Qué ocurre si cambia la estructura de los datos entre versiones?
+Si cambia el formato, la versión nueva debe detectar los datos incompatibles y comunicar el problema sin indicar que el progreso se cargó correctamente. Las migraciones complejas no forman parte del alcance actual.
 
 
 > **Navegación:** [[00 - Índice]] · ← [[03 - Requisitos Técnicos]] · [[05 - Seguridad y Riesgos Técnicos]] →

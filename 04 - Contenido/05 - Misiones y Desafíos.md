@@ -2,99 +2,169 @@
 
 ## Descripción de la sección
 
-Las misiones y desafíos convierten las mecánicas en objetivos concretos para el jugador.
+Las misiones y los desafíos convierten las mecánicas y la progresión de los escenarios en objetivos claros para el jugador.
 
-## Plantilla de misión
+## Misiones principales
+
+### Escapar de la jaula
+
+**Tipo:** Principal / tutorial.
+
+**Objetivo:** Aprender los controles básicos y salir de la jaula para comenzar el recorrido por la habitación de Leo.
+
+**Contexto:** Mochi despierta cautivo después de que Leo lo captura durante un picnic familiar.
+
+**Requisitos:** Movimiento y salto.
+
+**Pasos:** Seguir las señales del tutorial, superar los primeros obstáculos de la jaula y alcanzar la salida.
+
+**Condición de éxito:** Mochi sale de la jaula y entra en la habitación.
+
+**Condición de fracaso:** Caer en un peligro letal; reaparecer en el checkpoint disponible según las reglas generales.
+
+**Recompensa:** Acceso a la habitación.
+
+**Personaje relacionado:** Mochi.
+
+**Escenario relacionado:** La jaula (tutorial).
+
+### Superar al minijefe de las hormigas
+
+**Tipo:** Principal / minijefe.
+
+**Objetivo:** Conseguir las pilas y activar el ventilador para superar el encuentro con el minijefe de las hormigas.
+
+**Contexto:** El minijefe de las hormigas bloquea el avance en el escritorio. La solución definida es usar el ventilador; su apariencia y ataques están por definir.
+
+**Requisitos:** Alcanzar las pilas e interactuar con la ranura del ventilador.
+
+**Pasos:**
+
+1. Explorar el escritorio y localizar las pilas.
+2. Recogerlas y llevarlas a la ranura del ventilador.
+3. Activar el ventilador y continuar cuando el paso quede despejado.
+
+**Condición de éxito:** El ventilador se activa y Mochi puede seguir hacia los libros colgantes.
+
+**Condición de fracaso:** Caer o tocar un peligro durante el recorrido; reintentar desde el último checkpoint.
+
+**Recompensa:** Acceso al siguiente tramo de la habitación.
+
+**Personajes relacionados:** Mochi y el minijefe de las hormigas.
+
+**Escenario relacionado:** La habitación de Leo.
+
+**Por definir:** Cantidad y ubicación exacta de las pilas, forma de transportarlas y respuesta del ventilador.
+
+### Evitar las pelotas de tenis y subir por la estantería
+
+**Tipo:** Principal / reto de plataformas.
+
+**Objetivo:** Cruzar la sección de la estantería sin recibir el impacto de las pelotas de tenis y avanzar hacia arriba.
+
+**Contexto:** Un personaje aún sin identificar lanza pelotas de tenis mientras Mochi asciende por la estantería. Mochi debe leer su movimiento, encontrar el momento seguro, meterse en un hueco y continuar subiendo. Donkey Kong es solo una referencia; aquí se usan pelotas de tenis, no barriles.
+
+**Requisitos:** Observar el patrón de las pelotas y usar el movimiento y el salto para alcanzar refugios y repisas.
+
+**Condición de éxito:** Mochi alcanza el siguiente tramo superior de la estantería.
+
+**Condición de fracaso:** Recibir el impacto de una pelota o caer; reintentar desde el último checkpoint.
+
+**Recompensa:** Acceso a la parte superior de la habitación.
+
+**Personaje relacionado:** Mochi.
+
+**Escenario relacionado:** La habitación de Leo, después de los libros colgantes.
+
+**Estado de diseño:** La secuencia y la geometría exactas de los refugios y la estantería quedan por definir.
+
+### Recordar y repetir la secuencia de baldosas
+
+**Tipo:** Principal / puzzle de memoria.
+
+**Objetivo:** Activar el mecanismo repitiendo con saltos la secuencia de baldosas iluminadas.
+
+**Contexto:** Un conjunto de cuadros del suelo se ilumina en distintos colores siguiendo un orden. Mochi debe memorizar la secuencia y saltar sobre los cuadros en ese mismo orden.
+
+**Requisitos:** Observar la muestra completa antes de introducir la respuesta.
+
+**Pasos:**
+
+1. Activar el puzzle.
+2. Observar los colores y el orden en que se iluminan las baldosas.
+3. Esperar a que termine la secuencia.
+4. Saltar sobre cada baldosa en el orden mostrado para activar el mecanismo.
+
+**Condición de éxito:** Se repite correctamente la secuencia y el mecanismo se activa.
+
+**Condición de fracaso:** Pisar una baldosa incorrecta o alterar el orden; la respuesta se reinicia y se vuelve a mostrar la secuencia.
+
+**Recompensa:** Activación del mecanismo y acceso a la ruta siguiente.
+
+**Personaje relacionado:** Mochi.
+
+**Escenario relacionado:** La habitación de Leo; ubicación exacta pendiente.
+
+**Por definir:** Número de baldosas, longitud y velocidad de la secuencia, cantidad de intentos y señalización de reinicio.
+
+### Escapar de la aspiradora por el pasillo
+
+**Tipo:** Principal / persecución.
+
+**Objetivo:** Atravesar el pasillo y alcanzar su salida sin ser atrapado por la aspiradora ni por las trampas.
+
+**Contexto:** Los padres de Leo buscan un ratón y programaron la aspiradora para cazarlo. El aparato confunde a Mochi con su objetivo.
+
+**Requisitos:** Leer la ruta de persecución y los peligros del escenario.
+
+**Pasos:** Avanzar por el pasillo, evitar la zona de succión, las ratoneras, las escobas que caen y las pelotas rodantes, y alcanzar la salida.
+
+**Condición de éxito:** Mochi llega a la salida del pasillo y termina el recorrido jugable actual.
+
+**Condición de fracaso:** Ser succionado por la aspiradora o tocar otro peligro letal; reaparecer en el último checkpoint.
+
+**Recompensa:** Cierre simple de la versión actual.
+
+**Personajes relacionados:** Mochi y la aspiradora inteligente.
+
+**Escenario relacionado:** El pasillo.
+
+## Desafíos secundarios
+
+### Recolectar semillas
+
+**Tipo:** Secundario / colección.
+
+**Objetivo:** Recoger semillas repartidas por la ruta y sus desvíos.
+
+**Contexto:** Las semillas orientan al jugador y funcionan como moneda para cosméticos.
+
+**Condición de éxito:** Recoger las semillas que el jugador encuentre; completar la colección del juego desbloquea la skin especial.
+
+**Condición de fracaso:** Ninguna. No recoger semillas no bloquea la progresión.
+
+**Reglas:** Se recogen al tocarlas, se conservan al morir y reaparecer y no se usan como munición ni para activar mecanismos.
+
+### Sortear peligros eléctricos (si se incluye en el nivel)
+
+**Tipo:** Desafío ambiental opcional; solución de diseño pendiente.
+
+**Objetivo:** Cruzar una zona con cables pelados o agua electrificada sin tocarla.
+
+**Contexto:** La entrega 3 presenta cables y derrames electrificados como peligros mortales para Mochi.
+
+**Condición de éxito:** Encontrar y atravesar una ruta segura.
+
+**Condición de fracaso:** Tocar el cable o el agua electrificada; muerte instantánea y reinicio en el checkpoint.
+
+**Por definir:** Confirmar si el peligro aparece en el nivel final y si se supera mediante una ruta alternativa u otra interacción del entorno. Las semillas no se usan para apagarlo.
+
+## Criterios para los desafíos
+
+- Comunicar el objetivo y las señales de peligro antes de exigir precisión.
+- Permitir aprender del fallo y reintentar desde un checkpoint adecuado.
+- Usar sorpresas y trampas como parte del humor, sin ocultar señales necesarias para anticipar un peligro letal.
+- No convertir la recolección de semillas en requisito de progresión.
+- Walker es una oruga de peluche blanca con patrullas fijas repartidas de forma dispersa por el mapa, no limitadas a una sola zona; sus ubicaciones concretas y vulnerabilidad al aplastamiento siguen por definirse.
 
 > **Navegación:** [[00 - Índice]] · ← [[04 - Objetos y Coleccionables]] · [[01 - Dirección de Arte]] →
-
-### Nombre
-
-Cruzar la Corriente Electrificada
-
-**Tipo:** Principal
-
-**Objetivo:** Desactivar la electricidad del cable pelado para cruzar de forma segura el charco electrificado del escritorio o esquivando el obstaculo.
-
-**Contexto:** Una lata de bebida energizante derramada sobre un cable pelado crea un charco de agua mortal que bloquea el avance de Mochi hacia el librero.
-
-**Requisitos:** Tener al menos 1 semilla.
-
-**Pasos:**
-
-1. Subir a la parte alta de la laptop  para obtener una vista clara del entorno.
-2. Apuntar con la mecánica de disparo a distancia hacia el interruptor rojo de  enchufes al otro lado del charco.
-3. Disparar una semilla con precisión para presionar el interruptor y cortar el flujo eléctrico.
-
-**Condición de éxito:** El agua deja de chispotear electricidad y Mochi puede cruzar caminando o saltando sin sufrir daño.
-
-**Condición de fracaso:** Tocar el charco mientras sigue electrificado (muerte instantánea y reinicio en el punto de control).
-
-**Recompensa:** Desbloquea el acceso a la zona de escalada.
-
-**Consecuencias:** Permite continuar el avance de la historia.
-
-**Personajes relacionados:** Mochi.
-
-**Nivel relacionado:** Nivel 1: La Habitación del Niño.
-
-
-### Nombre
-
-Derribar la Barricada de Estudio
-
-**Tipo:** Principal
-
-**Objetivo:** Empujar el libro de Arquitectura de Bases de Datos para tirarlo y crear una rampa transitable hacia las repisas elevadas.
-
-**Contexto:** Un pesado libro académico bloquea el camino vertical hacia la zona de objetos apilada. 
-
-**Requisitos:** Habilidad de empujar objetos / Física del entorno.
-
-**Pasos:**
-
-1. Escalar por los tomos menores hasta posicionarse detrás del lomo del libro gigante.
-2. Correr y empujar la parte superior del libro aplicando fuerza de manera continua.
-3. Hacer que el libro colapse hacia adelante para formar un puente/rampa.
-
-**Condición de éxito:** El libro cae con éxito sobre la brecha, formando una rampa inclinada accesible.
-
-**Condición de fracaso:** No aplicar suficiente impulso o caer de la repisa al intentar empujar.
-
-**Recompensa:** Rampa transitable y acceso a semillas de girasol.
-
-**Consecuencias:** Se abre el camino hacia la parte alta de la habitación.
-
-**Personajes relacionados:** Mochi.
-
-**Nivel relacionado:** Nivel 1: La Habitación del Niño.
-
-### Nombre
-
-Desviar la Aspiradora Inteligente
-
-**Tipo:** Principal
-
-**Objetivo:** Activar un desviador o trampa de piso para hacer chocar a la aspiradora y despejar la entrada a la cocina.
-
-**Contexto:** La aspiradora inteligente bloquea directamente la rendija de paso hacia la cocina mientras patrulla.
-
-**Requisitos:** Dominio del timing de disparo y deslizamiento.
-
-**Pasos:**
-
-1. Atraer la atención de la aspiradora para que inicie la línea de persecución.
-2. Correr hacia la zona de cajones entreabiertos.
-3. Disparar a la palanca del cajón para que este se abra de golpe justo cuando la aspiradora pase, haciéndola chocar.
-
-**Condición de éxito:** La aspiradora choca, se desorienta y queda atascada temporalmente abriendo paso.
-
-**Condición de fracaso:** Ser alcanzado y succionado por la aspiradora (muerte instantánea).
-
-**Recompensa:** Despeja el acceso final a la puerta de La Cocina.
-
-**Consecuencias:** Permite avanzar al Nivel 3.
-
-**Personajes relacionados:** Mochi, Aspiradora Inteligente.
-
-**Nivel relacionado:** Nivel 2: El Pasillo.

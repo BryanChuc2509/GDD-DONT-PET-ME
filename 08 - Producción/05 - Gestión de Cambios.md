@@ -4,11 +4,13 @@
 
 El diseño de un videojuego cambia. Esta sección evita que las modificaciones importantes se pierdan o aparezcan sin evaluar sus consecuencias.
 
+Para cada cambio, esta nota registra la solicitud, su impacto y su estado. En el [[03 - Registro de Decisiones]] se documentan la resolución y sus motivos con el mismo identificador.
+
 ### Solicitud de cambio
 
 **Fecha:** 19 de octubre de 2026.
 
-**Cambio propuesto:** Eliminar el nivel jugable del bosque. La captura de Mochi en el picnic pasa a contarse con una introducción narrativa breve (imágenes fijas o viñetas), y el juego inicia directamente en la jaula, donde se integra el tutorial de controles (movimiento, salto, doble salto y canicas).
+**Cambio propuesto:** Eliminar el nivel jugable del bosque. La captura de Mochi durante el picnic se cuenta mediante una introducción narrativa breve tipo cómic. El juego inicia cuando Mochi despierta en la jaula, que es la zona inicial de la habitación, y aprende allí las acciones básicas.
 
 **Motivo:** Limitaciones de tiempo. Se cuenta con unas 3.5 semanas de desarrollo (del 19 de octubre al 13 de noviembre, con el evento el 20 de noviembre), y el bosque implicaba modelar, diseñar y programar un escenario completo adicional.
 
@@ -17,33 +19,39 @@ El diseño de un videojuego cambia. Esta sección evita que las modificaciones i
 * Reduce el trabajo de modelado 3D, diseño de niveles y pruebas de un escenario completo.
 * Libera tiempo para pulir el vertical slice (jaula y habitación) y la persecución del pasillo.
 * Disminuye el riesgo de no llegar a un build estable para la fecha de entrega.
-* Mantiene la enseñanza de las mecánicas principales mediante un tutorial integrado en el espacio de la jaula.
+* Mantiene la enseñanza de las acciones principales mediante un tutorial integrado en la jaula, sin convertirla en un nivel independiente.
 
 **Costo estimado:**
 
 * Se pierde el nivel de exploración al aire libre y el contraste visual entre naturaleza y casa.
 * Se pierde la secuencia jugable de la captura, que ahora será una escena no interactiva.
-* Se requiere trabajo nuevo, pero pequeño: guion e ilustraciones de la introducción y rediseño del tutorial dentro de la jaula
-* Se pasa de cinco a cuatro escenarios jugables.
+* Se requiere trabajo acotado: guion e ilustraciones de la introducción y diseño del tutorial dentro de la jaula.
+* El recorrido jugable se organiza en dos niveles: la habitación, que comienza en la jaula, y el pasillo.
 
 **Impacto en otros sistemas:**
 
 | Sección               | Impacto                                                                                   |
 | ---------------------- | ----------------------------------------------------------------------------------------- |
-| Visión del Juego      | Ajustar la progresión (de cinco a cuatro escenarios) y las características principales. |
-| UX y Flujo del Jugador | El flujo inicia en la jaula y los primeros minutos se rediseñaron.                       |
-| UI y Menús            | Se añadió la pantalla de introducción narrativa.                                       |
-| Alcance                | El bosque queda en “No incluido” y el vertical slice es jaula y habitación.            |
+| Visión del Juego | La captura y la motivación de Mochi se presentan en la introducción narrativa. |
+| UX y Flujo del Jugador | El flujo comienza con la introducción y continúa en la jaula, primera zona de la habitación. |
+| UI y Menús | Se incorpora una introducción narrativa breve tipo cómic. |
+| Alcance | El bosque no es jugable; el recorrido jugable comprende la habitación y el pasillo. |
 
-**Decisión:** Aprobado. El nivel del bosque se elimina del alcance jugable y se sustituye por la introducción narrativa y el tutorial en la jaula. No se reincorporará en esta versión; solo podría considerarse después del evento como contenido futuro  en dado caso de que el equipo planee seguir expandiendo y actualizando el jeugo.
+**Decisión:** Aprobado. El bosque se mantiene como parte de la historia, pero no es un nivel jugable de esta versión. La introducción presenta la captura y el tutorial inicia en la jaula, dentro de la habitación.
 
-**Responsable:** Bryan Chuc (líder de proyecto), con apoyo de todo los integrantes del equipo 
+**Responsable:** Bryan Chuc (líder de proyecto), con apoyo de todo el equipo.
 
 ### Registro
 
 | Fecha       | Cambio                                                                                                           | Motivo                                                                      | Impacto                                                                                                                                             | Estado     |
 | ----------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| 19 oct 2026 | Eliminar el nivel jugable del bosque y sustituirlo por una introducción narrativa. El tutorial pasa a la jaula. | Falta de tiempo (unas 3.5 semanas de desarrollo antes del 13 de noviembre). | Se pasa de cinco a cuatro escenarios jugables. Se reducen modelado, diseño y pruebas. Se actualizan Visión, Pilares 2 y 5, Plataforma y tráiler. | Aprobado   |
-| 19 oct 2026 | Actualizar documentos afectados (Visión, Pilares, Público y Plataforma).                                       | Mantener coherencia con el cambio.                                          | Solo edición de texto, sin costo de desarrollo.                                                                                                    | Completado |
+| 19 oct 2026 | [[03 - Registro de Decisiones#D-01 · Bosque y tutorial en la jaula\|D-01]] · Eliminar el nivel jugable del bosque y sustituir la captura por una introducción narrativa. El tutorial inicia en la jaula, dentro de la habitación. | Reducir el trabajo de producción y pruebas del escenario exterior. | Se establece un recorrido jugable de dos niveles: habitación y pasillo. | Aprobado |
+| 19 oct 2026 | Actualizar los documentos afectados por el cambio de alcance. | Mantener coherencia entre narrativa, flujo y producción. | El bosque permanece en la historia, pero no se produce como nivel jugable. | Completado |
+| 3 nov 2026 | [[03 - Registro de Decisiones#D-02 · Semillas y mecánicas\|D-02]] · Semillas para orientar y desbloquear skins. Retirar el inventario general y definir sprint, escalada y salto sobre enemigos. | Simplificar acciones y orientar la exploración. | Diseño, controles, economía y tutorial. | Documentado en el GDD |
+| 3 nov 2026 | [[03 - Registro de Decisiones#D-03 · Recorrido y ayudas\|D-03]] · Organizar la habitación en cuatro zonas e incluir checkpoints, encuadre inicial de la jaula y pistas contextuales. | Hacer legibles la ruta y los retos. | Niveles y UX. | Documentado en el GDD |
+| 3 nov 2026 | [[03 - Registro de Decisiones#D-04 · Planeo\|D-04]] · Evaluar si se conserva, se reduce o se elimina el planeo. | Validar cuánto control aéreo necesita el recorrido. | Movimiento, tutorial y diseño de saltos. | Pendiente |
+| 4 nov 2026 | [[03 - Registro de Decisiones#D-05 · Alcance narrativo\|D-05]] · Limitar el recorrido narrado al alcance actual. | Alinear la historia con la versión jugable. | Historia y referencias a entornos. | Documentado en el GDD |
+
+Consulta el [[03 - Registro de Decisiones]] para ver qué se resolvió y qué sigue abierto.
 
 > **Navegación:** [[00 - Índice]] · ← [[04 - Backlog del Proyecto]] · [[01 - Criterios de Calidad]] →

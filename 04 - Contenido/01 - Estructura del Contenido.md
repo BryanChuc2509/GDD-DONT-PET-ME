@@ -2,34 +2,45 @@
 
 ## Descripción de la sección
 
-Organiza el contenido del videojuego en unidades manejables: mundos, capítulos, zonas, niveles, misiones y desafíos.
+Organiza el contenido del videojuego en niveles, zonas, misiones y desafíos.
 
 ## Estructura
 
 ```text
 Don't Pet Me
-├── Mundo / Capítulo 1: La Huida de Casa
-│   ├── Nivel 1: La Habitación del Niño (escape de la jaula, juguetes, libros y cables)
-│   ├── Nivel 2: El Pasillo (persecución de la aspiradora inteligente,puzzles, trampas y desniveles)
-│   ├── Nivel 3: La Cocina (peligros culinarios, superficies resbalosas y utensilios)
-│   
-└── Final: Regreso al bosque
+├── Introducción narrativa: el bosque, la familia de Mochi y su captura
+└── Recorrido jugable lineal
+    ├── Nivel 1: La habitación de Leo
+    │   ├── Jaula (inicio y tutorial)
+    │   ├── Escritorio (minijefe de las hormigas)
+    │   ├── Libros colgantes
+    │   └── Pelotas de tenis y huecos de refugio (cierre con memorama)
+    └── Nivel 2: El pasillo
+        └── Persecución de la aspiradora y trampas hasta la salida del nivel
+
+Continuación de la historia: regresar al bosque con Copo y Trufa
 ```
 
-## Cantidad estimada
+La jaula es la primera zona del nivel de la habitación, no un nivel aparte. El memorama cierra la cuarta zona antes de entrar al pasillo.
 
-| Tipo     |                                           Cantidad |
-| -------- | -------------------------------------------------: |
-| Mundos   |                                                  1 |
-| Niveles  |                                                  3 |
-| Misiones |                   6 (3 principales, 3 secundarias) |
-| Enemigos |                                      3(De momento) |
-| Jefes    |                                                    |
-| NPC      |                                                  3 |
-| Objetos  | semillas, bosque, cuarto, cocina y 3 ítems clave |
+## Contenido estimado
+
+| Tipo | Cantidad / estado |
+| --- | --- |
+| Niveles jugables | 2: habitación de Leo y pasillo |
+| Zonas | Cuatro en la habitación: jaula, escritorio, libros colgantes y pelotas con refugios. Luego sigue el nivel del pasillo. |
+| Enemigos | Araña de rincón, oruga de peluche Walker y aspiradora inteligente |
+| Minijefes | 1 encuentro de hormigas; se supera con el puzzle de las pilas y el ventilador |
+| Personajes por identificar | Lanzador de pelotas de tenis y personaje asociado al memorama |
+| Objetos clave | Semillas como moneda y pilas para el ventilador |
 
 ## Dependencias
 
-¿Qué contenido debe existir antes de otro?
+1. La introducción presenta el hogar de Mochi y su captura antes del inicio jugable en la jaula.
+2. La jaula enseña movimiento y salto para iniciar el recorrido de la habitación.
+3. El escritorio conduce al encuentro con el minijefe de las hormigas, que se resuelve activando el ventilador con pilas.
+4. Después del minijefe, Mochi atraviesa los libros colgantes y asciende por la estantería, refugiándose de las pelotas de tenis.
+5. El memorama de baldosas cierra la habitación y habilita el acceso al pasillo.
+6. El pasillo combina sus trampas con la persecución de la aspiradora y conduce a la salida del nivel.
 
 > **Navegación:** [[00 - Índice]] · ← [[04 - Diálogos y Narrativa]] · [[02 - Niveles]] →
