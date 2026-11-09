@@ -41,59 +41,59 @@ Documenta cada mecánica con suficiente detalle para que otro integrante pueda i
 
 ### Mecánica 01
 
-Almacenamiento y Disparo de mejillas
+Recolección de Semillas-Moneda
 
-**Propósito:** 
+**Propósito:**
 
-Proveer un sistema de inventario y ataque a distancia integrado a la anatomía de un hámster, prescindiendo de armas convencionales.
+Guiar al jugador por las zonas y recompensar la exploración con una moneda para desbloquear aspectos cosméticos de Mochi.
 
 **Activación:**
 
-Presionar `E` para recoger objetos; mantener `SHIFT` para apuntar con una parábola visual y hacer `CLICK IZQUIERDO` para escupir.
+Las semillas se recogen automáticamente al tocarlas.
 
 **Reglas:**
 
-- Mochi solo puede almacenar un número limitado de objetos en sus mejillas.
-- Las semillas funcionan como proyectiles de impacto para golpear botones o aturdir enemigos.
-- No se puede disparar en mitad de ciertas animaciones (como escalar).
+- La distribución de semillas orienta hacia el recorrido principal sin impedir que el jugador explore rutas secundarias.
+- El saldo acumulado se conserva al morir y reaparecer en un checkpoint.
+- Una skin básica se compra con semillas; otra skin se desbloquea al recolectar todas las semillas del juego. El precio de compra se ajustará durante el balance.
 
 **Entrada:**
 
-`E` (Recoger) / `SHIFT + Click` (Apuntar y disparar).
+Contacto con una semilla.
 
 **Estado inicial:**
 
-Mejillas vacías
+Semillas disponibles en el escenario; saldo visible en el HUD.
 
 **Estado final:**
 
-Objeto proyectado contra el objetivo; reducción del inventario bucal.
+Semilla retirada del escenario y su valor añadido al saldo.
 
 **Recursos utilizados:**
 
-Semillas / Objetos interactivos del escenario.
+Semillas recogidas y saldo de semillas.
 
 **Recompensa:**
 
-Activación de mecanismos lejanos o aturdimiento de amenazas.
+Compra de una skin básica o, al completar la colección, desbloqueo de una skin especial.
 
 **Penalización:**
 
-Quedarse sin semillas en zonas que requieren pulsar interruptores remotos.
+No recoger una semilla reduce el saldo final disponible, pero no bloquea la progresión del nivel.
 
 **Interacciones con otras mecánicas:**
 
-Si Mochi rueda o salta, la parábola de disparo se desestabiliza.
+La guía visual de semillas complementa la iluminación, la geometría del nivel y los puntos de control.
 
 **Casos límite:**
 
-Si el jugador intenta comer mientras apunta, la acción de apuntar se cancela.
+Las semillas ya recogidas no vuelven a aparecer al reaparecer en un checkpoint.
 
 <!-- Copiar la plantilla anterior -->
 
 ### Mecánica 02
 
-Salto, Doble Salto e Inercia
+Salto e Inercia
 
 **Propósito:**
 
@@ -101,12 +101,11 @@ Permitir el plataformeo vertical y salvar abismos gigantescos entre muebles.
 
 **Activación:**
 
-Pulsar `ESPACIO` en el suelo; volver a pulsar `ESPACIO` en el aire. Mantener `ESPACIO` agachado para Salto Cargado.
+Pulsar `ESPACIO` en el suelo.
 
 **Reglas:**
 
-- El segundo salto reinicia la trayectoria vertical pero mantiene la velocidad horizontal.
-- Al caer desde grandes alturas, si se presiona la tecla de agacharse/deslizarse justo antes de impactar, Mochi ejecuta una rodada que conserva la velocidad en lugar de frenarse.
+- Al saltar sobre un enemigo vulnerable, Mochi lo aturde o aparta y puede rebotar para continuar el recorrido.
 
 **Entrada:**
 
@@ -134,117 +133,172 @@ Un mal cálculo provoca caer a zonas letales (charcos, vacío, trampas).
 
 **Interacciones con otras mecánicas:**
 
-Se combina con el Wall Jump rebotando en superficies verticales o con el deslizamiento bajo zócalos.
+Se combina con el sprint para ganar impulso y con la escalada de superficies de tela.
 
 **Casos límite:**
 
-El doble salto no se reactiva hasta que las patas toquen nuevamente una superficie válida.
+No alcanzar ciertas superficies.
 
 ### Mecánica 03
 
-Balanceo con Hilo
+Sprint con Combustible
 
 **Propósito:**
 
-Permitir a Mochi cruzar vacíos gigantescos entre muebles balanceándose al estilo liana o gancho de agarre.
+Dar al jugador dos usos alternativos de una sola reserva de combustible: aumentar la velocidad al correr por el suelo y planear brevemente en el aire para extender un salto y ralentizar la caída.
 
 **Activación:**
 
-Teniendo el hilo seleccionado en el inventario de las mejillas, apuntar a un anclaje compatible y presionar el botón de disparo/acción.
+Mantener `SHIFT` mientras Mochi se desplaza por el suelo para esprintar o mientras está en el aire para planear.
 
 **Reglas:**
 
-* El hilo no se pega en cualquier lado; solo funciona en anclajes metálicos o salientes rígidos definidos por el diseño de nivel (como pinzas de papel o tachuelas).
-* El jugador debe usar las teclas de movimiento para ganar impulso (momentum) antes de soltarse.
+- Sprint y planeo consumen la misma reserva; el jugador debe decidir si gasta combustible en velocidad antes del salto o lo conserva para usarlo en el aire.
+- En el aire, mantener `SHIFT` activa el planeo: Mochi obtiene control horizontal limitado y desciende más despacio, pero no asciende ni queda suspendido.
+- El planeo dura como máximo **1 segundo por tramo en el aire** y termina antes si se suelta `SHIFT` o se agota el combustible. El doble salto no reinicia ese límite.
+- El sprint consume combustible mientras está activo. El planeo consume combustible de esa misma reserva durante el tiempo que está activo.
+- El combustible se regenera con el tiempo al dejar de usar `SHIFT`, tanto si Mochi está en el suelo como en el aire. No se consume al caminar, saltar o escalar.
+- Si no queda combustible al despegar, no se puede activar el planeo en ese salto; el jugador deberá esperar a que la reserva se recupere antes de usarlo.
+- La capacidad y las tasas de consumo y recuperación se determinarán mediante pruebas de balance para que el uso prolongado del sprint pueda dejar insuficiente combustible para planear.
 
 **Entrada:**
 
-`SHIFT + Click` (con Hilo seleccionado).
+`SHIFT` (mantener en el suelo para esprintar; mantener en el aire para planear; soltar para dejar de consumir y regenerar combustible).
 
 **Estado inicial:**
 
-Mochi saltando hacia el vacío y lanzando el hilo.
+Mochi tiene combustible disponible y se encuentra en el suelo o en el aire.
 
 **Estado final:**
 
-Mochi llegando a salvo en una plataforma lejana tras cortar o soltar el balanceo.
+En el suelo, Mochi vuelve a su velocidad normal al soltar `SHIFT` o agotar el combustible. En el aire, el planeo termina al soltar `SHIFT`, agotar el combustible o alcanzar 1 segundo de planeo en el tramo actual en el aire.
 
 **Recursos utilizados:**
 
-Hilo (almacenado en las mejillas).
+Una sola reserva compartida de combustible, mostrada mediante un indicador en el HUD.
 
 **Recompensa:**
 
-Superación de grandes abismos y mantenimiento de la fluidez del parkour.
+Mayor velocidad temporal en el suelo o más distancia y control durante un salto.
 
 **Penalización:**
 
-Soltarse en el ángulo equivocado o en el momento incorrecto provoca caer en picada hacia el vacío o zonas letales.
+Gastar todo el combustible en el sprint deja a Mochi sin planeo si lo necesita al saltar; agotar la reserva en el aire termina el planeo y puede dejarlo corto de su destino.
 
 **Interacciones con otras mecánicas:**
 
-No hay
+El sprint puede dar impulso antes de un salto, pero ese gasto reduce lo disponible para planear. El planeo complementa el salto y el doble salto, pero no protege contra peligros letales.
 
 **Casos límite:**
 
-Disparar el hilo hacia una superficie que no tiene un punto de anclaje válido cancelará la animación inmediatamente sin gastar el objeto.
+Si el combustible se agota mientras `SHIFT` sigue presionado, la acción activa se interrumpe. En el aire, alcanzar el límite de 1 segundo impide seguir planeando durante ese mismo tramo en el aire, aunque quede combustible; el doble salto no reinicia el límite y se podrá esprintar nuevamente al tocar el suelo.
 
 ### Mecánica 04
 
-Ascenso con Globo
+Escalada de Superficies de Tela
 
 **Propósito:**
 
-Otorgar movilidad vertical pura para alcanzar repisas de extrema altura donde no existen plataformas para saltar o escalar.
+Permitir el ascenso por ropa y otras superficies escalables.
 
 **Activación:**
 
-Seleccionar el globo en el inventario y activarlo. Mochi lo infla rápidamente y comienza a flotar.
+Saltar o caminar hacia una superficie marcada visualmente con una textura tejida y mantener la dirección de ascenso.
 
 **Reglas:**
 
-* El ascenso es a una velocidad vertical constante y anula la gravedad temporalmente.
-* El control horizontal (moverse a los lados) es extremadamente lento y limitado mientras se flota.
-* El globo se revienta inmediatamente si toca una superficie afilada (lápices con punta, chinchetas, bordes de metal).
+- Solo se puede escalar en superficies designadas y reconocibles por su apariencia de tela o hilos.
+- Mochi pierde el agarre al alejarse de la superficie o alcanzar un borde no escalable.
 
 **Entrada:**
 
-Botón de usar objeto del inventario (ej. mantener pulsado `Click`).
+Movimiento hacia la superficie y dirección de ascenso.
 
 **Estado inicial:**
 
-Mochi en el suelo, sacando el globo de su boca e inflándolo.
+Mochi está junto a una superficie de tela escalable.
 
 **Estado final:**
 
-Mochi aterrizando en una zona elevada (o cayendo si el globo explota).
+Mochi alcanza una plataforma superior o suelta la superficie.
 
 **Recursos utilizados:**
 
-Globo
+Ninguno.
 
 **Recompensa:**
 
-Acceso rápido a zonas altas, atajos o áreas secretas fuera del alcance del doble salto.
+Acceso a plataformas altas y rutas de exploración.
 
 **Penalización:**
 
-Si el jugador calcula mal y choca contra un objeto punzante a gran altura, el globo explota y la caída resultante puede ser letal.
+Perder el agarre puede provocar una caída hacia una zona peligrosa.
 
 **Interacciones con otras mecánicas:**
 
-No se pueden disparar semillas ni usar el deslizamiento mientras Mochi está colgado del globo.
+El sprint puede ayudar a aproximarse; el combustible no se consume durante la escalada.
 
 **Casos límite:**
 
-Si Mochi llega al techo de una habitación (una superficie plana sin salientes), se quedará flotando atascado contra el techo hasta que el globo termine su tiempo límite de uso y se desinfle solo.
+Las superficies decorativas que no se puedan escalar deben diferenciarse visualmente de la tela marcada como escalable.
+
+### Mecánica 05
+
+Aplastar Enemigos desde Arriba
+
+**Propósito:**
+
+Dar una respuesta de movimiento defensiva cuando Mochi salta sobre enemigos vulnerables, sin introducir combate cuerpo a cuerpo.
+
+**Activación:**
+
+Caer sobre un enemigo desde arriba tras un salto.
+
+**Reglas:**
+
+- Solo los enemigos designados como vulnerables pueden ser eliminados.
+- El contacto lateral o desde abajo sigue siendo peligroso y puede causar la muerte.
+- Los jefes o enemigos resistentes requieren resolver su desafío específico; saltar sobre ellos no los derrota automáticamente.
+
+**Entrada:**
+
+Salto (`ESPACIO`) y contacto desde arriba.
+
+**Estado inicial:**
+
+Mochi está en el aire y un enemigo vulnerable está debajo.
+
+**Estado final:**
+
+El enemigo queda aturdido o desplazado brevemente y Mochi puede rebotar o continuar.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+Una oportunidad breve para superar al enemigo y continuar el recorrido.
+
+**Penalización:**
+
+Un contacto que no sea desde arriba puede provocar la muerte instantánea.
+
+**Interacciones con otras mecánicas:**
+
+Requiere leer el movimiento del enemigo y sincronizar el salto; no reemplaza el sigilo ni la evasión.
+
+**Casos límite:**
+
+La señal visual del enemigo debe comunicar si es vulnerable al salto antes de que el jugador se arriesgue.
 
 ## Mecánicas secundarias
 
-**Deslizamiento y Agacharse:**
-   Permite reducir el perfil del hámster para pasar por debajo de rendijas de puertas, muebles o cables colgantes.
-**Escalada de Superficies Porosas:**
-   Mochi se adhiere a telas, ropa desparramada y persianas para ascender verticalmente mientras mantenga contacto.
+No hay
+
+Avisos contextuales:
+
+   En desafíos complejos aparece un consejo breve, como indicar que se necesitan pilas para activar un ventilador. Al obtener una pila, un indicador señala el aparato o la ranura donde debe colocarse.
 
 Lista las mecánicas que complementan la experiencia pero no constituyen el núcleo.
 

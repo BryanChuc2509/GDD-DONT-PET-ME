@@ -2,79 +2,101 @@
 
 ## Descripción de la sección
 
-Los sistemas son conjuntos de reglas y componentes que trabajan juntos: combate, inventario, IA, diálogo, progresión, economía, misiones, etc.
+Los sistemas son conjuntos de reglas y componentes que trabajan juntos: movimiento, progresión, economía, checkpoints, puzzles y otros.
 
 ## Inventario de sistemas
 
-| Sistema                          | Propósito                                                                                                | Dependencias                                                 | Estado     |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------- |
-| Físicas y Locomoción de Roedor | Controlar la aceleración, saltos, rebotes, escalada y conservación de inercia de Mochi.                 | Motor de físicas 3D                                         | En proceso |
-| Inventario de Mejillas           | Gestionar la capacidad, almacenamiento y expulsión de objetos recogidos.                                 | Sistema de interfaz (`Q`), Sistema de interacción (`E`) | En proceso |
-| Daño Absoluto                   | Controlar el reinicio instantáneo ante colisiones letales (agua, electricidad, enemigos).                | Sistema de Checkpoints                                       | Diseñado  |
-| Puzzles Físicos de Microentorno | Permitir el desplazamiento de utilería (libros, zapatillas multicontacto, latas) mediante masa de Mochi. | Motor de físicas de cuerpos rígidos                        | En proceso |
+| Sistema | Propósito | Dependencias | Estado |
+| --- | --- | --- | --- |
+| Físicas y Locomoción de Roedor | Controlar desplazamiento, saltos, escalada de tela y rebotes sobre enemigos vulnerables. | Motor de físicas 3D | En proceso |
+| Sprint, Planeo y Combustible | Aplicar sprint en el suelo o planeo breve en el aire con una sola reserva compartida; regenerarla al soltar `SHIFT`. | Controlador del personaje, HUD | Diseñado |
+| Semillas y Cosméticos | Registrar semillas recogidas como moneda y desbloquear skins. | Persistencia, HUD, menú de cosméticos | Diseñado |
+| Checkpoints y Daño Absoluto | Reiniciar ante colisiones letales y conservar el progreso establecido. | Sistema de persistencia | Diseñado |
+| Puzzles Físicos y Objetos de Objetivo | Permitir mover utilería e interactuar con objetos contextuales, como pilas y ranuras. | Motor de físicas, sistema de interacción | En proceso |
 
-## Plantilla de sistema
-
-### Nombre
+## Sistema de Sprint, Planeo y Combustible
 
 **Objetivo:**
 
-Proveer al jugador de una forma orgánica y temática de transportar herramientas y munición dentro de la boca del roedor.
+Permitir al jugador administrar una sola reserva de combustible para esprintar en el suelo o planear brevemente durante un salto.
 
 **Entradas:**
 
-Pulsar `E` (recoger), `Q` (rueda/selector de inventario), `SHIFT + Click` (expulsar/disparar).
+Mantener o soltar `SHIFT`.
 
 **Procesamiento / reglas:**
 
-* Comprueba si el objeto en suelo es interactuable y si hay espacio en las mejillas.
-* Modifica visualmente el modelo 3D de Mochi inflando sus mejillas al guardar elementos.
-
-* Asigna comportamiento contextual a cada ítem (semilla = proyectil; hilo = gancho; clip = llave; pila = energía; globo = elevación).
+- En el suelo, mantener `SHIFT` aumenta temporalmente la velocidad de desplazamiento mientras quede combustible.
+- En el aire, mantener `SHIFT` activa un planeo con control horizontal limitado y descenso más lento; Mochi no asciende ni queda suspendido.
+- Sprint y planeo consumen el mismo combustible. El planeo dura como máximo 1 segundo por tramo en el aire; el doble salto no reinicia ese límite.
+- El combustible se regenera al soltar `SHIFT`, tanto en el suelo como en el aire; caminar, saltar y escalar no lo consumen.
+- Al agotarse el combustible, la acción activa termina. Si no queda combustible al despegar, no se puede planear en ese salto.
+- La capacidad y las tasas de consumo y regeneración se determinarán mediante pruebas de balance para que el sprint prolongado pueda dejar insuficiente combustible para planear.
 
 **Salidas:**
 
-Proyectiles disparados, objetos utilizados en el escenario, cambios cosméticos en el rostro de Mochi.
+Velocidad de movimiento en el suelo, estado y control de planeo en el aire, valor actualizado de combustible e indicador correspondiente en el HUD.
 
 **Estados posibles:**
 
-- Vacío
-
-- Capacidad Parcial
-
-- Capacidad Llena
-
--Apuntando proyectil
+- Desplazamiento normal
+- Esprintando
+- Planeando
+- Recuperando combustible
+- Sin combustible
 
 **Dependencias:**
 
-Controlador del personaje, motor de proyectiles y colisiones.
+Controlador del personaje, sistema de entrada y HUD.
 
 **Interacciones:**
 
-Al escupir una semilla a un interruptor, dispara el evento del puzzle ambiental.
+El sprint facilita atravesar tramos y tomar impulso para saltar; el planeo puede extender un salto y ralentizar la caída. Gastar combustible en una acción reduce lo disponible para la otra. Ninguna protege a Mochi del daño.
 
 **Datos que necesita:**
 
-Tipo de ítem interactuado, posición del jugador, vector de cámara (apuntado).
+Entrada `SHIFT`, tiempo transcurrido, combustible disponible, tiempo de planeo del salto actual y estado de movimiento (suelo o aire).
 
 **Datos que genera:**
 
-Instancia de proyectil / Uso de herramienta consumible.
+Velocidad o estado de planeo actualizado, tiempo de planeo restante y valor de combustible para el HUD y el guardado.
 
 **Riesgos:**
 
-Que el jugador se quede sin munición en un lugar cerrado
+Que el balance permita esprintar y planear sin tomar decisiones, o que agotar el combustible provoque una caída inevitable sin una oportunidad justa de recuperarlo.
 
 **Criterios de aceptación:**
 
-El jugador puede seleccionar y disparar un objeto con precisión y suavidad en menos de 1 segundo.
+El jugador puede esprintar en el suelo y planear hasta 1 segundo por tramo en el aire con `SHIFT`; ambas acciones reducen la misma barra de combustible, que se regenera al soltar la tecla. Si gasta la reserva en el sprint, el planeo no se activa hasta recuperar combustible.
+
+## Sistema de Semillas y Cosméticos
+
+**Objetivo:**
+
+Usar las semillas como moneda coleccionable y como guía visual del recorrido, sin emplearlas como munición.
+
+**Procesamiento / reglas:**
+
+- Al tocar una semilla, esta se recoge automáticamente y aumenta el saldo mostrado en el HUD.
+- El saldo se conserva al morir y reaparecer en un checkpoint; las semillas recogidas no reaparecen.
+- Una skin básica se compra con semillas; otra skin se desbloquea al recolectar todas las semillas del juego.
+- El precio de la skin comprable se ajustará durante el balance.
+
+**Salidas:**
+
+Saldo actualizado, progreso de colección y desbloqueos cosméticos.
+
+**Dependencias:**
+
+Persistencia del progreso, HUD y menú de cosméticos.
 
 ## Relaciones entre sistemas
 
-El **Sistema de Físicas y Locomoción** interactúa con el **Sistema de Daño Absoluto**: si el cálculo de velocidad o colisión intersecta con una zona de peligro (ej. charco electrificado), el sistema de daño interrumpe inmediatamente el movimiento y activa la secuencia de muerte y recarga de checkpoint.
+El **Sistema de Físicas y Locomoción** interactúa con el **Sistema de Daño Absoluto**: si Mochi colisiona con una zona de peligro, el sistema de daño interrumpe inmediatamente el movimiento y activa la secuencia de muerte y recarga del checkpoint.
 
-El **Inventario de Mejillas** alimenta a los **Puzzles de Microentorno**, ya que los proyectiles activan switches que modifican la física del escenario (apagar la corriente, soltar rampas).
+El **Sistema de Sprint y Combustible** modifica temporalmente la velocidad del personaje. El **Sistema de Semillas y Cosméticos** actualiza el saldo al recoger semillas y registra los desbloqueos.
+
+Los **Puzzles Físicos y Objetos de Objetivo** utilizan interacción contextual con elementos del escenario; no dependen de semillas como proyectiles ni de un inventario general. Cuando un puzzle requiere un objeto —por ejemplo, una pila para activar un ventilador—, un aviso breve comunica el objetivo y un indicador señala el lugar de uso al recogerlo.
 
 Describe qué sistemas dependen de otros y qué información intercambian.
 
