@@ -42,7 +42,7 @@ Define las reglas globales y los estados que puede atravesar el videojuego.
 
 ## Presentación de la jaula
 
-La jaula inicia con un encuadre amplio y poco acercado para que se entienda el espacio y que Mochi está encerrado. Cuando el jugador recibe el control o empieza a moverse, el lado de la jaula más cercano a la cámara se vuelve transparente para mantener visible al personaje y el área jugable.
+La jaula inicia con un plano amplio y alejado, con el título "La prisión de Mochi", para que se entienda el espacio y que Mochi está encerrado. Después la cámara se acerca hasta el encuadre de juego; Mochi no se mueve hasta que termina el plano, que se puede saltar con cualquier tecla. Durante todo el tutorial, los barrotes que quedan entre la cámara y Mochi se vuelven casi transparentes para que siempre se le vea; el suelo y las repisas que pisa no se desvanecen.
 
 ## Casos especiales
 

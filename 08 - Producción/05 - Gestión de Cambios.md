@@ -10,7 +10,7 @@ Para cada cambio, esta nota registra la solicitud, su impacto y su estado. En el
 
 **Fecha:** 19 de octubre de 2026.
 
-**Cambio propuesto:** Eliminar el nivel jugable del bosque. La captura de Mochi durante el picnic se cuenta mediante una introducción narrativa breve tipo cómic. El juego inicia cuando Mochi despierta en la jaula, que es la zona inicial de la habitación, y aprende allí las acciones básicas.
+**Cambio propuesto:** Eliminar el nivel jugable del bosque. La captura de Mochi durante el picnic se cuenta mediante una introducción narrativa breve. El juego inicia cuando Mochi despierta en la jaula, que es la zona inicial de la habitación, y aprende allí las acciones básicas.
 
 **Motivo:** Limitaciones de tiempo. Se cuenta con unas 3.5 semanas de desarrollo (del 19 de octubre al 13 de noviembre, con el evento el 20 de noviembre), y el bosque implicaba modelar, diseñar y programar un escenario completo adicional.
 
@@ -34,7 +34,7 @@ Para cada cambio, esta nota registra la solicitud, su impacto y su estado. En el
 | ---------------------- | ----------------------------------------------------------------------------------------- |
 | Visión del Juego | La captura y la motivación de Mochi se presentan en la introducción narrativa. |
 | UX y Flujo del Jugador | El flujo comienza con la introducción y continúa en la jaula, primera zona de la habitación. |
-| UI y Menús | Se incorpora una introducción narrativa breve tipo cómic. |
+| UI y Menús | Se incorpora una introducción narrativa breve en video. |
 | Alcance | El bosque no es jugable; el recorrido jugable comprende la habitación y el pasillo. |
 
 **Decisión:** Aprobado. El bosque se mantiene como parte de la historia, pero no es un nivel jugable de esta versión. La introducción presenta la captura y el tutorial inicia en la jaula, dentro de la habitación.

@@ -60,28 +60,3 @@ Pilas
 
 **Representación visual:** Pilas domésticas pequeñas, claramente distinguibles del fondo y de los coleccionables.
 
-### Nombre
-
-Foto Familiar
-
-**Tipo:** Coleccionable narrativo opcional (propuesto para el pasillo).
-
-**Descripción:** Fotografía de la familia de Leo, escondida bajo el mueble recibidor.
-
-**Función:** Revela un detalle del entorno y de la familia; no afecta la progresión.
-
-**Cómo se obtiene:** Explorando debajo del mueble recibidor, si el coleccionable se mantiene en el alcance final.
-
-**Cómo se utiliza:** Se registra al recogerla; no se consume ni se equipa.
-
-**Cantidad máxima:** 1.
-
-**Valor:** Coleccionable de lore.
-
-**Rareza:** Único.
-
-**Restricciones:** Opcional.
-
-**Interacciones:** Ninguna interacción de juego adicional definida.
-
-**Representación visual:** Fotografía familiar enmarcada o suelta, a escala legible para Mochi.

@@ -39,7 +39,7 @@ Cada entregable importante debe tener una persona responsable de coordinarlo, au
 | Cámara y dispositivos inteligentes         | Dhayan Lee               | Bryan Chuc                                                      |
 | Menús, HUD, guardado y configuración      | Ahui                     | Gio Medina (arte de interfaz)                                   |
 | Audio y música                             | Bruno LLovera            | Dhayan Lee o Ahui (integración en Unity)                       |
-| Introducción narrativa                     | Bruno LLovera            | Gio Medina (ilustraciones o viñetas)                           |
+| Introducción narrativa                     | Bruno LLovera            | Gio Medina (arte del video)                           |
 | Tráiler promocional                        | Bruno LLovera            | Todo el equipo (material de gameplay)                           |
 | Pruebas y build estable                     | Dhayan Lee               | Bryan Chuc (compilación)                                       |
 | Publicación en itch.io y difusión         | Bruno LLovera            | Bryan Chuc                                                      |

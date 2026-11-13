@@ -9,10 +9,10 @@ Explica cómo cambia la experiencia desde el inicio hasta el final. La progresi�
 Describe las etapas principales del juego:
 
 1. **Introducción narrativa:** La captura de Mochi en el bosque se presenta en una breve secuencia; el juego no incluye un nivel jugable en el bosque.
-2. **Tutorial (Nivel 0) — La jaula:** Nivel propio de tutorial. El jugador aprende el movimiento y el salto en un encuadre amplio que presenta el espacio; al tomar control, el lado de la jaula más cercano a la cámara se vuelve transparente. Al escapar de la jaula y alcanzar la meta del tutorial, comienza el Nivel 1.
+2. **Tutorial (Nivel 0) — La jaula:** Nivel propio de tutorial. El jugador aprende el movimiento y el salto en un encuadre amplio que presenta el espacio; los barrotes que tapan a Mochi se vuelven casi transparentes en cualquier momento. Al escapar de la jaula y alcanzar la meta del tutorial, comienza el Nivel 1.
 3. **Nivel 1, zona 1 — El escritorio:** Se refuerzan el sprint y el combustible que comparte con el planeo, las semillas que marcan la ruta y la interacción contextual con objetos y mecanismos.
 4. **Nivel 1, zona 2 — Libros colgantes:** El jugador aprende a reconocer y escalar superficies con textura tejida y combina la escalada con saltos, sprint y planeo.
-5. **Nivel 1, zona 3 — Pelotas que caen:** Tramo de avance bajo presión, con pelotas que ruedan o caen por un pasillo; el jugador lee sus patrones, reparte el combustible entre el sprint y el planeo (máximo 0.6 segundos por tramo) para alcanzar un hueco seguro.
+5. **Nivel 1, zona 3 — Estantería de la araña:** Tramo de avance bajo presión: la araña lanzadora echa a rodar bolas de telaraña por los estantes y Mochi las esquiva mientras sube por los hilos que cuelgan, repartiendo el combustible entre el sprint y el planeo (máximo 0.6 segundos por tramo).
 6. **Nivel 2 — El pasillo:** El último nivel combina las habilidades aprendidas con nuevos peligros y checkpoints mientras la aspiradora persigue a Mochi.
 
 ## Progresión del jugador
@@ -38,11 +38,11 @@ El jugador aprende a calcular saltos y a administrar el combustible que comparte
 
 ## Checkpoints
 
-Se coloca un checkpoint en pausas seguras entre desafíos, en particular al salir de la jaula y al terminar zonas de escritorio, libros colgantes y pelotas. Al morir, Mochi reaparece en el último checkpoint; las semillas ya recogidas y los puzzles que el juego marque como persistentes se conservan.
+Se coloca un checkpoint en pausas seguras entre desafíos, en particular al salir de la jaula y al terminar zonas de escritorio, libros colgantes y estantería. Al morir, Mochi reaparece en el último checkpoint; las semillas ya recogidas y los puzzles que el juego marque como persistentes se conservan.
 
 ## Curva de dificultad
 
-El tutorial de la jaula es seguro y presenta los controles básicos. El escritorio introduce obstáculos y enseña el sprint; los libros colgantes enseñan a escalar y usar el planeo; el pasillo de pelotas combina velocidad, planeo, observación y elección de refugios. Las zonas posteriores aumentan la presión y combinan habilidades ya aprendidas.
+El tutorial de la jaula es seguro y presenta los controles básicos. El escritorio introduce obstáculos y enseña el sprint; los libros colgantes enseñan a escalar y usar el planeo; la estantería de la araña combina saltos, planeo y la lectura del recorrido de las bolas de telaraña. Las zonas posteriores aumentan la presión y combinan habilidades ya aprendidas.
 
 ## Curva de aprendizaje
 

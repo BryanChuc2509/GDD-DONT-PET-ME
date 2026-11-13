@@ -415,6 +415,7 @@ Pisar o tocar el objeto.
 
 - **Plataformas de impulso:** al caer sobre el vaso o el globo del Nivel 1, Mochi sale lanzado hacia arriba; el vaso lanza más alto que el globo. El rebote reinicia el planeo.
 - **Recorridos guiados:** en el pasillo, el tubo de cartón ("¡A rodar!") y el cable de la lámpara como tirolesa llevan a Mochi de un punto a otro sin control y lo sueltan con impulso al final. En la tirolesa, `ESPACIO` lo suelta a mitad del recorrido.
+- **Hilos que cuelgan:** en la estantería de la araña, al tocar un hilo que cuelga de un estante, Mochi sube solo por él hasta el estante de arriba, sin pulsar ninguna tecla.
 - **Plataformas móviles:** la noria del Nivel 1, cuyas cabinas giran y se mantienen horizontales; ascensores que suben y bajan; y libros colgantes que se balancean como péndulo. Mochi se mueve junto con la plataforma que pisa.
 - **Plataformas que se caen:** la nota del tutorial, algunas repisas y libros tiemblan al pisarlos, se caen y reaparecen 3 segundos después.
 

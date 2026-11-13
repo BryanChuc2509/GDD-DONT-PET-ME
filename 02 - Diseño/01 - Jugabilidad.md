@@ -16,7 +16,7 @@ Describe el ciclo que se repite durante la experiencia.
 
 `Mochi debe evaluar cada habitación humana como un circuito colosal de plataformas. Sigue las semillas que le sirven de guía visual, escala superficies de tela reconocibles, esquiva a los enemigos y administra el combustible que comparten el sprint y el planeo para superar tramos exigentes. El planeo dura hasta 0.6 segundos por tramo en el aire.`
 
-El recorrido jugable se divide en tres niveles consecutivos: **Tutorial (Nivel 0) — la jaula, Nivel 1 — el cuarto de Leo y Nivel 2 — el pasillo**. En el tutorial, Mochi aprende las acciones básicas y escapa de la jaula. En el cuarto, el recorrido se divide en zonas consecutivas: **1) escritorio, 2) libros colgantes y 3) pasillo de pelotas que caen**, donde Mochi debe avanzar y encontrar un hueco seguro. Las zonas enseñan y combinan las mecánicas antes de conducir al pasillo.
+El recorrido jugable se divide en tres niveles consecutivos: **Tutorial (Nivel 0) — la jaula, Nivel 1 — el cuarto de Leo y Nivel 2 — el pasillo**. En el tutorial, Mochi aprende las acciones básicas y escapa de la jaula. En el cuarto, el recorrido se divide en zonas consecutivas: **1) escritorio, 2) libros colgantes y 3) estantería de la araña**, donde Mochi esquiva bolas de telaraña mientras sube. Las zonas enseñan y combinan las mecánicas antes de conducir al pasillo.
 
 ## Acciones principales del jugador
 
@@ -33,7 +33,7 @@ El recorrido jugable se divide en tres niveles consecutivos: **Tutorial (Nivel 0
 
 ¿Qué hace el jugador durante los primeros minutos?
 
-La jaula abre con un plano amplio y poco acercado que permite reconocer sus barrotes y el escenario. Al comenzar el control de Mochi, el barrote lateral más cercano a la cámara se vuelve transparente para mantener visible al personaje y el espacio de juego. El tutorial introduce movimiento y salto; después enseña el sprint en el suelo con `Shift` y el planeo en el aire manteniendo `Espacio`, dejando claro que los dos gastan el mismo combustible (la barra de estamina del HUD) y que este solo se recarga en el suelo. También enseña la escalada por una superficie de tela.
+La jaula abre con un plano amplio y poco acercado que permite reconocer sus barrotes y el escenario. Cualquier barrote que quede entre la cámara y Mochi se vuelve casi transparente, en cualquier momento, para mantener visible al personaje. El tutorial introduce movimiento y salto; después enseña el sprint en el suelo con `Shift` y el planeo en el aire manteniendo `Espacio`, dejando claro que los dos gastan el mismo combustible (la barra de estamina del HUD) y que este solo se recarga en el suelo. También enseña la escalada por una superficie de tela.
 
 ## Experiencia minuto a minuto
 
@@ -57,7 +57,7 @@ Sobrevivir al recorrido lineal del mapa y alcanzar el punto físico de transici�
 
 ¿Qué situaciones provocan fracaso?
 
-Muerte instantánea (One-hit kill). Al no existir un sistema de curación, cualquier error fatal reinicia la partida en el último punto de control. Esto incluye caer al vacío, tocar agua o líquidos electrificados, y ser alcanzado por enemigos (arañas, el gato o el robot aspirador).
+Muerte instantánea (One-hit kill). Al no existir un sistema de curación, cualquier error fatal reinicia la partida en el último punto de control. Esto incluye caer al vacío, tocar agua o líquidos electrificados, y ser alcanzado por enemigos (arañas, hormigas, ciempiés o la aspiradora).
 
 ## Ritmo
 
@@ -68,7 +68,7 @@ Describe cómo alternan:
 - **Descanso** Zonas seguras dentro de madrigueras improvisadas o la jaula inicial
 - **Desafío** Zonas de plataformeo vertical, enemigos que hay que esquivar y puzzles contextuales de objetos.
 - **Recompensa** Completar cada nivel y las semillas que el HUD cuenta como `recogidas/total`.
-- Historia Revelación humorística de que la supuesta libertad no era más que otro escenario.
+- **Historia** El video de introducción presenta la captura de Mochi y su deseo de volver al bosque; el recorrido termina al llegar a la sala de estar.
 
 ## Principios de interacción
 

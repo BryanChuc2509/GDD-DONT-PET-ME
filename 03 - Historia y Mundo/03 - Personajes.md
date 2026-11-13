@@ -139,14 +139,11 @@ Documenta qué NPC existen, qué hacen y cómo interactúan con el jugador:
 - **Nido de hormigas (Reto de zona - escritorio):**
   El nido bloquea el avance hacia los libros colgantes. Para superar el reto, Mochi consigue las pilas necesarias y enciende un ventilador; las pistas del entorno indican el objetivo y dónde colocar las pilas.
 - **Arañas de Rincón (Enemigos menores - Nivel 1):**  
-  Arácnidos que custodian grietas y rincones del escritorio. Representan un peligro que Mochi debe leer y superar con movimiento, saltos y rutas seguras; las semillas no se usan para atacarlas.
+  Una araña que persigue a Mochi cuando se acerca y le escupe telarañas que lo frenan; tocarla es mortal. Mochi debe esquivarla con movimiento, saltos y rutas seguras; las semillas no se usan para atacarla.
 - **Aspiradora inteligente (Amenaza de persecución - Pasillo):**
   Los padres de Leo la programaron para cazar al ratón que ronda la casa. Al detectar a Mochi, lo confunde con el ratón y lo persigue. Mochi debe escapar de ella mientras esquiva las trampas del pasillo.
-- **Ratoneras, escobas y pelotas (Peligros del escenario - Pasillo):**
-  Las ratoneras fueron colocadas por los padres de Leo; las escobas caen y las pelotas ruedan por el recorrido. Son obstáculos ambientales, no personajes.
-- **Silueta del águila (Amenaza narrativa futura):**
-  Aparece cuando Mochi sale de la casa, como presagio de un peligro posterior. No es un encuentro jugable en la versión actual.
-
+- **Ratoneras, escobas y otras trampas (Peligros del escenario - Pasillo):**
+  Las ratoneras fueron colocadas por los padres de Leo; además, las escobas caen y hay cables electrificados, Legos, una rejilla y tablas falsas. Son obstáculos ambientales, no personajes.
 
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Mundo]] · [[04 - Diálogos y Narrativa]] →

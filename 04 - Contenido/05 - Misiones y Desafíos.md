@@ -34,7 +34,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Objetivo:** Conseguir las pilas y activar el ventilador para superar el encuentro con el minijefe de las hormigas.
 
-**Contexto:** El minijefe de las hormigas bloquea el avance en el escritorio. La solución definida es usar el ventilador; su apariencia y ataques están por definir.
+**Contexto:** El minijefe de las hormigas bloquea el avance en el escritorio. La solución es usar el ventilador: un hormiguero de 6 a 9 hormigas protege a la reina y, al colocar las 3 pilas, el ventilador las aspira a todas.
 
 **Requisitos:** Alcanzar las pilas y llevarlas al compartimento del ventilador.
 
@@ -56,72 +56,68 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Cantidad y transporte:** Son 3 pilas. Mochi carga una a la vez, más despacio, y la suelta si una hormiga lo aturde. Con las 3 colocadas, el ventilador aspira a las hormigas y se cae.
 
-### Evitar las pelotas de tenis y subir por la estantería
+### Esquivar las telarañas y subir por la estantería
 
 **Tipo:** Principal / reto de plataformas.
 
-**Objetivo:** Cruzar la sección de la estantería sin recibir el impacto de las pelotas de tenis y avanzar hacia arriba.
+**Objetivo:** Subir la estantería de la araña sin que las bolas de telaraña tiren a Mochi.
 
-**Contexto:** Un personaje aún sin identificar lanza pelotas de tenis mientras Mochi asciende por la estantería. Mochi debe leer su movimiento, encontrar el momento seguro, meterse en un hueco y continuar subiendo. Donkey Kong es solo una referencia; aquí se usan pelotas de tenis, no barriles.
+**Contexto:** La araña lanzadora, en lo alto de la estantería, echa a rodar bolas de telaraña por los estantes y lanza otras directamente a Mochi. Donkey Kong es la referencia: aquí las bolas de telaraña hacen el papel de los barriles.
 
-**Requisitos:** Observar el patrón de las pelotas y usar el movimiento y el salto para alcanzar refugios y repisas.
+**Requisitos:** Leer el recorrido de las bolas y subir por los hilos que cuelgan de los estantes en el momento seguro.
 
-**Condición de éxito:** Mochi alcanza el siguiente tramo superior de la estantería.
+**Condición de éxito:** Mochi llega a lo alto de la estantería.
 
-**Condición de fracaso:** Recibir el impacto de una pelota o caer; reintentar desde el último checkpoint.
+**Condición de fracaso:** Una bola derriba a Mochi y lo hace caer, o Mochi cae al vacío; reintentar desde el último checkpoint.
 
-**Recompensa:** Acceso a la parte superior de la habitación.
+**Recompensa:** Acceso a la sala de memoria.
 
-**Personaje relacionado:** Mochi.
+**Personajes relacionados:** Mochi y la araña lanzadora.
 
 **Escenario relacionado:** La habitación de Leo, después de los libros colgantes.
-
-**Estado de diseño:** La secuencia y la geometría exactas de los refugios y la estantería quedan por definir.
 
 ### Recordar y repetir la secuencia de baldosas
 
 **Tipo:** Principal / puzzle de memoria.
 
-**Objetivo:** Activar el mecanismo repitiendo con saltos la secuencia de baldosas iluminadas.
+**Objetivo:** Superar las 5 rondas de la sala de memoria repitiendo con saltos la secuencia de baldosas iluminadas.
 
-**Contexto:** Un conjunto de cuadros del suelo se ilumina en distintos colores siguiendo un orden. Mochi debe memorizar la secuencia y saltar sobre los cuadros en ese mismo orden.
+**Contexto:** La sala tiene 16 baldosas (4×4). En cada ronda, algunas se iluminan una por una, todas del mismo color y cada una con su propia nota musical. Mochi debe memorizar la secuencia y caer con un salto sobre las baldosas en ese mismo orden.
 
-**Requisitos:** Observar la muestra completa antes de introducir la respuesta.
+**Requisitos:** Observar la muestra completa antes de responder.
 
 **Pasos:**
 
-1. Activar el puzzle.
-2. Observar los colores y el orden en que se iluminan las baldosas.
-3. Esperar a que termine la secuencia.
-4. Saltar sobre cada baldosa en el orden mostrado para activar el mecanismo.
+1. Entrar en la sala; una pared se cierra detrás de Mochi.
+2. Esperar la cuenta atrás de la ronda y observar el orden en que se iluminan las baldosas.
+3. Caer con un salto sobre cada baldosa en el orden mostrado, antes de que se acabe el tiempo de cada una.
+4. Repetir hasta superar las 5 rondas. La secuencia crece de 3 a 5 baldosas y el tiempo por baldosa baja de 5 a 3 segundos.
 
-**Condición de éxito:** Se repite correctamente la secuencia y el mecanismo se activa.
+**Condición de éxito:** Se superan las 5 rondas; la pared de salida se hunde.
 
-**Condición de fracaso:** Pisar una baldosa incorrecta o alterar el orden; la respuesta se reinicia y se vuelve a mostrar la secuencia.
+**Condición de fracaso:** Caer en una baldosa equivocada o quedarse sin tiempo; las paredes aplastan a Mochi, que reaparece en el checkpoint de la sala y empieza otra vez desde la ronda 1.
 
-**Recompensa:** Activación del mecanismo y acceso a la ruta siguiente.
+**Recompensa:** Acceso a la meta del nivel.
 
 **Personaje relacionado:** Mochi.
 
-**Escenario relacionado:** La habitación de Leo; ubicación exacta pendiente.
-
-**Por definir:** Número de baldosas, longitud y velocidad de la secuencia, cantidad de intentos y señalización de reinicio.
+**Escenario relacionado:** La habitación de Leo, después de la estantería de la araña.
 
 ### Escapar de la aspiradora por el pasillo
 
 **Tipo:** Principal / persecución.
 
-**Objetivo:** Atravesar el pasillo y alcanzar su salida sin ser atrapado por la aspiradora ni por las trampas.
+**Objetivo:** Llegar a la sala de estar antes que la aspiradora, sin caer en las trampas del pasillo.
 
 **Contexto:** Los padres de Leo buscan un ratón y programaron la aspiradora para cazarlo. El aparato confunde a Mochi con su objetivo.
 
 **Requisitos:** Leer la ruta de persecución y los peligros del escenario.
 
-**Pasos:** Avanzar por el pasillo, evitar la zona de succión, las ratoneras, las escobas que caen y las pelotas rodantes, y alcanzar la salida.
+**Pasos:** Avanzar por el pasillo sin que la aspiradora alcance a Mochi, evitando las ratoneras, las escobas que caen, los cables electrificados, los Legos, la rejilla y las tablas falsas, hasta llegar a la sala de estar.
 
-**Condición de éxito:** Mochi llega a la salida del pasillo y termina el recorrido jugable actual.
+**Condición de éxito:** Mochi llega a la sala de estar y termina el recorrido jugable actual.
 
-**Condición de fracaso:** Ser succionado por la aspiradora o tocar otro peligro letal; reaparecer en el último checkpoint.
+**Condición de fracaso:** Ser alcanzado por la aspiradora o tocar otro peligro letal; reaparecer en el último checkpoint.
 
 **Recompensa:** Cierre simple de la versión actual.
 
@@ -165,6 +161,6 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 - Permitir aprender del fallo y reintentar desde un checkpoint adecuado.
 - Usar sorpresas y trampas como parte del humor, sin ocultar señales necesarias para anticipar un peligro letal.
 - No convertir la recolección de semillas en requisito de progresión.
-- Walker es una oruga de peluche blanca con patrullas fijas repartidas de forma dispersa por el mapa, no limitadas a una sola zona; sus ubicaciones concretas siguen por definirse.
+- El ciempiés (Walker) camina de un lado a otro y da media vuelta en paredes y bordes; aparece en el tutorial y en el Nivel 1.
 
 > **Navegación:** [[00 - Índice]] · ← [[04 - Objetos y Coleccionables]] · [[01 - Dirección de Arte]] →

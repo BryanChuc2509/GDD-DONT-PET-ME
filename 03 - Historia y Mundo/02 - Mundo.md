@@ -38,9 +38,9 @@ Mochi debe atravesar la habitación y el pasillo para llegar a la sala y encontr
 | El Bosque | Hábitat natural donde Mochi vive con Copo y Trufa. | Solo aparece en la introducción narrativa; no es una zona jugable. | Es el hogar al que Mochi quiere regresar. |
 | La Jaula de Leo (Tutorial) | Recinto doméstico donde despierta Mochi. | Nivel tutorial (Nivel 0): inicio jugable donde se enseñan el movimiento y el salto. | Representa el cautiverio y da inicio a la fuga. |
 | La Habitación de Leo (Nivel 1) | Dormitorio con escritorio, muebles, libros y mecanismos caseros. | Plataformeo y exploración; incluye el reto del nido de hormigas, las pilas y el ventilador, además de trampas que se activan de improviso. | Presenta las bromas anti-escape de Leo y el tamaño colosal del entorno. |
-| Los Libros Colgantes | Libros y superficies suspendidas sobre el recorrido. | Zona de plataformeo y escalada; las superficies escalables se identifican con una textura tejida. | Lleva a una falsa salida y revela que Mochi todavía sigue dentro de la casa. |
-| El Pasillo (Nivel 2) | Zona con ratoneras, escobas que caen y pelotas que ruedan. | Tramo de evasión y persecución por la aspiradora inteligente, que confunde a Mochi con el ratón. | La búsqueda del ratón por parte de la familia convierte el pasillo en un peligro adicional. |
-| La Sala | Espacio al que Mochi llega después de superar el pasillo. | Cierre del recorrido de la versión actual y punto de continuación de la historia. | La silueta de un águila anticipa que el peligro sigue incluso más allá de la casa. |
+| Los Libros Colgantes | Libros y superficies suspendidas sobre el recorrido. | Zona de plataformeo y escalada; las superficies escalables se identifican con una textura tejida. | Conduce a la estantería de la araña y a la sala de memoria, los últimos retos antes del pasillo. |
+| El Pasillo (Nivel 2) | Zona con ratoneras, escobas que caen, cables electrificados, Legos, una rejilla y tablas falsas. | Tramo de evasión y persecución por la aspiradora inteligente, que confunde a Mochi con el ratón. | La búsqueda del ratón por parte de la familia convierte el pasillo en un peligro adicional. |
+| La Sala | Espacio al que Mochi llega después de superar el pasillo. | Cierre del recorrido de la versión actual y punto de continuación de la historia. | Es la meta del recorrido actual; el regreso al bosque queda pendiente. |
 
 ## Facciones
 
@@ -50,7 +50,6 @@ Mochi debe atravesar la habitación y el pasillo para llegar a la sala y encontr
 | Humanos (Leo y su familia) | Leo quiere conservar a Mochi como mascota y grabar bromas; sus padres buscan al ratón que ronda la casa. | No actúan por maldad deliberada, pero sus decisiones y mecanismos ponen a Mochi en peligro. |
 | Hormigas y arañas | Mantener sus zonas y reaccionar ante intrusos. | Amenazas que Mochi debe superar mediante movimiento e ingenio; el nido de hormigas bloquea el escritorio. |
 | Tecnología doméstica (aspiradora inteligente) | Cazar al ratón que anda por la casa, siguiendo su programación. | Confunde a Mochi con el ratón y lo persigue por el pasillo. |
-| Fauna silvestre (águila) | No especificado en esta etapa. | Su silueta al final anticipa un peligro futuro; no participa en el recorrido actual. |
 
 ## Coherencia del mundo
 
