@@ -8,13 +8,13 @@ Documenta el objetivo, el orden de las zonas y los desafíos de cada nivel jugab
 
 **Objetivo principal:** Aprender las acciones básicas, escapar de la jaula y alcanzar la meta del tutorial para pasar al Nivel 1.
 
-**Objetivos secundarios:** Recoger semillas como moneda y explorar rutas opcionales.
+**Objetivos secundarios:** Recoger las semillas, que marcan la ruta, y explorar rutas opcionales.
 
-**Mecánicas introducidas:** Movimiento, salto, sprint, planeo, escalada en superficies designadas y aplastar enemigos vulnerables desde arriba.
+**Mecánicas introducidas:** Movimiento, salto, sprint, planeo y escalada en superficies designadas.
 
 **Desarrollo:** Mochi despierta en la jaula después de la captura. Las indicaciones del tutorial presentan cada acción de forma gradual mientras busca la forma de salir. Después de escapar, el tutorial incluye un laberinto de tubos con un botón que abre la salida y un primer tramo del escritorio; termina al alcanzar la meta, la tecla Enter del teclado.
 
-**Enemigos y obstáculos:** Bichos que se pueden aplastar desde arriba, café caliente, plataformas que se caen y monedas trampa.
+**Enemigos y obstáculos:** Bichos que hay que esquivar, café caliente, plataformas que se caen y monedas trampa.
 
 **Puntos de control:** Repartidos entre la jaula, las repisas y el escritorio.
 
@@ -32,9 +32,9 @@ Jaula → escape → laberinto de tubos y escritorio → meta del tutorial → N
 
 **Objetivo principal:** Recorrer la habitación y superar sus desafíos hasta abrir el paso al pasillo.
 
-**Objetivos secundarios:** Recoger semillas como moneda y explorar rutas opcionales.
+**Objetivos secundarios:** Recoger las semillas, que marcan la ruta, y explorar rutas opcionales.
 
-**Mecánicas utilizadas:** Movimiento, salto, sprint con combustible propio y planeo independiente de ese combustible, escalada en superficies designadas, interacción contextual con objetos y puzzle de memoria resuelto saltando sobre baldosas.
+**Mecánicas utilizadas:** Movimiento, salto, sprint y planeo con combustible compartido, escalada en superficies designadas, interacción contextual con objetos y puzzle de memoria resuelto saltando sobre baldosas.
 
 ### Zona 1: Escritorio
 
@@ -65,12 +65,12 @@ La cantidad de cuadros, la longitud y velocidad de la secuencia, los intentos pe
 **Enemigos y obstáculos del nivel:**
 
 - Araña de rincón, amenaza de contacto.
-- Walker, oruga de peluche blanca que patrulla rutas fijas y aparece de forma dispersa por el mapa. Sus ubicaciones y vulnerabilidad al aplastamiento están por definir.
+- Walker, oruga de peluche blanca que patrulla rutas fijas y aparece de forma dispersa por el mapa. Sus ubicaciones están por definir.
 - Minijefe de las hormigas en el escritorio.
 - Personaje aún sin identificar que lanza pelotas de tenis en la estantería.
 - Libros, plataformas y otros mecanismos trampa.
 
-**Coleccionables y objetos clave:** Semillas como moneda; pilas para activar el ventilador.
+**Coleccionables y objetos clave:** Semillas que guían el recorrido; pilas para activar el ventilador.
 
 **Puntos de control:** Ubicaciones por definir en la habitación.
 
@@ -92,7 +92,7 @@ Escritorio → Minijefe de las hormigas
 
 **Mecánicas introducidas:** Leer una persecución activa y encontrar refugio o rutas seguras entre los peligros.
 
-**Mecánicas utilizadas:** Movimiento, salto, sprint y planeo. El planeo no consume ni depende del combustible del sprint.
+**Mecánicas utilizadas:** Movimiento, salto, sprint y planeo. El sprint y el planeo gastan el mismo combustible.
 
 **Enemigos y obstáculos:**
 
@@ -101,7 +101,7 @@ Escritorio → Minijefe de las hormigas
 - Escobas que caen y pelotas que ruedan por el pasillo.
 - Walker puede aparecer patrullando en puntos dispersos del mapa.
 
-**Coleccionables:** Semillas como moneda. La fotografía familiar bajo el mueble recibidor queda como coleccionable opcional propuesto, pendiente de confirmación.
+**Coleccionables:** Semillas que guían el recorrido. La fotografía familiar bajo el mueble recibidor queda como coleccionable opcional propuesto, pendiente de confirmación.
 
 **Puntos de control:** Ubicaciones por definir entre los tramos de mayor riesgo.
 
@@ -122,7 +122,7 @@ Entrada al pasillo → persecución de la aspiradora
 - El orden de zonas en la habitación se mantiene: escritorio, minijefe de las hormigas, libros colgantes, estantería con pelotas de tenis y memorama.
 - El jugador se refugia en huecos de la estantería para evitar las pelotas; no se le indica saltar por encima.
 - El memorama enseña una secuencia de cuadros iluminados y se resuelve saltando los mismos cuadros en el mismo orden.
-- Las semillas funcionan como moneda, no como munición.
+- Las semillas guían el recorrido; no son munición.
 - Walker es una oruga de peluche blanca con patrullas fijas dispersas por el mapa.
 
 > **Navegación:** [[00 - Índice]] · ← [[01 - Estructura del Contenido]] · [[03 - Enemigos y NPC]] →

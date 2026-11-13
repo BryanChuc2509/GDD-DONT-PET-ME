@@ -10,7 +10,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T01 — Movimiento y salto de Mochi
 
-**Descripción:** Implementar en Unity el desplazamiento, salto y doble salto de Mochi según los controles definidos. El sprint consume combustible propio; el planeo no lo consume ni depende de esa reserva.
+**Descripción:** Implementar en Unity el desplazamiento y el salto de Mochi según los controles definidos. El sprint y el planeo gastan la misma reserva de combustible, que solo se recarga en el suelo.
 
 **Responsable:** Bryan Chuc
 
@@ -18,7 +18,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** Ninguna (es la primera tarea).
 
-**Criterio de aceptación:** Mochi se mueve, salta y realiza el doble salto de forma fluida; el sprint consume su combustible y el planeo, si se conserva tras la evaluación, funciona sin depender de esa reserva.
+**Criterio de aceptación:** Mochi se mueve y salta de forma fluida; el sprint y el planeo (hasta 0.6 segundos por tramo) gastan la misma reserva de combustible.
 
 **Estado:** Pendiente
 
@@ -46,7 +46,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T01.
 
-**Criterio de aceptación:** Mochi completa la interacción definida y activa el ventilador para despejar el paso del encuentro de las hormigas. Las semillas se contabilizan como moneda, no como munición.
+**Criterio de aceptación:** Mochi completa la interacción definida y activa el ventilador para despejar el paso del encuentro de las hormigas. Las semillas solo guían el recorrido; no son munición.
 
 **Estado:** Pendiente
 
@@ -102,7 +102,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T06.
 
-**Criterio de aceptación:** Los recursos se importan en Unity sin errores y funcionan dentro de los objetivos de rendimiento propuestos; Mochi cuenta con las animaciones necesarias para movimiento, salto y doble salto.
+**Criterio de aceptación:** Los recursos se importan en Unity sin errores y funcionan dentro de los objetivos de rendimiento propuestos; Mochi cuenta con las animaciones necesarias para movimiento y salto.
 
 **Estado:** Pendiente
 
@@ -164,7 +164,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T12 — Menús, HUD y configuración
 
-**Descripción:** Programar menú principal, pausa, HUD con saldo de semillas, indicaciones contextuales, checkpoints y configuración esencial. No incluir contador de munición ni retícula para disparar.
+**Descripción:** Programar menú principal, pausa, HUD con contador de semillas, indicaciones contextuales, checkpoints y configuración esencial. No incluir contador de munición ni retícula para disparar.
 
 **Responsable:** Ahui
 
@@ -172,7 +172,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T03, T04.
 
-**Criterio de aceptación:** Se puede navegar con teclado y ratón; las opciones de configuración implementadas y el saldo de semillas se muestran de forma coherente con el diseño.
+**Criterio de aceptación:** Se puede navegar con teclado y ratón; las opciones de configuración implementadas y el contador de semillas se muestran de forma coherente con el diseño.
 
 **Estado:** Pendiente
 

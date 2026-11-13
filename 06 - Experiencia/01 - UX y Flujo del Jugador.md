@@ -36,11 +36,10 @@ Para cada acción importante define:
 
 **Entrada → Respuesta visual → Respuesta sonora → Resultado**
 
-
 | Acción | Entrada | Respuesta visual | Respuesta sonora | Resultado |
 | --- | --- | --- | --- | --- |
 | Movimiento y salto | Teclas de movimiento y salto | Animación de Mochi y respuesta visible al despegar y aterrizar | Efectos breves asociados al movimiento | El jugador comprende el control y la distancia del salto |
-| Recoger semillas | Tocar una semilla | La semilla desaparece, el contador de semillas del HUD suma una y su icono da un salto | Sonido breve de recolección | Aumenta la moneda; no se añade munición ni un objeto de uso |
+| Recoger semillas | Tocar una semilla | La semilla desaparece, el contador de semillas del HUD suma una y su icono da un salto | Sonido breve de recolección | El contador avanza; no se añade munición ni un objeto de uso |
 | Interactuar con el ventilador | Llevar la pila hasta el compartimento del ventilador | Mientras Mochi carga una pila, un marcador señala el ventilador; el objetivo del HUD cuenta las pilas colocadas (x/3) y un aviso confirma que se enciende | Sonido de activación | El ventilador se activa y despeja el paso del encuentro de hormigas |
 | Memorizar las baldosas | Observar la muestra | Los cuadros se iluminan en una secuencia de colores | Señal breve por cada cuadro, si se implementa | El jugador observa el orden antes de repetirlo saltando |
 | Refugiarse de una pelota | Entrar en un hueco de la estantería | La pelota pasa sin alcanzar a Mochi | Sonido de impacto de la pelota en el entorno | El jugador puede continuar ascendiendo |

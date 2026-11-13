@@ -65,7 +65,7 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 ## Elevator Pitch
 
 > [!example] ¿Qué es?
-> Un videojuego de plataformas 3D para PC en el que el jugador controla a Mochi, un pequeño hámster que intenta escapar de una casa llena de peligros, obstáculos y dispositivos inteligentes. El jugador deberá explorar, realizar parkour, usar objetos del entorno, disparar canicas y superar desafíos mediante el salto y el doble salto y la resolución de algunos puzzles.
+> Un videojuego de plataformas 3D para PC en el que el jugador controla a Mochi, un pequeño hámster que intenta escapar de una casa llena de peligros, obstáculos y dispositivos inteligentes. El jugador deberá explorar, realizar parkour, usar objetos del entorno, disparar canicas y superar desafíos mediante el salto y la resolución de algunos puzzles.
 
 **Respuesta:**
 

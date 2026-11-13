@@ -6,9 +6,9 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 ## Reglas comunes
 
-- El contacto con un enemigo es mortal para Mochi, salvo que caiga desde arriba sobre un enemigo designado como vulnerable.
-- Mochi puede matar aplastando desde arriba únicamente a los enemigos declarados vulnerables. El contacto lateral o desde abajo sigue siendo peligroso.
-- Las semillas son moneda coleccionable: no son munición y no aturden ni atacan enemigos.
+- El contacto con un enemigo es mortal para Mochi.
+- Mochi no puede derrotar enemigos: los esquiva o usa el entorno para avanzar.
+- Las semillas solo guían el recorrido: no son munición y no aturden ni atacan enemigos.
 - El minijefe de las hormigas se supera con el reto de las pilas y el ventilador; sus ataques y apariencia exactos están por definir.
 
 ## Enemigos
@@ -21,7 +21,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Daño:** El contacto con Mochi causa muerte instantánea.
 
-**Vulnerabilidad:** Puede morir si Mochi cae sobre ella desde arriba.
+**Vulnerabilidad:** No se puede derrotar; Mochi debe evitarla.
 
 **Interacciones:** No recibe daño ni se aturde con semillas.
 
@@ -37,7 +37,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Daño:** La succión alcanza a Mochi si queda dentro de su zona frontal de peligro y causa muerte instantánea.
 
-**Vulnerabilidad:** No se derrota aplastándola ni con semillas; el jugador debe escapar y aprovechar el entorno para avanzar.
+**Vulnerabilidad:** No se puede derrotar ni con semillas; el jugador debe escapar y aprovechar el entorno para avanzar.
 
 **Estado de diseño:** Amenaza principal del pasillo. El alcance de detección, la velocidad y la duración de la persecución quedan por balancear.
 
@@ -51,9 +51,9 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Daño:** El contacto con Mochi es mortal según la regla general de enemigos.
 
-**Vulnerabilidad:** Pendiente de confirmar si Mochi puede matarlo aplastándolo desde arriba.
+**Vulnerabilidad:** No se puede derrotar; Mochi debe esquivarla.
 
-**Estado de diseño:** La especie, el material, el color y su presencia dispersa por el mapa están definidos. Las ubicaciones exactas, la detección y la vulnerabilidad quedan pendientes.
+**Estado de diseño:** La especie, el material, el color y su presencia dispersa por el mapa están definidos. Las ubicaciones exactas y la detección quedan pendientes.
 
 ### Minijefe de las hormigas
 
@@ -63,7 +63,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Cómo se supera:** Mochi consigue las pilas y activa el ventilador para despejar el paso.
 
-**Vulnerabilidad:** No se derrota saltando encima. La resolución definida es activar el ventilador.
+**Vulnerabilidad:** No se puede derrotar directamente. La resolución definida es activar el ventilador.
 
 **Estado de diseño:** El encuentro y su solución están definidos a nivel general; faltan el diseño concreto, los ataques y la implementación del ventilador.
 

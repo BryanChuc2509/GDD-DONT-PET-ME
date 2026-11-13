@@ -41,11 +41,11 @@ Documenta cada mecánica con suficiente detalle para que otro integrante pueda i
 
 ### Mecánica 01
 
-Recolección de Semillas-Moneda
+Recolección de Semillas
 
 **Propósito:**
 
-Guiar al jugador por las zonas y recompensar la exploración con una moneda para desbloquear aspectos cosméticos de Mochi.
+Guiar al jugador por las zonas: las semillas marcan la ruta que debe seguir.
 
 **Activación:**
 
@@ -54,8 +54,9 @@ Las semillas se recogen automáticamente al tocarlas.
 **Reglas:**
 
 - La distribución de semillas orienta hacia el recorrido principal sin impedir que el jugador explore rutas secundarias.
-- El saldo acumulado se conserva al morir y reaparecer en un checkpoint.
-- Una skin básica se compra con semillas; otra skin se desbloquea al recolectar todas las semillas del juego. El precio de compra se ajustará durante el balance.
+- El HUD muestra cuántas semillas se han recogido y el total del nivel. El contador empieza en 0 en cada nivel.
+- Las semillas recogidas siguen contadas al morir y reaparecer en un checkpoint.
+- Las semillas no se gastan ni se usan para activar mecanismos.
 
 **Entrada:**
 
@@ -67,19 +68,19 @@ Semillas disponibles en el escenario; el contador del HUD muestra las recogidas 
 
 **Estado final:**
 
-Semilla retirada del escenario y su valor añadido al saldo.
+Semilla retirada del escenario y contador del HUD aumentado en uno.
 
 **Recursos utilizados:**
 
-Semillas recogidas y saldo de semillas.
+Semillas del nivel.
 
 **Recompensa:**
 
-Compra de una skin básica o, al completar la colección, desbloqueo de una skin especial.
+Saber por dónde seguir y completar el contador del nivel.
 
 **Penalización:**
 
-No recoger una semilla reduce el saldo final disponible, pero no bloquea la progresión del nivel.
+No recoger una semilla no bloquea la progresión del nivel.
 
 **Interacciones con otras mecánicas:**
 
@@ -87,7 +88,7 @@ La guía visual de semillas complementa la iluminación, la geometría del nivel
 
 **Casos límite:**
 
-Las semillas ya recogidas no vuelven a aparecer al reaparecer en un checkpoint.
+Las semillas ya recogidas no vuelven a aparecer al reaparecer en un checkpoint. Algunas semillas son trampas: lanzan a Mochi por los aires o se alejan cuando se acerca.
 
 <!-- Copiar la plantilla anterior -->
 
@@ -105,7 +106,9 @@ Pulsar `ESPACIO` en el suelo.
 
 **Reglas:**
 
-- Al caer desde arriba sobre un enemigo vulnerable, Mochi lo aplasta y lo mata; el rebote le permite continuar el recorrido.
+- Soltar `ESPACIO` antes de tiempo corta el salto, así que la altura depende de cuánto se mantiene la tecla.
+- Hay un pequeño margen para saltar justo después de salir de un borde y, si se pulsa `ESPACIO` un poco antes de aterrizar, el salto sale al tocar el suelo.
+- Mochi solo puede saltar desde el suelo; mantener `ESPACIO` en el aire activa el planeo.
 
 **Entrada:**
 
@@ -145,27 +148,28 @@ Sprint con Combustible
 
 **Propósito:**
 
-Permitir que Mochi aumente temporalmente su velocidad al correr por el suelo mediante una reserva de combustible exclusiva del sprint.
+Permitir que Mochi aumente temporalmente su velocidad gastando la reserva de combustible que comparte con el planeo.
 
 **Activación:**
 
-Mantener `SHIFT` mientras Mochi se desplaza por el suelo.
+Mantener `SHIFT` mientras Mochi se desplaza.
 
 **Reglas:**
 
-- El sprint solo se activa en el suelo y consume combustible mientras está activo.
-- El combustible se regenera con el tiempo mientras el sprint no está activo, tanto en el suelo como en el aire. Caminar, saltar, planear y escalar no lo consumen.
-- Si se agota el combustible mientras el sprint está activo, Mochi vuelve a su velocidad normal. No puede volver a esprintar hasta que la reserva se recupere.
-- El combustible del sprint no afecta la disponibilidad, duración ni alcance del planeo.
-- La capacidad y las tasas de consumo y recuperación se determinarán mediante pruebas de balance para ajustar el uso del sprint.
+- El sprint y el planeo comparten una sola reserva de combustible de 100 puntos, que el HUD muestra como la barra de estamina.
+- El sprint gasta 22 puntos por segundo mientras se mantiene `SHIFT` y Mochi se mueve, también durante un salto. Con la reserva llena alcanza para unos 4.5 segundos.
+- El combustible solo se recarga con Mochi en el suelo, 0.6 segundos después del último gasto, a 40 puntos por segundo. En el aire no se recarga.
+- Si la reserva llega a 0, Mochi queda agotado: vuelve a su velocidad normal y no puede esprintar ni planear hasta que la reserva se recupere al 30%.
+- Al reaparecer en un checkpoint, la reserva se llena por completo.
+- Caminar, saltar y escalar no gastan combustible.
 
 **Entrada:**
 
-`SHIFT` (mantener mientras Mochi se desplaza por el suelo para esprintar).
+`SHIFT` (mantener mientras Mochi se desplaza).
 
 **Estado inicial:**
 
-Mochi se desplaza por el suelo y tiene combustible disponible.
+Mochi se desplaza y no está agotado.
 
 **Estado final:**
 
@@ -173,23 +177,23 @@ Mochi vuelve a su velocidad normal al soltar `SHIFT` o agotar el combustible.
 
 **Recursos utilizados:**
 
-La reserva de combustible del sprint, mostrada en la barra con un rayo de la esquina inferior izquierda del HUD.
+La reserva de combustible compartida con el planeo, mostrada en la barra con un rayo de la esquina inferior izquierda del HUD.
 
 **Recompensa:**
 
-Mayor velocidad temporal en el suelo para recorrer tramos y tomar impulso antes de un salto.
+Mayor velocidad temporal para recorrer tramos y tomar impulso antes de un salto.
 
 **Penalización:**
 
-Gastar todo el combustible impide esprintar hasta que la reserva se recupere.
+Gastar todo el combustible impide esprintar y planear hasta que la reserva vuelva al 30%.
 
 **Interacciones con otras mecánicas:**
 
-El sprint puede dar impulso antes de un salto. Su combustible es independiente del planeo y no protege contra peligros letales.
+El sprint da impulso antes de un salto. Como comparte el combustible con el planeo, correr mucho antes de saltar deja menos reserva para planear. No protege contra peligros letales.
 
 **Casos límite:**
 
-Si el combustible se agota mientras `SHIFT` sigue presionado, el sprint se interrumpe y no se reactiva hasta que haya combustible disponible.
+Si el combustible se agota mientras `SHIFT` sigue presionado, el sprint se interrumpe; la barra del HUD se atenúa y el rayo parpadea hasta que la reserva vuelve al 30%.
 
 ### Mecánica 04
 
@@ -201,13 +205,14 @@ Reducir por un momento la velocidad de caída para extender un salto y ayudar a 
 
 **Activación:**
 
-Mantener `ESPACIO` cuando Mochi ya está en el aire.
+Mantener `ESPACIO` en el aire. El planeo empieza cuando Mochi ya va cayendo, no durante la subida del salto.
 
 **Reglas:**
 
-- El planeo no consume combustible y está disponible independientemente de la reserva del sprint.
-- Mientras planea, Mochi obtiene control horizontal limitado y desciende más despacio, pero no asciende ni queda suspendido.
-- El planeo dura como máximo **1 segundo por tramo en el aire** y termina antes si se suelta `ESPACIO`. El doble salto no reinicia ese límite.
+- El planeo gasta el mismo combustible que el sprint: 45 puntos por segundo, unos 27 puntos por un planeo completo.
+- Mientras planea, Mochi cae despacio y conserva el control en el aire, pero no asciende ni queda suspendido.
+- Dura como máximo **0.6 segundos por tramo en el aire** y termina antes si se suelta `ESPACIO` o se acaba el combustible. El límite se reinicia al tocar el suelo o al rebotar en una plataforma de impulso.
+- Con el combustible agotado no se puede planear.
 
 **Entrada:**
 
@@ -215,15 +220,15 @@ Mantener `ESPACIO` cuando Mochi ya está en el aire.
 
 **Estado inicial:**
 
-Mochi está en el aire.
+Mochi está en el aire, cayendo, y no está agotado.
 
 **Estado final:**
 
-El planeo termina al soltar `ESPACIO` o alcanzar 1 segundo en el tramo actual en el aire.
+El planeo termina al soltar `ESPACIO`, alcanzar 0.6 segundos en el tramo actual, agotar el combustible o aterrizar.
 
 **Recursos utilizados:**
 
-Ninguno.
+La reserva de combustible compartida con el sprint.
 
 **Recompensa:**
 
@@ -231,15 +236,15 @@ Más distancia y control durante un salto al ralentizar la caída.
 
 **Penalización:**
 
-Un mal cálculo del momento de activar el planeo puede dejar a Mochi corto de su destino cuando se agote el segundo disponible.
+Un mal cálculo del momento de planear puede dejar a Mochi corto de su destino. Planear sin medida vacía la reserva y deja a Mochi sin sprint ni planeo hasta recargar en el suelo.
 
 **Interacciones con otras mecánicas:**
 
-El planeo complementa el salto y el doble salto. Es independiente del combustible del sprint y no protege contra peligros letales.
+El planeo complementa el salto y comparte el combustible con el sprint. Como la reserva solo se recarga en el suelo, encadenar varios saltos planeando la vacía. No protege contra peligros letales.
 
 **Casos límite:**
 
-Al alcanzar el límite de 1 segundo no se puede volver a planear durante ese mismo tramo en el aire, aunque quede combustible. El doble salto no reinicia el límite; este vuelve a estar disponible al tocar el suelo.
+Al alcanzar el límite de 0.6 segundos no se puede volver a planear en ese mismo tramo en el aire, aunque quede combustible; vuelve a estar disponible al tocar el suelo o al rebotar. Si el combustible se acaba a mitad del planeo, este se corta y Mochi cae con normalidad.
 
 ### Mecánica 05
 
@@ -289,56 +294,6 @@ El sprint puede ayudar a aproximarse; el combustible no se consume durante la es
 **Casos límite:**
 
 Las superficies decorativas que no se puedan escalar deben diferenciarse visualmente de la tela marcada como escalable.
-
-### Mecánica 06
-
-Aplastar Enemigos desde Arriba
-
-**Propósito:**
-
-Dar una respuesta de movimiento defensiva cuando Mochi salta sobre enemigos vulnerables, sin introducir combate cuerpo a cuerpo.
-
-**Activación:**
-
-Caer sobre un enemigo desde arriba tras un salto.
-
-**Reglas:**
-
-- Solo los enemigos designados como vulnerables pueden ser eliminados al aplastarlos desde arriba.
-- El contacto lateral o desde abajo sigue siendo peligroso y puede causar la muerte.
-- Los jefes o enemigos resistentes requieren resolver su desafío específico; saltar sobre ellos no los derrota automáticamente.
-
-**Entrada:**
-
-Salto (`ESPACIO`) y contacto desde arriba.
-
-**Estado inicial:**
-
-Mochi está en el aire y un enemigo vulnerable está debajo.
-
-**Estado final:**
-
-El enemigo muere y Mochi rebota para continuar el recorrido.
-
-**Recursos utilizados:**
-
-Ninguno.
-
-**Recompensa:**
-
-Mata al enemigo vulnerable y despeja el paso de forma permanente.
-
-**Penalización:**
-
-Un contacto que no sea desde arriba puede provocar la muerte instantánea.
-
-**Interacciones con otras mecánicas:**
-
-Requiere leer el movimiento del enemigo y sincronizar el salto; no reemplaza el sigilo ni la evasión.
-
-**Casos límite:**
-
-La señal visual del enemigo debe comunicar si es vulnerable al salto antes de que el jugador se arriesgue.
 
 ## Mecánicas secundarias
 

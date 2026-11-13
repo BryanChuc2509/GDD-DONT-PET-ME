@@ -12,19 +12,19 @@ Define objetos que el jugador puede recoger, utilizar, equipar, vender, intercam
 
 Semillas de Girasol
 
-**Tipo:** Moneda coleccionable.
+**Tipo:** Coleccionable que guía el recorrido.
 
 **Descripción:** Semillas repartidas por el recorrido y en rincones opcionales del escenario.
 
-**Función:** Aumentan el saldo de Mochi y sirven como guía visual hacia la ruta principal. Se pueden usar para comprar una skin básica; reunirlas todas desbloquea una skin especial.
+**Función:** Sirven como guía visual hacia la ruta principal. El HUD cuenta las recogidas y el total del nivel.
 
 **Cómo se obtiene:** Se recogen automáticamente al tocarlas en los escenarios jugables y sus desvíos.
 
 **Cómo se utiliza:** No se disparan ni se usan para activar mecanismos o atacar enemigos.
 
-**Cantidad máxima:** Sin límite de almacenamiento.
+**Cantidad máxima:** Las que haya en cada nivel.
 
-**Valor:** Moneda; el precio de los cosméticos se define durante el balance.
+**Valor:** Guía del recorrido; no se gastan en nada.
 
 **Rareza:** Común.
 
@@ -33,7 +33,6 @@ Semillas de Girasol
 **Interacciones:** Al recogerlas suman al contador de semillas del HUD (recogidas/total del nivel).
 
 **Representación visual:** Semillas de girasol con cáscara rayada blanca y negra.
-
 
 ### Nombre
 
@@ -60,7 +59,6 @@ Pilas
 **Interacciones:** Al activar el ventilador, se despeja el camino durante el encuentro con el minijefe de las hormigas para que Mochi pueda continuar.
 
 **Representación visual:** Pilas domésticas pequeñas, claramente distinguibles del fondo y de los coleccionables.
-
 
 ### Nombre
 

@@ -137,9 +137,9 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Objetivo:** Recoger semillas repartidas por la ruta y sus desvíos.
 
-**Contexto:** Las semillas orientan al jugador y funcionan como moneda para cosméticos.
+**Contexto:** Las semillas orientan al jugador hacia la ruta principal.
 
-**Condición de éxito:** Recoger las semillas que el jugador encuentre; completar la colección del juego desbloquea la skin especial.
+**Condición de éxito:** Recoger las semillas que el jugador encuentre; el HUD muestra cuántas lleva de cada nivel.
 
 **Condición de fracaso:** Ninguna. No recoger semillas no bloquea la progresión.
 
@@ -165,6 +165,6 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 - Permitir aprender del fallo y reintentar desde un checkpoint adecuado.
 - Usar sorpresas y trampas como parte del humor, sin ocultar señales necesarias para anticipar un peligro letal.
 - No convertir la recolección de semillas en requisito de progresión.
-- Walker es una oruga de peluche blanca con patrullas fijas repartidas de forma dispersa por el mapa, no limitadas a una sola zona; sus ubicaciones concretas y vulnerabilidad al aplastamiento siguen por definirse.
+- Walker es una oruga de peluche blanca con patrullas fijas repartidas de forma dispersa por el mapa, no limitadas a una sola zona; sus ubicaciones concretas siguen por definirse.
 
 > **Navegación:** [[00 - Índice]] · ← [[04 - Objetos y Coleccionables]] · [[01 - Dirección de Arte]] →

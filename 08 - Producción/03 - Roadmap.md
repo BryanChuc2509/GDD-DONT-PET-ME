@@ -29,7 +29,7 @@ Validar que la mecánica central funciona y dejar listo todo lo necesario para p
 **Entregables:**
 
 * Bocetos en papel de los cuatro escenarios (jaula, habitación, pasillo y sala) y de Mochi.
-* Prototipo jugable en Unity con movimiento, salto, doble salto y cámara en tercera persona sobre un escenario de prueba.
+* Prototipo jugable en Unity con movimiento, salto y cámara en tercera persona sobre un escenario de prueba.
 * Prototipo de canicas (recoger, disparar y activar un interruptor).
 * Estilo visual definido (low-poly o stylized) y lista de assets necesarios.
 * Estructura del proyecto en Unity y control de versiones configurado.
@@ -91,7 +91,7 @@ Entregar el proyecto y presentarlo en el evento universitario, además de public
 | Hito                         | Fecha límite | Entregable                                                          | Criterio de finalización                                                           | Estado    |
 | ---------------------------- | ------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------- |
 | H1. Concepto cerrado         | 21 oct        | Documento de diseño y alcance                                      | Todas las secciones completas y aprobadas por el equipo                             | En curso  |
-| H2. Prototipo de movimiento  | 23 oct        | Mochi con salto, doble salto y cámara en escenario de prueba       | Se siente fluido y la cámara no se atora                                           | Pendiente |
+| H2. Prototipo de movimiento  | 23 oct        | Mochi con salto y cámara en escenario de prueba                    | Se siente fluido y la cámara no se atora                                           | Pendiente |
 | H3. Prototipo de canicas     | 26 oct        | Recoger, disparar y activar un interruptor                          | Un interruptor apaga el contacto del toma corrientes para pasar a otras plataformas | Pendiente |
 | H4. Bocetos y estilo visual  | 30 oct        | Bocetos de escenarios y Mochi, y estilo definido                    | El equipo aprueba el estilo y la lista de assets                                    | Pendiente |
 | H5. Vertical slice           | 3 nov         | Jaula y habitación jugables y pulidas                              | Se completan de principio a fin con arte, sonido y checkpoints definitivos          | Pendiente |

@@ -8,9 +8,9 @@ Los sistemas son conjuntos de reglas y componentes que trabajan juntos: movimien
 
 | Sistema | Propósito | Dependencias | Estado |
 | --- | --- | --- | --- |
-| Físicas y Locomoción de Roedor | Controlar desplazamiento, saltos, escalada de tela y rebotes sobre enemigos vulnerables. | Motor de físicas 3D | En proceso |
-| Sprint y Planeo | Aplicar sprint con combustible propio en el suelo y planeo de hasta 1 segundo en el aire, independiente de ese combustible. | Controlador del personaje, HUD | Diseñado |
-| Semillas y Cosméticos | Registrar semillas recogidas como moneda y desbloquear skins. | Persistencia, HUD, menú de cosméticos | Diseñado |
+| Físicas y Locomoción de Roedor | Controlar desplazamiento, saltos, escalada de tela y rebotes en plataformas de impulso. | Motor de físicas 3D | En proceso |
+| Sprint y Planeo | Aplicar sprint y planeo de hasta 0.6 segundos por tramo en el aire, que gastan la misma reserva de combustible. | Controlador del personaje, HUD | Implementado |
+| Semillas | Contar las semillas recogidas de cada nivel y usarlas como guía del recorrido. | HUD | Implementado |
 | Checkpoints y Daño Absoluto | Reiniciar ante colisiones letales y conservar el progreso establecido. | Sistema de persistencia | Diseñado |
 | Puzzles Físicos y Objetos de Objetivo | Permitir mover utilería e interactuar con objetos contextuales, como pilas y ranuras. | Motor de físicas, sistema de interacción | En proceso |
 
@@ -18,32 +18,34 @@ Los sistemas son conjuntos de reglas y componentes que trabajan juntos: movimien
 
 **Objetivo:**
 
-Permitir al jugador esprintar en el suelo usando una reserva de combustible propia y planear durante un máximo de 1 segundo por tramo en el aire, sin consumir esa reserva.
+Permitir al jugador esprintar y planear gastando una sola reserva de combustible, para que tenga que decidir cuándo usar cada acción.
 
 **Entradas:**
 
-Mantener `SHIFT` en el suelo para esprintar y mantener `ESPACIO` en el aire para planear.
+Mantener `SHIFT` al desplazarse para esprintar y mantener `ESPACIO` en el aire para planear.
 
 **Procesamiento / reglas:**
 
-- En el suelo, mantener `SHIFT` aumenta temporalmente la velocidad de desplazamiento mientras quede combustible.
-- En el aire, mantener `ESPACIO` activa un planeo con control horizontal limitado y descenso más lento; Mochi no asciende ni queda suspendido. El planeo no consume combustible.
-- El planeo dura como máximo 1 segundo por tramo en el aire; el doble salto no reinicia ese límite.
-- El sprint consume combustible mientras está activo y se detiene al agotarse la reserva. El planeo sigue disponible sin importar cuánto combustible quede.
-- El combustible del sprint se regenera mientras no se está esprintando, tanto en el suelo como en el aire. Caminar, saltar, planear y escalar no lo consumen.
-- La capacidad y las tasas de consumo y regeneración del sprint se determinarán mediante pruebas de balance.
+- Una sola reserva de 100 puntos, compartida por el sprint y el planeo.
+- **Sprint:** gasta 22 puntos por segundo mientras se mantiene `SHIFT` y Mochi se mueve, también durante un salto.
+- **Planeo:** gasta 45 puntos por segundo; Mochi cae despacio sin ascender. Dura como máximo 0.6 segundos por tramo en el aire y el límite se reinicia al tocar el suelo o al rebotar en una plataforma de impulso.
+- **Recarga:** solo en el suelo, 0.6 segundos después del último gasto, a 40 puntos por segundo.
+- **Agotamiento:** al llegar a 0 no se puede esprintar ni planear hasta que la reserva vuelva al 30%.
+- Al reaparecer en un checkpoint, la reserva se llena por completo.
+- Caminar, saltar y escalar no gastan combustible.
 
 **Salidas:**
 
-Velocidad de movimiento en el suelo, estado y control de planeo en el aire, valor de combustible del sprint e indicador correspondiente en el HUD.
+Velocidad de movimiento, estado y velocidad de caída del planeo, valor del combustible y estado de agotamiento para la barra del HUD.
 
 **Estados posibles:**
 
 - Desplazamiento normal
 - Esprintando
 - Planeando
-- Recuperando combustible del sprint
-- Sin combustible para el sprint
+- Esperando para recargar
+- Recargando en el suelo
+- Agotado (sin sprint ni planeo hasta llegar al 30%)
 
 **Dependencias:**
 
@@ -51,50 +53,49 @@ Controlador del personaje, sistema de entrada y HUD.
 
 **Interacciones:**
 
-El sprint facilita atravesar tramos y tomar impulso para saltar; el planeo puede extender un salto y ralentizar la caída. El combustible solo afecta al sprint y no limita el planeo. Ninguna acción protege a Mochi del daño.
+El sprint ayuda a tomar impulso y el planeo extiende el salto, pero ambos salen de la misma reserva: correr mucho antes de saltar deja menos para planear. Ninguna de las dos acciones protege a Mochi del daño.
 
 **Datos que necesita:**
 
-Entradas `SHIFT` y `ESPACIO`, tiempo transcurrido, combustible disponible para el sprint, tiempo de planeo del tramo actual y estado de movimiento (suelo o aire).
+Entradas `SHIFT` y `ESPACIO`, tiempo transcurrido, combustible disponible, tiempo de planeo del tramo actual y estado de movimiento (suelo o aire).
 
 **Datos que genera:**
 
-Velocidad o estado de planeo actualizado, tiempo de planeo restante y valor del combustible del sprint para el HUD y el guardado.
+Velocidad o estado de planeo actualizado, tiempo de planeo restante, valor del combustible y estado de agotamiento para el HUD.
 
 **Riesgos:**
 
-Que el balance del sprint resulte poco claro o que una duración fija del planeo no dé suficiente control para aterrizar con justicia.
+Que el jugador se quede sin combustible a mitad de un tramo largo por no saber que solo se recarga en el suelo. El tutorial lo explica en pantalla: "La estamina solo se recarga en el suelo: respira en cada repisa antes del siguiente salto".
 
 **Criterios de aceptación:**
 
-El jugador puede esprintar en el suelo con `SHIFT`, consumiendo una reserva propia que se regenera cuando no esprinta, y planear hasta 1 segundo por tramo en el aire manteniendo `ESPACIO`, sin consumir ni depender de esa reserva.
+El jugador puede esprintar con `SHIFT` y planear hasta 0.6 segundos por tramo manteniendo `ESPACIO` en el aire. Ambas acciones gastan la misma reserva, que solo se recarga en el suelo y, al agotarse, bloquea las dos hasta volver al 30%.
 
-## Sistema de Semillas y Cosméticos
+## Sistema de Semillas
 
 **Objetivo:**
 
-Usar las semillas como moneda coleccionable y como guía visual del recorrido, sin emplearlas como munición.
+Usar las semillas como guía visual del recorrido, sin emplearlas como munición.
 
 **Procesamiento / reglas:**
 
-- Al tocar una semilla, esta se recoge automáticamente y aumenta el contador de semillas del HUD (recogidas/total del nivel).
-- El saldo se conserva al morir y reaparecer en un checkpoint; las semillas recogidas no reaparecen.
-- Una skin básica se compra con semillas; otra skin se desbloquea al recolectar todas las semillas del juego.
-- El precio de la skin comprable se ajustará durante el balance.
+- Al tocar una semilla, esta se recoge automáticamente y el contador del HUD suma una.
+- Al cargar cada nivel se cuentan sus semillas para mostrar `recogidas/total`; el contador empieza en 0 en cada nivel.
+- Al morir y reaparecer en un checkpoint, las semillas recogidas siguen contadas y no reaparecen.
 
 **Salidas:**
 
-Saldo actualizado, progreso de colección y desbloqueos cosméticos.
+Contador de semillas del HUD actualizado.
 
 **Dependencias:**
 
-Persistencia del progreso, HUD y menú de cosméticos.
+HUD.
 
 ## Relaciones entre sistemas
 
 El **Sistema de Físicas y Locomoción** interactúa con el **Sistema de Daño Absoluto**: si Mochi colisiona con una zona de peligro, el sistema de daño interrumpe inmediatamente el movimiento y activa la secuencia de muerte y recarga del checkpoint.
 
-El **Sistema de Sprint y Combustible** modifica temporalmente la velocidad del personaje. El **Sistema de Semillas y Cosméticos** actualiza el saldo al recoger semillas y registra los desbloqueos.
+El **Sistema de Sprint y Combustible** modifica temporalmente la velocidad del personaje. El **Sistema de Semillas** actualiza el contador del HUD al recoger semillas.
 
 Los **Puzzles Físicos y Objetos de Objetivo** utilizan interacción contextual con elementos del escenario; no dependen de semillas como proyectiles ni de un inventario general. Cuando un puzzle requiere un objeto —por ejemplo, una pila para activar un ventilador—, un aviso breve comunica el objetivo y un indicador señala el lugar de uso al recogerlo.
 

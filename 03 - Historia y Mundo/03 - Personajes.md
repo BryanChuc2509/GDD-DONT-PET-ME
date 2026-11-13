@@ -42,7 +42,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Rol:** Protagonista principal jugable.
 
-**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint, planeo breve independiente del combustible del sprint, escalada de superficies de tela e interacción con objetos del entorno.
+**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint y planeo breve (ambos gastan el mismo combustible), escalada de superficies de tela e interacción con objetos del entorno.
 
 **Función narrativa:** El héroe reacio atrapado en una comedia trágica. Su convicción y dignidad chocan constantemente con la ridiculez de su tamaño y las trampas domésticas.
 
@@ -60,7 +60,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Arco del personaje:** Pasa de despertar cautivo en un entorno desconocido a usar su agilidad e ingenio para superar las trampas de la casa y acercarse a su hogar.
 
-**Habilidades:** Salto y doble salto elástico, sprint en el suelo con combustible propio, planeo de hasta 1 segundo por tramo en el aire sin consumir ni depender de ese combustible, escalada de superficies designadas y capacidad para empujar objetos. Puede aplastar desde arriba a los enemigos designados como vulnerables.
+**Habilidades:** Salto elástico, sprint y planeo de hasta 0.6 segundos por tramo en el aire, que gastan el mismo combustible, escalada de superficies designadas y capacidad para empujar objetos.
 
 **Debilidades:** Fragilidad absoluta ante cualquier daño ambiental o animal (**muerte de un solo golpe**) e ingenuidad ante la tecnología humana.
 

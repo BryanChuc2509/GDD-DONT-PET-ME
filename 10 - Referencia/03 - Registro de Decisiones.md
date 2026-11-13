@@ -14,7 +14,7 @@ Las solicitudes, su impacto y su seguimiento se consultan en [[05 - Gestión de 
 
 ## D-02 · Semillas y mecánicas
 
-**3 de noviembre de 2026 · Documentado.** Las semillas marcan la ruta y permiten comprar una skin básica. Recogerlas todas desbloquea una segunda skin. Se retiran el inventario general y las acciones de hilos, disparo con semillas y globo. Se incorpora sprint con `Shift`, combustible y enfriamiento antes de recargar. Se reutiliza la escalada del tutorial, señalada con textura de tela o hilos, y se permite aplastar enemigos vulnerables al caer sobre ellos.
+**3 de noviembre de 2026 · Documentado.** Las semillas marcan la ruta. Se retiran el inventario general y las acciones de hilos, disparo con semillas y globo. Se incorpora sprint con `Shift`, combustible y enfriamiento antes de recargar. Se reutiliza la escalada del tutorial, señalada con textura de tela o hilos.
 
 ## D-03 · Recorrido y ayudas
 
@@ -23,6 +23,8 @@ Las solicitudes, su impacto y su seguimiento se consultan en [[05 - Gestión de 
 ## D-04 · Planeo
 
 **3 de noviembre de 2026 · Pendiente.** Las opciones son conservar, reducir o retirar el planeo. El comportamiento de hasta un segundo descrito en Diseño sirve de referencia para el prototipo mientras se decide. La duración del enfriamiento del sprint queda por balancear.
+
+**12 de noviembre de 2026 · Resuelto.** Se conserva el planeo, reducido a 0.6 segundos por tramo en el aire. El sprint y el planeo gastan la misma reserva de combustible (la barra de estamina del HUD), que solo se recarga en el suelo y, si se agota, bloquea las dos acciones hasta volver al 30%. Así queda implementado en el juego.
 
 ## D-05 · Alcance narrativo
 

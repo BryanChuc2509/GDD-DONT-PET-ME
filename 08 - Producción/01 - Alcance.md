@@ -9,9 +9,9 @@ Define qué se va a construir y, sobre todo, qué queda fuera del proyecto.
 ### Incluido
 
 - Videojuego de plataformas 3D para PC
-- Protagonista Mochi con movimiento, salto y doble salto
+- Protagonista Mochi con movimiento y salto
 - Puzzles de encendido/apagado de interruptores
-- Semillas como moneda coleccionable y guía visual del recorrido; pilas y objetos del entorno se usan en los puzzles mediante interacción contextual.
+- Semillas como guía visual del recorrido; pilas y objetos del entorno se usan en los puzzles mediante interacción contextual.
 - Tres niveles jugables en orden lineal: tutorial de la jaula (Nivel 0), habitación (Nivel 1) y pasillo (Nivel 2).
 - Secuencia de persecución por la aspiradora en el pasillo.
 - Cinemática breve sobre como mochi es capturado en el bosque durante un Picnic Familiar
@@ -23,7 +23,7 @@ Define qué se va a construir y, sobre todo, qué queda fuera del proyecto.
 - Nivel jugable del bosque (se sustituye por la introducción narrativa).
 
 * Multijugador, cooperativo, competitivo u online.
-* Sistemas de combate, ataques con armas o violencia gráfica. Se incluye únicamente matar aplastando desde arriba a los enemigos designados como vulnerables, como acción de movimiento.
+* Sistemas de combate, ataques con armas o violencia gráfica.
 * Mundo abierto, exploración libre por toda la casa o más escenarios adicionales.
 * Diálogos extensos, doblaje, sistemas de RPG, crafteo o árbol de habilidades.
 * Múltiples ranuras de guardado, logros o tablas de clasificación.
@@ -35,8 +35,8 @@ El **Producto Mínimo Viable** debe contener únicamente lo necesario para demos
 
 **MVP del proyecto:**
 
-* Mochi con movimiento, salto y doble salto funcionando de forma fluida, con cámara estable.
-* Recolección de semillas como moneda y resolución de al menos un puzzle mediante interacción contextual con un objeto del entorno.
+* Mochi con movimiento y salto funcionando de forma fluida, con cámara estable.
+* Recolección de semillas como guía y resolución de al menos un puzzle mediante interacción contextual con un objeto del entorno.
 * Jaula jugable como tutorial, con escape hacia la habitación.
 * Habitación con plataformas y obstáculos básicos.
 * Pasillo con la persecución de la aspiradora.

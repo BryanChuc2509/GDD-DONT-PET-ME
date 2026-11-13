@@ -33,7 +33,7 @@ La jaula es un nivel propio de tutorial (Nivel 0), previo a la habitación. El m
 | Enemigos | Araña de rincón, oruga de peluche Walker y aspiradora inteligente |
 | Minijefes | 1 encuentro de hormigas; se supera con el puzzle de las pilas y el ventilador |
 | Personajes por identificar | Lanzador de pelotas de tenis y personaje asociado al memorama |
-| Objetos clave | Semillas como moneda y pilas para el ventilador |
+| Objetos clave | Semillas que guían el recorrido y pilas para el ventilador |
 
 ## Dependencias
 

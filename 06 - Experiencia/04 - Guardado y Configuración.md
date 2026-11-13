@@ -17,7 +17,6 @@ Define cómo se conserva el progreso y qué opciones puede modificar el jugador.
 
 * Nivel y checkpoint actuales.
 * Estado de los puzzles necesarios para la progresión.
-* Saldo de semillas, si debe conservarse entre sesiones.
 * Preferencias de configuración.
 
 **Cantidad de ranuras:**

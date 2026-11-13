@@ -55,7 +55,7 @@ Mochi debe atravesar la habitación y el pasillo para llegar a la sala y encontr
 ## Coherencia del mundo
 
 - **Escala desde la perspectiva de Mochi:** Los objetos domésticos se perciben como obstáculos y estructuras enormes por el pequeño tamaño y fragilidad del protagonista.
-- **Sin Armamento Militar o Fantástico:** Mochi no usa armas. Se vale de su anatomía, su agilidad y objetos cotidianos del entorno para superar obstáculos y resolver puzzles. Las semillas se recogen como moneda, no como proyectiles.
+- **Sin Armamento Militar o Fantástico:** Mochi no usa armas. Se vale de su anatomía, su agilidad y objetos cotidianos del entorno para superar obstáculos y resolver puzzles. Las semillas se recogen como guía del recorrido, no como proyectiles.
 - **Peligro cotidiano:** Trampas, objetos que caen, mecanismos inesperados y aparatos domésticos pueden ser mortales para un hámster. La comedia de las bromas no reduce el peligro real que representan.
 
 > **Navegación:** [[00 - Índice]] · ← [[01 - Premisa y Trama]] · [[03 - Personajes]] →
