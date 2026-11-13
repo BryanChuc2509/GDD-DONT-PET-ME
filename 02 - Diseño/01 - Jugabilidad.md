@@ -16,7 +16,7 @@ Describe el ciclo que se repite durante la experiencia.
 
 `Mochi debe evaluar cada habitación humana como un circuito colosal de plataformas. Sigue las semillas que le sirven de guía visual, escala superficies de tela reconocibles, esquiva a los enemigos y administra el combustible que comparten el sprint y el planeo para superar tramos exigentes. El planeo dura hasta 0.6 segundos por tramo en el aire.`
 
-El recorrido jugable se divide en tres niveles consecutivos: **Tutorial (Nivel 0) — la jaula, Nivel 1 — el cuarto de Leo y Nivel 2 — el pasillo**. En el tutorial, Mochi aprende las acciones básicas y escapa de la jaula. En el cuarto, el recorrido se divide en zonas consecutivas: **1) escritorio, 2) libros colgantes y 3) estantería de la araña**, donde Mochi esquiva bolas de telaraña mientras sube. Las zonas enseñan y combinan las mecánicas antes de conducir al pasillo.
+El recorrido jugable se divide en tres niveles consecutivos: **Tutorial (Nivel 0) — la jaula, Nivel 1 — el cuarto de Reo y Nivel 2 — el pasillo**. En el tutorial, Mochi aprende las acciones básicas y escapa de la jaula. En el cuarto, el recorrido se divide en zonas consecutivas: **1) escritorio, 2) libros colgantes y 3) estantería de la araña**, donde Mochi esquiva bolas de telaraña mientras sube. Las zonas enseñan y combinan las mecánicas antes de conducir al pasillo.
 
 ## Acciones principales del jugador
 

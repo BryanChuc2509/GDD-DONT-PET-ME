@@ -12,7 +12,7 @@ Don't Pet Me
 └── Recorrido jugable lineal
     ├── Tutorial (Nivel 0): La jaula
     │   └── Movimiento, salto y escape de la jaula hasta la meta del tutorial
-    ├── Nivel 1: La habitación de Leo
+    ├── Nivel 1: La habitación de Reo
     │   ├── Escritorio (minijefe de las hormigas)
     │   ├── Libros colgantes
     │   └── Estantería de la araña (cierre con memorama)
@@ -28,7 +28,7 @@ La jaula es un nivel propio de tutorial (Nivel 0), previo a la habitación. El m
 
 | Tipo | Cantidad / estado |
 | --- | --- |
-| Niveles jugables | 3: tutorial de la jaula (Nivel 0), habitación de Leo (Nivel 1) y pasillo (Nivel 2) |
+| Niveles jugables | 3: tutorial de la jaula (Nivel 0), habitación de Reo (Nivel 1) y pasillo (Nivel 2) |
 | Zonas | El tutorial ocurre en la jaula. La habitación tiene tres zonas: escritorio, libros colgantes y estantería de la araña. Luego sigue el nivel del pasillo. |
 | Enemigos | Araña de rincón, araña lanzadora, ciempiés (Walker) y aspiradora inteligente |
 | Minijefes | 1 encuentro de hormigas; se supera con el puzzle de las pilas y el ventilador |

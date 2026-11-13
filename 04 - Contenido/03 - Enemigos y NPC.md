@@ -29,7 +29,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Rol:** Amenaza de persecución del pasillo.
 
-**Origen:** Los padres de Leo la programaron para cazar al ratón que ronda la casa.
+**Origen:** Los padres de Reo la programaron para cazar al ratón que ronda la casa.
 
 **Comportamiento:** Despierta cuando Mochi entra en su zona, lo confunde con el ratón y lo persigue por cualquier terreno: sube escalones y rampas, baja desniveles y empuja los objetos ligeros. Si Mochi se aleja mucho, acelera para alcanzarlo. Cuando lo tiene cerca, avisa parpadeando y embiste; si Mochi está más alto, salta para alcanzarlo. Si se queda atascada o muy atrás, "toma un atajo" y reaparece detrás de él.
 
@@ -88,7 +88,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Personaje asociado:** Ninguno; la sala funciona sola cuando Mochi entra.
 
-### Trampas de Leo
+### Trampas de Reo
 
 **Tipo:** Peligros del escenario.
 
@@ -100,7 +100,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Tipo:** Peligros del escenario, no personajes.
 
-**Ejemplos:** Ratoneras colocadas por los padres de Leo (algunas ocultas), escobas que caen avisando con su sombra, cables electrificados, piezas de Lego, una rejilla y tablas falsas por donde se cae, tachuelas y el charco del gato, que frena a Mochi.
+**Ejemplos:** Ratoneras colocadas por los padres de Reo (algunas ocultas), escobas que caen avisando con su sombra, cables electrificados, piezas de Lego, una rejilla y tablas falsas por donde se cae, tachuelas y el charco del gato, que frena a Mochi.
 
 **Función:** Añaden obstáculos al recorrido mientras Mochi escapa de la aspiradora.
 
@@ -114,10 +114,10 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Interacción:** Se presentan junto a Mochi antes de su captura. Su vínculo explica por qué Mochi quiere regresar al bosque.
 
-### Leo y su familia
+### Reo y su familia
 
 **Función:** Personajes humanos de la historia, principalmente fuera de cámara.
 
-**Interacción:** Leo captura a Mochi y sus bromas originan trampas en la habitación. Sus padres buscan al ratón que recorre la casa, lo que explica la programación de la aspiradora y las ratoneras.
+**Interacción:** Reo captura a Mochi y sus bromas originan trampas en la habitación. Sus padres buscan al ratón que recorre la casa, lo que explica la programación de la aspiradora y las ratoneras.
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Niveles]] · [[04 - Objetos y Coleccionables]] →
