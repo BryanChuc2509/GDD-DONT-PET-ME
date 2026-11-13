@@ -34,7 +34,7 @@ Solo se necesita conocer como moverse y estar familirizados con juegos de plataf
 | Plataforma principal    | PC (Windows)                                                  |
 | Plataformas secundarias | N/A. De momento no se considera alguna plataforma secundaria. |
 | Método de entrada      | Teclado + Mouse                                               |
-| Resolución objetivo    | 1920x1080 (Ajustable)                                         |
+| Resolución objetivo    | 1920x1080                                                     |
 | Relación de aspecto    | 16:9                                                          |
 | Rendimiento objetivo    | Buscamos 60 FPS. Mínimo: 30 FPS                              |
 | Conexión requerida     | No                                                            |

@@ -41,11 +41,11 @@ Documenta cada mecánica con suficiente detalle para que otro integrante pueda i
 
 ### Mecánica 01
 
-Recolección de Semillas-Moneda
+Recolección de Semillas
 
 **Propósito:**
 
-Guiar al jugador por las zonas y recompensar la exploración con una moneda para desbloquear aspectos cosméticos de Mochi.
+Guiar al jugador por las zonas: las semillas marcan la ruta que debe seguir.
 
 **Activación:**
 
@@ -54,8 +54,9 @@ Las semillas se recogen automáticamente al tocarlas.
 **Reglas:**
 
 - La distribución de semillas orienta hacia el recorrido principal sin impedir que el jugador explore rutas secundarias.
-- El saldo acumulado se conserva al morir y reaparecer en un checkpoint.
-- Una skin básica se compra con semillas; otra skin se desbloquea al recolectar todas las semillas del juego. El precio de compra se ajustará durante el balance.
+- El HUD muestra cuántas semillas se han recogido y el total del nivel. El contador empieza en 0 en cada nivel.
+- Las semillas recogidas siguen contadas al morir y reaparecer en un checkpoint.
+- Las semillas no se gastan ni se usan para activar mecanismos.
 
 **Entrada:**
 
@@ -63,23 +64,23 @@ Contacto con una semilla.
 
 **Estado inicial:**
 
-Semillas disponibles en el escenario; saldo visible en el HUD.
+Semillas disponibles en el escenario; el contador del HUD muestra las recogidas y el total del nivel.
 
 **Estado final:**
 
-Semilla retirada del escenario y su valor añadido al saldo.
+Semilla retirada del escenario y contador del HUD aumentado en uno.
 
 **Recursos utilizados:**
 
-Semillas recogidas y saldo de semillas.
+Semillas del nivel.
 
 **Recompensa:**
 
-Compra de una skin básica o, al completar la colección, desbloqueo de una skin especial.
+Saber por dónde seguir y completar el contador del nivel.
 
 **Penalización:**
 
-No recoger una semilla reduce el saldo final disponible, pero no bloquea la progresión del nivel.
+No recoger una semilla no bloquea la progresión del nivel.
 
 **Interacciones con otras mecánicas:**
 
@@ -87,7 +88,7 @@ La guía visual de semillas complementa la iluminación, la geometría del nivel
 
 **Casos límite:**
 
-Las semillas ya recogidas no vuelven a aparecer al reaparecer en un checkpoint.
+Las semillas ya recogidas no vuelven a aparecer al reaparecer en un checkpoint. Algunas semillas son trampas: lanzan a Mochi por los aires o se alejan cuando se acerca.
 
 <!-- Copiar la plantilla anterior -->
 
@@ -105,7 +106,9 @@ Pulsar `ESPACIO` en el suelo.
 
 **Reglas:**
 
-- Al caer desde arriba sobre un enemigo vulnerable, Mochi lo aplasta y lo mata; el rebote le permite continuar el recorrido.
+- Soltar `ESPACIO` antes de tiempo corta el salto, así que la altura depende de cuánto se mantiene la tecla.
+- Hay un pequeño margen para saltar justo después de salir de un borde y, si se pulsa `ESPACIO` un poco antes de aterrizar, el salto sale al tocar el suelo.
+- Mochi solo puede saltar desde el suelo; mantener `ESPACIO` en el aire activa el planeo.
 
 **Entrada:**
 
@@ -145,27 +148,28 @@ Sprint con Combustible
 
 **Propósito:**
 
-Permitir que Mochi aumente temporalmente su velocidad al correr por el suelo mediante una reserva de combustible exclusiva del sprint.
+Permitir que Mochi aumente temporalmente su velocidad gastando la reserva de combustible que comparte con el planeo.
 
 **Activación:**
 
-Mantener `SHIFT` mientras Mochi se desplaza por el suelo.
+Mantener `SHIFT` mientras Mochi se desplaza.
 
 **Reglas:**
 
-- El sprint solo se activa en el suelo y consume combustible mientras está activo.
-- El combustible se regenera con el tiempo mientras el sprint no está activo, tanto en el suelo como en el aire. Caminar, saltar, planear y escalar no lo consumen.
-- Si se agota el combustible mientras el sprint está activo, Mochi vuelve a su velocidad normal. No puede volver a esprintar hasta que la reserva se recupere.
-- El combustible del sprint no afecta la disponibilidad, duración ni alcance del planeo.
-- La capacidad y las tasas de consumo y recuperación se determinarán mediante pruebas de balance para ajustar el uso del sprint.
+- El sprint y el planeo comparten una sola reserva de combustible de 100 puntos, que el HUD muestra como la barra de estamina.
+- El sprint gasta 22 puntos por segundo mientras se mantiene `SHIFT` y Mochi se mueve, también durante un salto. Con la reserva llena alcanza para unos 4.5 segundos.
+- El combustible solo se recarga con Mochi en el suelo, 0.6 segundos después del último gasto, a 40 puntos por segundo. En el aire no se recarga.
+- Si la reserva llega a 0, Mochi queda agotado: vuelve a su velocidad normal y no puede esprintar ni planear hasta que la reserva se recupere al 30%.
+- Al reaparecer en un checkpoint, la reserva se llena por completo.
+- Caminar, saltar y escalar no gastan combustible.
 
 **Entrada:**
 
-`SHIFT` (mantener mientras Mochi se desplaza por el suelo para esprintar).
+`SHIFT` (mantener mientras Mochi se desplaza).
 
 **Estado inicial:**
 
-Mochi se desplaza por el suelo y tiene combustible disponible.
+Mochi se desplaza y no está agotado.
 
 **Estado final:**
 
@@ -173,23 +177,23 @@ Mochi vuelve a su velocidad normal al soltar `SHIFT` o agotar el combustible.
 
 **Recursos utilizados:**
 
-La reserva de combustible del sprint, mostrada mediante un indicador en el HUD.
+La reserva de combustible compartida con el planeo, mostrada en la barra con un rayo de la esquina inferior izquierda del HUD.
 
 **Recompensa:**
 
-Mayor velocidad temporal en el suelo para recorrer tramos y tomar impulso antes de un salto.
+Mayor velocidad temporal para recorrer tramos y tomar impulso antes de un salto.
 
 **Penalización:**
 
-Gastar todo el combustible impide esprintar hasta que la reserva se recupere.
+Gastar todo el combustible impide esprintar y planear hasta que la reserva vuelva al 30%.
 
 **Interacciones con otras mecánicas:**
 
-El sprint puede dar impulso antes de un salto. Su combustible es independiente del planeo y no protege contra peligros letales.
+El sprint da impulso antes de un salto. Como comparte el combustible con el planeo, correr mucho antes de saltar deja menos reserva para planear. No protege contra peligros letales.
 
 **Casos límite:**
 
-Si el combustible se agota mientras `SHIFT` sigue presionado, el sprint se interrumpe y no se reactiva hasta que haya combustible disponible.
+Si el combustible se agota mientras `SHIFT` sigue presionado, el sprint se interrumpe; la barra del HUD se atenúa y el rayo parpadea hasta que la reserva vuelve al 30%.
 
 ### Mecánica 04
 
@@ -201,13 +205,14 @@ Reducir por un momento la velocidad de caída para extender un salto y ayudar a 
 
 **Activación:**
 
-Mantener `ESPACIO` cuando Mochi ya está en el aire.
+Mantener `ESPACIO` en el aire. El planeo empieza cuando Mochi ya va cayendo, no durante la subida del salto.
 
 **Reglas:**
 
-- El planeo no consume combustible y está disponible independientemente de la reserva del sprint.
-- Mientras planea, Mochi obtiene control horizontal limitado y desciende más despacio, pero no asciende ni queda suspendido.
-- El planeo dura como máximo **1 segundo por tramo en el aire** y termina antes si se suelta `ESPACIO`. El doble salto no reinicia ese límite.
+- El planeo gasta el mismo combustible que el sprint: 45 puntos por segundo, unos 27 puntos por un planeo completo.
+- Mientras planea, Mochi cae despacio y conserva el control en el aire, pero no asciende ni queda suspendido.
+- Dura como máximo **0.6 segundos por tramo en el aire** y termina antes si se suelta `ESPACIO` o se acaba el combustible. El límite se reinicia al tocar el suelo o al rebotar en una plataforma de impulso.
+- Con el combustible agotado no se puede planear.
 
 **Entrada:**
 
@@ -215,15 +220,15 @@ Mantener `ESPACIO` cuando Mochi ya está en el aire.
 
 **Estado inicial:**
 
-Mochi está en el aire.
+Mochi está en el aire, cayendo, y no está agotado.
 
 **Estado final:**
 
-El planeo termina al soltar `ESPACIO` o alcanzar 1 segundo en el tramo actual en el aire.
+El planeo termina al soltar `ESPACIO`, alcanzar 0.6 segundos en el tramo actual, agotar el combustible o aterrizar.
 
 **Recursos utilizados:**
 
-Ninguno.
+La reserva de combustible compartida con el sprint.
 
 **Recompensa:**
 
@@ -231,15 +236,15 @@ Más distancia y control durante un salto al ralentizar la caída.
 
 **Penalización:**
 
-Un mal cálculo del momento de activar el planeo puede dejar a Mochi corto de su destino cuando se agote el segundo disponible.
+Un mal cálculo del momento de planear puede dejar a Mochi corto de su destino. Planear sin medida vacía la reserva y deja a Mochi sin sprint ni planeo hasta recargar en el suelo.
 
 **Interacciones con otras mecánicas:**
 
-El planeo complementa el salto y el doble salto. Es independiente del combustible del sprint y no protege contra peligros letales.
+El planeo complementa el salto y comparte el combustible con el sprint. Como la reserva solo se recarga en el suelo, encadenar varios saltos planeando la vacía. No protege contra peligros letales.
 
 **Casos límite:**
 
-Al alcanzar el límite de 1 segundo no se puede volver a planear durante ese mismo tramo en el aire, aunque quede combustible. El doble salto no reinicia el límite; este vuelve a estar disponible al tocar el suelo.
+Al alcanzar el límite de 0.6 segundos no se puede volver a planear en ese mismo tramo en el aire, aunque quede combustible; vuelve a estar disponible al tocar el suelo o al rebotar. Si el combustible se acaba a mitad del planeo, este se corta y Mochi cae con normalidad.
 
 ### Mecánica 05
 
@@ -292,33 +297,87 @@ Las superficies decorativas que no se puedan escalar deben diferenciarse visualm
 
 ### Mecánica 06
 
-Aplastar Enemigos desde Arriba
+Cargar Pilas
 
 **Propósito:**
 
-Dar una respuesta de movimiento defensiva cuando Mochi salta sobre enemigos vulnerables, sin introducir combate cuerpo a cuerpo.
+Resolver el reto del hormiguero llevando las pilas hasta el ventilador.
 
 **Activación:**
 
-Caer sobre un enemigo desde arriba tras un salto.
+Tocar una pila: Mochi la levanta solo, sin pulsar ninguna tecla.
 
 **Reglas:**
 
-- Solo los enemigos designados como vulnerables pueden ser eliminados al aplastarlos desde arriba.
-- El contacto lateral o desde abajo sigue siendo peligroso y puede causar la muerte.
-- Los jefes o enemigos resistentes requieren resolver su desafío específico; saltar sobre ellos no los derrota automáticamente.
+- Mochi carga una sola pila a la vez.
+- Mientras la carga se mueve un 15% más lento, pero puede correr, saltar y planear.
+- Si una hormiga aturde a Mochi, suelta la pila.
+- Si Mochi muere, la pila que cargaba vuelve a su lugar original.
+- Al tocar el compartimento del ventilador con una pila, esta se coloca sola. El ventilador necesita 3 pilas.
 
 **Entrada:**
 
-Salto (`ESPACIO`) y contacto desde arriba.
+Contacto para recoger y colocar.
 
 **Estado inicial:**
 
-Mochi está en el aire y un enemigo vulnerable está debajo.
+Mochi no carga nada y hay una pila libre en el escenario.
 
 **Estado final:**
 
-El enemigo muere y Mochi rebota para continuar el recorrido.
+La pila queda colocada en el ventilador o vuelve a quedar libre en el escenario.
+
+**Recursos utilizados:**
+
+Las 3 pilas del Nivel 1.
+
+**Recompensa:**
+
+Con las 3 pilas colocadas, el ventilador se enciende, aspira a las hormigas durante 3 segundos y luego se cae; el objetivo cambia a "Llega a la salida".
+
+**Penalización:**
+
+Perder la pila por un aturdimiento obliga a volver por ella.
+
+**Interacciones con otras mecánicas:**
+
+Mientras Mochi carga una pila, un marcador en pantalla señala el ventilador y el objetivo del HUD cuenta las pilas colocadas (x/3). Las hormigas son la principal amenaza durante el transporte.
+
+**Casos límite:**
+
+Si Mochi suelta la pila por un aturdimiento y no hay suelo debajo, la pila vuelve a su lugar original.
+
+### Mecánica 07
+
+Aturdimiento y Lentitud
+
+**Propósito:**
+
+Que algunos enemigos y obstáculos estorben a Mochi sin matarlo, castigando el error con tiempo y posición.
+
+**Activación:**
+
+Recibir el efecto de una de las fuentes de la lista.
+
+**Reglas:**
+
+- **Aturdimiento:** Mochi no puede moverse, saltar ni correr durante un momento. Una hormiga lo aturde 1 segundo ("¡Aturdido!"). Una bola de telaraña rodante lo derriba lejos y lo aturde 0.8 segundos ("¡Derribado!").
+- Después de un aturdimiento hay 0.75 segundos en los que no puede volver a ser aturdido.
+- Si 4 hormigas lo tocan a la vez, Mochi muere ("¡Enjambre!").
+- Al ser aturdido, Mochi suelta la pila que cargue y se suelta de la superficie que esté trepando.
+- **Lentitud:** la telaraña que escupe la araña deja a Mochi al 35% de su velocidad durante 1.5 segundos ("¡Telaraña!"). El charco del gato lo deja al 45% mientras lo pisa y un momento después ("¡Charco del gato! Vas más lento").
+
+**Entrada:**
+
+Contacto con la fuente del efecto.
+
+**Estado inicial:**
+
+Mochi se mueve con normalidad.
+
+**Estado final:**
+
+Mochi recupera el control o su velocidad normal al terminar el efecto.
 
 **Recursos utilizados:**
 
@@ -326,28 +385,189 @@ Ninguno.
 
 **Recompensa:**
 
-Mata al enemigo vulnerable y despeja el paso de forma permanente.
+No aplica.
 
 **Penalización:**
 
-Un contacto que no sea desde arriba puede provocar la muerte instantánea.
+Mochi pierde tiempo y posición; puede caer de una plataforma o perder una pila.
 
 **Interacciones con otras mecánicas:**
 
-Requiere leer el movimiento del enemigo y sincronizar el salto; no reemplaza el sigilo ni la evasión.
+Estos efectos no matan por sí mismos, pero pueden dejar a Mochi al alcance de un peligro letal. Al reaparecer en un checkpoint se quitan todos los efectos.
 
 **Casos límite:**
 
-La señal visual del enemigo debe comunicar si es vulnerable al salto antes de que el jugador se arriesgue.
+Un aturdimiento nuevo no se suma mientras dura otro ni durante los 0.75 segundos de protección.
+
+### Mecánica 08
+
+Plataformas de Impulso, Recorridos Guiados y Plataformas Móviles
+
+**Propósito:**
+
+Dar variedad al plataformeo con objetos del entorno que lanzan, transportan o se mueven.
+
+**Activación:**
+
+Pisar o tocar el objeto.
+
+**Reglas:**
+
+- **Plataformas de impulso:** al caer sobre el vaso o el globo del Nivel 1, Mochi sale lanzado hacia arriba; el vaso lanza más alto que el globo. El rebote reinicia el planeo.
+- **Recorridos guiados:** en el pasillo, el tubo de cartón ("¡A rodar!") y el cable de la lámpara como tirolesa llevan a Mochi de un punto a otro sin control y lo sueltan con impulso al final. En la tirolesa, `ESPACIO` lo suelta a mitad del recorrido.
+- **Hilos que cuelgan:** en la estantería de la araña, al tocar un hilo que cuelga de un estante, Mochi sube solo por él hasta el estante de arriba, sin pulsar ninguna tecla.
+- **Plataformas móviles:** la noria del Nivel 1, cuyas cabinas giran y se mantienen horizontales; ascensores que suben y bajan; y libros colgantes que se balancean como péndulo. Mochi se mueve junto con la plataforma que pisa.
+- **Plataformas que se caen:** la nota del tutorial, algunas repisas y libros tiemblan al pisarlos, se caen y reaparecen 3 segundos después.
+
+**Entrada:**
+
+Contacto con el objeto; `ESPACIO` para soltarse de la tirolesa.
+
+**Estado inicial:**
+
+Mochi llega al objeto.
+
+**Estado final:**
+
+Mochi sale lanzado, llega al final del recorrido o se baja de la plataforma.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+Alcanzar zonas altas o lejanas.
+
+**Penalización:**
+
+Calcular mal el momento deja a Mochi en el vacío.
+
+**Interacciones con otras mecánicas:**
+
+Después de un impulso se puede planear para alargar el salto.
+
+**Casos límite:**
+
+Las plataformas que se caen vuelven a su sitio aunque Mochi no muera.
+
+### Mecánica 09
+
+Interruptores
+
+**Propósito:**
+
+Abrir el camino cambiando algo del escenario.
+
+**Activación:**
+
+Tocar el interruptor; el botón se hunde.
+
+**Reglas:**
+
+- Cada interruptor se activa una sola vez y queda activado aunque Mochi muera.
+- Puede encender o apagar objetos, cortar la corriente, cambiar el objetivo o terminar el nivel.
+- **Tutorial:** el botón dentro del laberinto de tubos abre la salida ("¡Salida abierta!") y la tecla Enter es la meta del nivel ("¡Escapaste de la jaula!").
+- **Nivel 1:** el interruptor de la regleta corta la corriente de los cables electrificados ("Corriente cortada"), otro activa un puente ("¡Puente activado!") y otro apaga el ventilador que sopla a Mochi ("¡Ventilador apagado!"). La meta del nivel también es un interruptor.
+- **Nivel 2:** la meta en la sala de estar es un interruptor que termina el nivel.
+
+**Entrada:**
+
+Contacto.
+
+**Estado inicial:**
+
+Interruptor sin pulsar.
+
+**Estado final:**
+
+Interruptor pulsado y su efecto aplicado.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+Se abre la ruta o se completa el nivel.
+
+**Penalización:**
+
+Ninguna.
+
+**Interacciones con otras mecánicas:**
+
+Mientras tienen corriente, los cables electrificados matan al tocarlos ("¡Calambre!").
+
+**Casos límite:**
+
+Un interruptor activado no se puede desactivar.
+
+### Mecánica 10
+
+Trampas de Leo
+
+**Propósito:**
+
+Sorprender al jugador con el humor absurdo de las bromas de Leo.
+
+**Activación:**
+
+Tocar la trampa o acercarse a ella.
+
+**Reglas:**
+
+- **Semillas trampa:** parecen semillas; al tocarlas lanzan a Mochi por los aires y le quitan el control un momento ("¡Moneda trampa!"). Están en los tres niveles.
+- **Checkpoints falsos:** parecen checkpoints y lanzan a Mochi ("¡Checkpoint falso!"). Están en el Nivel 1 y en el pasillo.
+- **Objetos que huyen:** en el Nivel 1, una semilla, un libro y la meta se apartan cuando Mochi se acerca. La semilla y el libro regresan después de unos segundos; la meta se queda en su nuevo sitio.
+- **Bloques ocultos:** son invisibles hasta que Mochi los golpea saltando desde abajo; entonces aparecen y le cortan el salto ("¡Bloque oculto!").
+- **Libro con resorte:** al pisarlo se abre de golpe y lanza a Mochi ("¡Boing! Ese libro tenía resorte").
+- **Libros que se caen encima:** tiemblan y caen sobre Mochi; matan mientras caen y luego quedan tumbados como escalón ("¡Plaf!").
+- **Objetos que caen desde arriba:** la grapadora y el pisapapeles caen cuando Mochi pasa debajo, matan al caer y vuelven a subir.
+- **Pinchos que salen del suelo** cuando Mochi se acerca ("¡Pinchos!"), en el Nivel 1 y en el pasillo.
+- **Ventilador que sopla y barra giratoria:** lanzan a Mochi lejos ("¡Fiuuuuu!", "¡Zas!").
+- **Plataformas falsas:** un libro, un tablón, una tabla y un zócalo se caen al pisarlos sin temblar antes.
+
+**Entrada:**
+
+Contacto con la trampa o acercarse a ella.
+
+**Estado inicial:**
+
+La trampa parece un objeto inofensivo.
+
+**Estado final:**
+
+Mochi sale lanzado, pierde el salto, cae o muere, según la trampa.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+No aplica.
+
+**Penalización:**
+
+Mochi puede caer al vacío o morir.
+
+**Interacciones con otras mecánicas:**
+
+Cada trampa avisa con un mensaje en el centro del HUD. Las que lanzan a Mochi le quitan el control entre 0.9 y 1.5 segundos.
+
+**Casos límite:**
+
+Los libros que cayeron se vuelven a poner de pie si Mochi muere.
 
 ## Mecánicas secundarias
 
-No hay
+### Ver objetivo
 
-Avisos contextuales:
+Con `TAB`, o al pulsar la bandera del HUD, vuelve a aparecer la tarjeta con el objetivo actual. Cada objetivo nuevo se anuncia solo y después la tarjeta se reduce a la bandera.
 
-   En desafíos complejos aparece un consejo breve, como indicar que se necesitan pilas para activar un ventilador. Al obtener una pila, un indicador señala el aparato o la ranura donde debe colocarse.
+### Avisos contextuales
 
-Lista las mecánicas que complementan la experiencia pero no constituyen el núcleo.
+En desafíos complejos aparece un consejo breve, como indicar que se necesitan pilas para activar un ventilador. Al obtener una pila, un indicador señala el aparato o la ranura donde debe colocarse.
 
 > **Navegación:** [[00 - Índice]] · ← [[01 - Jugabilidad]] · [[03 - Sistemas]] →

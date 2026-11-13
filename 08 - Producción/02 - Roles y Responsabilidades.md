@@ -10,7 +10,7 @@ Define quién es responsable de cada área y evita que tareas importantes queden
 | ------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Bryan Chuc    | Líder de proyecto y programación | Coordinar al equipo y el cronograma, implementar el movimiento y las interacciones principales, el sistema de checkpoints en Unity e integrar el build final. |
 | Dhayan Lee    | QA y Programación                 | Implementar cámara, IA de la aspiradora y dispositivos inteligentes. Realizar pruebas de calidad y que el videojuego funcione correctamente.                                 |
-| Gio Medina    | Arte y Diseño                     | Diseñar y armar los niveles de la habitación (incluida la jaula) y el pasillo; definir el tutorial integrado y dibujar los escenarios y elementos necesarios. |
+| Gio Medina    | Arte y Diseño                     | Diseñar y armar los niveles del tutorial (jaula), la habitación y el pasillo; definir el tutorial integrado y dibujar los escenarios y elementos necesarios. |
 | Bruno LLovera | Narrativa y Audio                  | Escribir la introducción narrativa y el cierre de la historia, seleccionar música y efectos, hacer el tráiler y gestionar la publicación en itch.io y las redes sociales. |
 | Ahui          | Diseño de Niveles y Programación |                                                                                                                                                                               |
 
@@ -34,12 +34,12 @@ Cada entregable importante debe tener una persona responsable de coordinarlo, au
 | Documento de diseño                        | Gio Medina               | Todo el equipo                                                  |
 | Personaje Mochi (modelo y animaciones)      | Gio Medina               | Bryan Chuc (integración en Unity)                              |
 | Movimiento e interacción con pilas y ventilador (prototipo jugable) | Bryan Chuc | Ahui (ajustes de diseño) |
-| Habitación, incluida la jaula (vertical slice) | Gio Medina | Ahui (armado en Unity), Bryan Chuc y Dhayan Lee (programación) |
+| Tutorial de la jaula y habitación (vertical slice) | Gio Medina | Ahui (armado en Unity), Bryan Chuc y Dhayan Lee (programación) |
 | Persecución de la aspiradora en el pasillo | Dhayan Lee               | Ahui (diseño del nivel), Gio Medina (arte)                     |
 | Cámara y dispositivos inteligentes         | Dhayan Lee               | Bryan Chuc                                                      |
 | Menús, HUD, guardado y configuración      | Ahui                     | Gio Medina (arte de interfaz)                                   |
 | Audio y música                             | Bruno LLovera            | Dhayan Lee o Ahui (integración en Unity)                       |
-| Introducción narrativa y escena final      | Bruno LLovera            | Gio Medina (ilustraciones o viñetas)                           |
+| Introducción narrativa                     | Bruno LLovera            | Gio Medina (arte del video)                           |
 | Tráiler promocional                        | Bruno LLovera            | Todo el equipo (material de gameplay)                           |
 | Pruebas y build estable                     | Dhayan Lee               | Bryan Chuc (compilación)                                       |
 | Publicación en itch.io y difusión         | Bruno LLovera            | Bryan Chuc                                                      |
