@@ -8,7 +8,7 @@ Define la identidad visual del videojuego y las reglas que deben seguir los recu
 
 **Estilo: Un cartoon 3D estilizado, de pocos polígonos y con texturas pintadas a mano. Buscamos formas simples y colores limpios en vez de realismo, porque así los peligros se leen de un vistazo, Blender se vuelve manejable para un equipo chico y el juego corre a 60 FPS en laptops de gama media. Con esto queda resuelta la duda del Roadmap entre “low-poly o stylized”  *(propuesto)* .**
 
-**Referencias: Remy de *Ratatouille* por su carisma, los cortos de Chuck Jones por la elasticidad y las miradas a cámara, y Sid de *Toy Story* para la silueta de Leo: un niño travieso, no un villano. *Super Mario 64* nos sirve para pensar la lectura de las plataformas. Sugiero sumar  *Tom y Jerry* , que ya cuenta la casa desde el punto de vista de un roedor.**
+**Referencias: Remy de *Ratatouille* por su carisma, los cortos de Chuck Jones por la elasticidad y las miradas a cámara, y Sid de *Toy Story* para la silueta de Reo: un niño travieso, no un villano. *Super Mario 64* nos sirve para pensar la lectura de las plataformas. Sugiero sumar  *Tom y Jerry* , que ya cuenta la casa desde el punto de vista de un roedor.**
 
 **Sensación buscada: El jugador debe sentirse pequeño, ágil y astuto, y reírse, pero sin bajar la guardia: en cualquier momento algo puede aplastar a Mochi. Por eso el arte primero hace gracia y luego avisa del peligro, nunca al revés.**
 
@@ -64,7 +64,7 @@ Los códigos hex son un punto de partida  *(propuesto)* ; habrá que ajustarlos 
 2. **Un mismo lenguaje en todos los niveles.** Las pinzas de papel siempre piden hilo y los interruptores rojos siempre piden semilla. Nunca cambian de significado.
 3. **El peligro avisa antes de matar.** Como la muerte es instantánea, cada amenaza debe anunciarse con forma, color, movimiento o sonido. Ninguna muerte puede llegar sin señal.
 4. **Mochi destaca.** Cálido y saturado contra fondos más neutros o fríos, con luz de contorno si hace falta.
-5. **El humor vive en los detalles.** Post-its irónicos, Windows XP haciéndose pasar por bosque, marcas de quemaduras, el desorden de Leo. Todo texto del entorno se localiza.
+5. **El humor vive en los detalles.** Post-its irónicos, Windows XP haciéndose pasar por bosque, marcas de quemaduras, el desorden de Reo. Todo texto del entorno se localiza.
 6. **Cómico, nunca gráfico.** Las muertes son exageradas y de caricatura, sin sangre.
 7. **Cuidar los 60 FPS.** Cada decisión de arte tiene que respetar ese presupuesto (30 como mínimo).
 

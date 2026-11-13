@@ -52,11 +52,11 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Motivaciones:** El amor por sus hermanos y el deseo de regresar al bosque para reunirse con ellos.
 
-**Objetivos:** Escapar de la jaula y de la casa de Leo, y regresar al bosque con Copo y Trufa.
+**Objetivos:** Escapar de la jaula y de la casa de Reo, y regresar al bosque con Copo y Trufa.
 
 **Conflicto:** Es un animal de 100 gramos expuesto a peligros colosales donde el menor error le causa la muerte inmediata (One-hit kill).
 
-**Relaciones:** Hermano mayor y guardián de Copo y Trufa; víctima cautiva de Leo.
+**Relaciones:** Hermano mayor y guardián de Copo y Trufa; víctima cautiva de Reo.
 
 **Arco del personaje:** Pasa de despertar cautivo en un entorno desconocido a usar su agilidad e ingenio para superar las trampas de la casa y acercarse a su hogar.
 
@@ -70,7 +70,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 ---
 
-### Antagonista: Leo
+### Antagonista: Reo
 
 **Rol:** Antagonista principal ("El Gigante Inconsciente").
 
@@ -96,7 +96,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Debilidades:** Impulsividad y falta de conciencia sobre las consecuencias de sus bromas para una mascota tan pequeña.
 
-**Frases o tono de diálogo:** Voces humanas a distancia durante la captura y en el entorno. El tono de Leo es entusiasta, como si capturar a Mochi fuera una nueva ocurrencia.
+**Frases o tono de diálogo:** Voces humanas a distancia durante la captura y en el entorno. El tono de Reo es entusiasta, como si capturar a Mochi fuera una nueva ocurrencia.
 
 **Referencias visuales:** Silueta caricaturesca de niños traviesos del cine animado (ej. Sid de *Toy Story*, pero sin intenciones malévolas directas).
 
@@ -122,7 +122,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Relaciones:** Hermanos menores de Mochi.
 
-**Arco del personaje:** Pasan de ser guiados por Mochi a presenciar horrorizados su secuestro por la mano gigante de Leo.
+**Arco del personaje:** Pasan de ser guiados por Mochi a presenciar horrorizados su secuestro por la mano gigante de Reo.
 
 **Habilidades:** Recolección básica de semillas a ras de suelo.
 
@@ -141,9 +141,9 @@ Documenta qué NPC existen, qué hacen y cómo interactúan con el jugador:
 - **Arañas de Rincón (Enemigos menores - Nivel 1):**  
   Una araña que persigue a Mochi cuando se acerca y le escupe telarañas que lo frenan; tocarla es mortal. Mochi debe esquivarla con movimiento, saltos y rutas seguras; las semillas no se usan para atacarla.
 - **Aspiradora inteligente (Amenaza de persecución - Pasillo):**
-  Los padres de Leo la programaron para cazar al ratón que ronda la casa. Al detectar a Mochi, lo confunde con el ratón y lo persigue. Mochi debe escapar de ella mientras esquiva las trampas del pasillo.
+  Los padres de Reo la programaron para cazar al ratón que ronda la casa. Al detectar a Mochi, lo confunde con el ratón y lo persigue. Mochi debe escapar de ella mientras esquiva las trampas del pasillo.
 - **Ratoneras, escobas y otras trampas (Peligros del escenario - Pasillo):**
-  Las ratoneras fueron colocadas por los padres de Leo; además, las escobas caen y hay cables electrificados, Legos, una rejilla y tablas falsas. Son obstáculos ambientales, no personajes.
+  Las ratoneras fueron colocadas por los padres de Reo; además, las escobas caen y hay cables electrificados, Legos, una rejilla y tablas falsas. Son obstáculos ambientales, no personajes.
 
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Mundo]] · [[04 - Diálogos y Narrativa]] →

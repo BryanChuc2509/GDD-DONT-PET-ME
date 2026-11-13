@@ -28,7 +28,7 @@ Documenta el objetivo, el orden de las zonas y los desafíos de cada nivel jugab
 Jaula → escape → laberinto de tubos y escritorio → meta del tutorial → Nivel 1
 ```
 
-## Nivel 1 — La habitación de Leo
+## Nivel 1 — La habitación de Reo
 
 **Objetivo principal:** Recorrer la habitación y superar sus desafíos hasta abrir el paso al pasillo.
 
@@ -70,7 +70,7 @@ Al entrar, una pared se levanta detrás de Mochi y lo encierra en una sala con 1
 
 **Fallo:** Si Mochi cae en una baldosa equivocada o se acaba el tiempo, todas las baldosas se marcan en el color de peligro y las paredes se cierran y lo aplastan ("¡Aplastado!"). Mochi reaparece en el checkpoint de la sala y el reto vuelve a empezar desde la ronda 1.
 
-**Éxito:** Al superar las 5 rondas, las baldosas se marcan como correctas ("¡Memoria superada!"), la pared de salida se hunde y el objetivo cambia a "Llega a la meta". La meta del nivel se aparta cuando Mochi se acerca (es una de las trampas de Leo).
+**Éxito:** Al superar las 5 rondas, las baldosas se marcan como correctas ("¡Memoria superada!"), la pared de salida se hunde y el objetivo cambia a "Llega a la meta". La meta del nivel se aparta cuando Mochi se acerca (es una de las trampas de Reo).
 
 **Enemigos y obstáculos del nivel:**
 
@@ -106,7 +106,7 @@ Escritorio → Minijefe de las hormigas
 
 **Enemigos y obstáculos:**
 
-- Aspiradora inteligente, programada por los padres de Leo para cazar al ratón que ronda la casa; confunde a Mochi con su objetivo. Despierta cuando Mochi entra en su zona y lo persigue por cualquier terreno: sube escalones, avisa parpadeando antes de embestir y salta si Mochi está más alto. Si se atasca o se queda muy atrás, "toma un atajo" y reaparece detrás de él. Si lo alcanza, Mochi muere ("¡Aspirado!").
+- Aspiradora inteligente, programada por los padres de Reo para cazar al ratón que ronda la casa; confunde a Mochi con su objetivo. Despierta cuando Mochi entra en su zona y lo persigue por cualquier terreno: sube escalones, avisa parpadeando antes de embestir y salta si Mochi está más alto. Si se atasca o se queda muy atrás, "toma un atajo" y reaparece detrás de él. Si lo alcanza, Mochi muere ("¡Aspirado!").
 - 42 ratoneras, algunas ocultas: al pisarlas, Mochi sale volando y luego muere ("¡Trampa de ratón!").
 - Escobas que caen; antes de caer, su sombra crece en el suelo ("¡Escobazo!").
 - Cables electrificados en el suelo ("¡Calambre! Salta los cables del suelo").
