@@ -36,7 +36,7 @@ Define las reglas globales y los estados que puede atravesar el videojuego.
 3. **Persistencia de Checkpoints:** Al morir, los interruptores activados y los objetivos de puzzle completados se mantienen cuando el diseño los marque como persistentes. Mochi reaparece en el punto de control seguro más cercano.
 4. **Semillas como guía:** Las semillas se recogen al tocarlas y orientan el recorrido; el HUD cuenta las recogidas y el total del nivel. No son munición, no se usan en ataques ni se almacenan en un inventario.
 5. **Combustible compartido:** Mantener `SHIFT` al desplazarse activa el sprint y mantener `ESPACIO` en el aire activa el planeo; los dos gastan la misma reserva. La reserva solo se recarga en el suelo, poco después de dejar de gastar, y se llena al reaparecer en un checkpoint. Si se agota, no se puede esprintar ni planear hasta que vuelva al 30%. El planeo dura como máximo 0.6 segundos por tramo en el aire. El sprint y el planeo no evitan daño ni alteran las reglas de letalidad.
-6. **Interacción contextual:** Los objetos de objetivo, como las pilas, se recogen y colocan en su aparato mediante interacción; no existe un inventario general de herramientas.
+6. **Pilas por contacto:** Las pilas se recogen al tocarlas y se colocan solas al tocar el compartimento del ventilador. No existe un inventario general de herramientas.
 7. **Avisos y objetivos legibles:** En desafíos complejos aparece un consejo breve, por ejemplo, indicar que se necesitan pilas para activar un ventilador. Al obtener el objeto, un indicador visual señala su destino. Los consejos para un jefe de hormigas u otro reto deben explicar la acción necesaria sin resolver el desafío por completo.
 8. **Lectura de superficies escalables:** Las superficies válidas para trepar se identifican con una textura claramente tejida; la decoración que no sea escalable no debe usar el mismo tratamiento.
 
@@ -49,7 +49,7 @@ La jaula inicia con un encuadre amplio y poco acercado para que se entienda el e
 - **Uso de objetos durante un peligro:** Las interacciones contextuales se interrumpen inmediatamente si el jugador recibe un impacto letal o inicia una acción de movimiento que no sea compatible.
 - **Combustible agotado:** El sprint y el planeo se detienen al vaciarse la reserva, aunque `SHIFT` o `ESPACIO` sigan presionados. Solo se reactivan cuando la reserva vuelve al 30%, recargándose en el suelo.
 - **Planeo agotado:** El planeo se interrumpe al soltar `ESPACIO`, al alcanzar 0.6 segundos de planeo en el tramo actual o al acabarse el combustible. El límite de tiempo se reinicia al tocar el suelo o al rebotar en una plataforma de impulso.
-- **Caída al vacío sin peligro definido:** Si Mochi cae desde una altura excesiva a un suelo no letal, se activa la animación cómica de aplastamiento y el reinicio inmediato por impacto de caída.
+- **Caída al vacío:** Si Mochi cae fuera del escenario, muere ("¡Caída!") y reaparece en el último checkpoint. Caer desde cualquier altura sobre un suelo firme no le hace daño.
 - **Semillas y reaparición:** Las semillas ya recogidas siguen contadas en el HUD y no reaparecen tras morir.
 
 > **Navegación:** [[00 - Índice]] · ← [[06 - Economía y Recursos]] · [[01 - Premisa y Trama]] →

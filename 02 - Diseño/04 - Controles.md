@@ -9,6 +9,7 @@ Define la relación entre las acciones del jugador y las entradas físicas del d
 | Acción                    | Teclado                    | Ratón (Mouse) | Comportamiento / Detalle                                                                                           |
 | :------------------------- | :------------------------- | :------------- | :----------------------------------------------------------------------------------------------------------------- |
 | **Moverse**          | `W`, `A`, `S`, `D` | —             | Desplazamiento en el plano del escenario                                                                           |
+| **Cámara**           | —                          | Mover el ratón | Gira la cámara alrededor de Mochi; hacia arriba y abajo tiene un límite |
 | **Saltar**           | `ESPACIO` (pulsar)        | —             | Impulso vertical; mantener la tecla da un salto más alto y, al empezar a caer, activa el planeo |
 | **Sprint**           | `SHIFT` (mantener)       | —             | Aumenta temporalmente la velocidad y gasta el combustible que comparte con el planeo                                               |
 | **Planeo**           | `ESPACIO` (mantener en el aire) | —      | Ralentiza la caída y gasta el mismo combustible que el sprint; dura hasta 0.6 segundos por tramo en el aire             |
@@ -22,7 +23,7 @@ Define la relación entre las acciones del jugador y las entradas físicas del d
 - **Salto y planeo con `ESPACIO`:** Pulsar la tecla en el suelo inicia el salto; si se mantiene, al empezar a caer Mochi planea.
 - **Sin combinaciones complejas:** El plataformeo se basa en reflejos y timing natural, no en combinaciones laberínticas de teclas.
 - **Combustible compartido:** `SHIFT` activa el sprint y mantener `ESPACIO` en el aire activa el planeo; los dos gastan la misma reserva, que solo se recarga en el suelo. Si se agota, no se puede esprintar ni planear hasta que vuelva al 30%. El planeo dura como máximo 0.6 segundos por tramo en el aire.
-- **Acciones diferenciadas:** `SHIFT` queda reservado para sprintar; `CTRL` o `C` se usan para agacharse o deslizarse y no gastan combustible.
+- **Acciones diferenciadas:** `SHIFT` queda reservado para sprintar.
 
 ## Consulta de controles
 

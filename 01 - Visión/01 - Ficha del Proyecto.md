@@ -48,7 +48,7 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 
 **Perspectiva:**
 
-	Tercera Persona con una cámara Fija
+	Tercera persona, con una cámara de plataformas que sigue a Mochi y que el jugador puede girar con el ratón
 
 > Consulta [[04 - Perspectivas y Cámaras]].
 

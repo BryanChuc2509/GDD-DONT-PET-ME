@@ -36,7 +36,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Contexto:** El minijefe de las hormigas bloquea el avance en el escritorio. La solución definida es usar el ventilador; su apariencia y ataques están por definir.
 
-**Requisitos:** Alcanzar las pilas e interactuar con la ranura del ventilador.
+**Requisitos:** Alcanzar las pilas y llevarlas al compartimento del ventilador.
 
 **Pasos:**
 
@@ -54,7 +54,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Escenario relacionado:** La habitación de Leo.
 
-**Por definir:** Cantidad y ubicación exacta de las pilas, forma de transportarlas y respuesta del ventilador.
+**Cantidad y transporte:** Son 3 pilas. Mochi carga una a la vez, más despacio, y la suelta si una hormiga lo aturde. Con las 3 colocadas, el ventilador aspira a las hormigas y se cae.
 
 ### Evitar las pelotas de tenis y subir por la estantería
 
@@ -145,19 +145,19 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Reglas:** Se recogen al tocarlas, se conservan al morir y reaparecer y no se usan como munición ni para activar mecanismos.
 
-### Sortear peligros eléctricos (si se incluye en el nivel)
+### Sortear peligros eléctricos
 
-**Tipo:** Desafío ambiental opcional; solución de diseño pendiente.
+**Tipo:** Desafío ambiental.
 
-**Objetivo:** Cruzar una zona con cables pelados o agua electrificada sin tocarla.
+**Objetivo:** Cruzar zonas con cables electrificados sin tocarlos.
 
-**Contexto:** La entrega 3 presenta cables y derrames electrificados como peligros mortales para Mochi.
+**Contexto:** Los cables pelados tienen corriente animada y matan al tocarlos ("¡Calambre!").
+
+**Cómo se supera:** En el Nivel 1, pisando el interruptor de la regleta, que corta la corriente ("Corriente cortada"). En el pasillo, saltando los cables del suelo.
 
 **Condición de éxito:** Encontrar y atravesar una ruta segura.
 
-**Condición de fracaso:** Tocar el cable o el agua electrificada; muerte instantánea y reinicio en el checkpoint.
-
-**Por definir:** Confirmar si el peligro aparece en el nivel final y si se supera mediante una ruta alternativa u otra interacción del entorno. Las semillas no se usan para apagarlo.
+**Condición de fracaso:** Tocar un cable con corriente; muerte instantánea y reinicio en el checkpoint.
 
 ## Criterios para los desafíos
 

@@ -14,7 +14,7 @@ Registra juegos, películas, libros, fotografías, artículos, diseños o cualqu
 
 **Qué nos interesa: Es considerada la base del género de plataformas 3D. Sirve como referencia para la sensación del movimiento y del salto: su control analógico y sus variantes de salto ayudan a definir cómo debería sentirse el salto de Mochi.**
 
-**Qué NO queremos copiar: La cámara controlada por el jugador (el proyecto usa cámara fija), el catálogo de ataques como puñetazos y patadas (Mochi no ataca) y la libertad de exploración abierta (nuestra progresión es lineal).**
+**Qué NO queremos copiar: El catálogo de ataques como puñetazos y patadas (Mochi no ataca) y la libertad de exploración abierta (nuestra progresión es lineal).**
 
 ## Referencias visuales
 

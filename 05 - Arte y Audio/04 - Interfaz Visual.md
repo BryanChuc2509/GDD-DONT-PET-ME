@@ -23,7 +23,6 @@ El HUD es un solo prefab (`HUD.prefab`) que el `LevelManager` crea al cargar cad
 - **Panel de tutorial:** instrucciones en la parte inferior, como un subtítulo, mientras Mochi está en la zona y 1.5 s después de salir. Puede fijar un nuevo objetivo. Solo se ve un panel a la vez.
 - **Cartel de zona difícil:** aviso llamativo en el tercio inferior, encima del panel de tutorial, durante 4 s al entrar en la zona (por ejemplo, al llegar al hormiguero de la reina o a la sala de memoria).
 - **Marcador de entrega:** mientras Mochi carga una pila, un marcador rebota sobre el ventilador con el texto "Lleva la pila al ventilador". Si el destino no se ve, una flecha en el borde de la pantalla apunta hacia él.
-- **Marcador del hilo:** señala el borde de estante al que se puede lanzar el hilo cuando hay uno al alcance.
 - **Título de apertura:** en el tutorial, el plano inicial muestra "La prisión de Mochi" y "Pulsa cualquier tecla para saltar".
 
 El HUD no muestra vida, munición, inventario ni mapa: Mochi muere de un solo golpe y no lleva objetos aparte de la pila que carga.

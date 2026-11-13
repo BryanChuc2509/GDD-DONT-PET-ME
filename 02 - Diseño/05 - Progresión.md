@@ -25,7 +25,7 @@ El jugador aprende a calcular saltos y a administrar el combustible que comparte
 
 - **Vida:** **Inmutable**. No hay mejoras de salud; Mochi siempre muere de un solo golpe (One-hit kill).
 - **Daño:** No hay combate: Mochi no puede derrotar enemigos y cualquier contacto con ellos es mortal.
-- **Habilidades:** Desplazamiento, salto, sprint en el suelo, planeo en el aire, agacharse y escalar las superficies designadas están disponibles durante el recorrido y se enseñan de forma gradual.
+- **Habilidades:** Desplazamiento, salto, sprint en el suelo, planeo en el aire y escalar las superficies designadas están disponibles durante el recorrido y se enseñan de forma gradual.
 - **Combustible:** Una sola reserva para el sprint (`SHIFT`) y el planeo (`ESPACIO` mantenido en el aire). Solo se recarga en el suelo, poco después de dejar de gastar; si se agota, no se puede esprintar ni planear hasta que vuelva al 30%. El planeo dura como máximo 0.6 segundos por tramo en el aire.
 - **Semillas:** Se recogen al tocarlas y marcan la ruta; el HUD cuenta las recogidas y el total de cada nivel. No ocupan espacio de inventario ni se gastan.
 - **Objetos contextuales:** Algunos puzzles requieren recoger y colocar un objeto concreto, como una pila. Estos objetos se gestionan solo durante su desafío y no forman parte de un inventario general.

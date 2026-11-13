@@ -44,15 +44,15 @@ Pilas
 
 **Función:** Alimentan el ventilador necesario para superar el encuentro con el minijefe de las hormigas en el escritorio.
 
-**Cómo se obtiene:** Se recogen en el escenario de la habitación; la ubicación exacta se determina en el diseño del nivel.
+**Cómo se obtiene:** Se recogen al tocarlas en la habitación (Nivel 1).
 
-**Cómo se utiliza:** Se colocan en el ventilador o en su ranura de alimentación mediante interacción contextual.
+**Cómo se utiliza:** Mochi la lleva cargada hasta el ventilador y se coloca sola al tocar su compartimento.
 
-**Cantidad máxima:** La necesaria para activar el ventilador; la cantidad exacta queda por definir.
+**Cantidad máxima:** Mochi carga una a la vez; el ventilador necesita 3.
 
 **Valor:** Objeto clave del reto; no forma parte de un inventario general.
 
-**Rareza:** Según la cantidad de pilas requeridas para el mecanismo.
+**Rareza:** Hay 3 en el Nivel 1.
 
 **Restricciones:** Su uso se limita al mecanismo del ventilador.
 

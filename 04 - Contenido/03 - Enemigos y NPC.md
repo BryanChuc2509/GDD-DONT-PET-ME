@@ -95,7 +95,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Tipo:** Peligros del escenario.
 
-**Ejemplos de la entrega 3:** Libros que caen, plataformas giratorias o falsas y mecanismos que se activan de repente.
+**Ejemplos:** Semillas trampa, checkpoints falsos, objetos que huyen, bloques ocultos, libro con resorte, libros que se caen encima, grapadora y pisapapeles que caen, pinchos que salen del suelo, ventilador que sopla, barra giratoria y plataformas falsas. El detalle está en [[02 - Mecánicas]] (Mecánica 10).
 
 **Regla:** Pueden sorprender al jugador, pero deben dar señales legibles y respetar los criterios de aviso de peligro del GDD.
 
@@ -103,7 +103,7 @@ Documenta los personajes no controlados por el jugador, las amenazas y sus inter
 
 **Tipo:** Peligros del escenario, no personajes.
 
-**Ejemplos:** Ratoneras colocadas por los padres de Leo, escobas que caen y pelotas que ruedan.
+**Ejemplos:** Ratoneras colocadas por los padres de Leo (algunas ocultas), escobas que caen avisando con su sombra, cables electrificados, piezas de Lego, una rejilla y tablas falsas por donde se cae, tachuelas y el charco del gato, que frena a Mochi.
 
 **Función:** Añaden obstáculos al recorrido mientras Mochi escapa de la aspiradora.
 

@@ -295,14 +295,278 @@ El sprint puede ayudar a aproximarse; el combustible no se consume durante la es
 
 Las superficies decorativas que no se puedan escalar deben diferenciarse visualmente de la tela marcada como escalable.
 
+### Mecánica 06
+
+Cargar Pilas
+
+**Propósito:**
+
+Resolver el reto del hormiguero llevando las pilas hasta el ventilador.
+
+**Activación:**
+
+Tocar una pila: Mochi la levanta solo, sin pulsar ninguna tecla.
+
+**Reglas:**
+
+- Mochi carga una sola pila a la vez.
+- Mientras la carga se mueve un 15% más lento, pero puede correr, saltar y planear.
+- Si una hormiga aturde a Mochi, suelta la pila.
+- Si Mochi muere, la pila que cargaba vuelve a su lugar original.
+- Al tocar el compartimento del ventilador con una pila, esta se coloca sola. El ventilador necesita 3 pilas.
+
+**Entrada:**
+
+Contacto para recoger y colocar.
+
+**Estado inicial:**
+
+Mochi no carga nada y hay una pila libre en el escenario.
+
+**Estado final:**
+
+La pila queda colocada en el ventilador o vuelve a quedar libre en el escenario.
+
+**Recursos utilizados:**
+
+Las 3 pilas del Nivel 1.
+
+**Recompensa:**
+
+Con las 3 pilas colocadas, el ventilador se enciende, aspira a las hormigas durante 3 segundos y luego se cae; el objetivo cambia a "Llega a la salida".
+
+**Penalización:**
+
+Perder la pila por un aturdimiento obliga a volver por ella.
+
+**Interacciones con otras mecánicas:**
+
+Mientras Mochi carga una pila, un marcador en pantalla señala el ventilador y el objetivo del HUD cuenta las pilas colocadas (x/3). Las hormigas son la principal amenaza durante el transporte.
+
+**Casos límite:**
+
+Si Mochi suelta la pila por un aturdimiento y no hay suelo debajo, la pila vuelve a su lugar original.
+
+### Mecánica 07
+
+Aturdimiento y Lentitud
+
+**Propósito:**
+
+Que algunos enemigos y obstáculos estorben a Mochi sin matarlo, castigando el error con tiempo y posición.
+
+**Activación:**
+
+Recibir el efecto de una de las fuentes de la lista.
+
+**Reglas:**
+
+- **Aturdimiento:** Mochi no puede moverse, saltar ni correr durante un momento. Una hormiga lo aturde 1 segundo ("¡Aturdido!"). Una bola de telaraña rodante lo derriba lejos y lo aturde 0.8 segundos ("¡Derribado!").
+- Después de un aturdimiento hay 0.75 segundos en los que no puede volver a ser aturdido.
+- Si 4 hormigas lo tocan a la vez, Mochi muere ("¡Enjambre!").
+- Al ser aturdido, Mochi suelta la pila que cargue y se suelta de la superficie que esté trepando.
+- **Lentitud:** la telaraña que escupe la araña deja a Mochi al 35% de su velocidad durante 1.5 segundos ("¡Telaraña!"). El charco del gato lo deja al 45% mientras lo pisa y un momento después ("¡Charco del gato! Vas más lento").
+
+**Entrada:**
+
+Contacto con la fuente del efecto.
+
+**Estado inicial:**
+
+Mochi se mueve con normalidad.
+
+**Estado final:**
+
+Mochi recupera el control o su velocidad normal al terminar el efecto.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+No aplica.
+
+**Penalización:**
+
+Mochi pierde tiempo y posición; puede caer de una plataforma o perder una pila.
+
+**Interacciones con otras mecánicas:**
+
+Estos efectos no matan por sí mismos, pero pueden dejar a Mochi al alcance de un peligro letal. Al reaparecer en un checkpoint se quitan todos los efectos.
+
+**Casos límite:**
+
+Un aturdimiento nuevo no se suma mientras dura otro ni durante los 0.75 segundos de protección.
+
+### Mecánica 08
+
+Plataformas de Impulso, Recorridos Guiados y Plataformas Móviles
+
+**Propósito:**
+
+Dar variedad al plataformeo con objetos del entorno que lanzan, transportan o se mueven.
+
+**Activación:**
+
+Pisar o tocar el objeto.
+
+**Reglas:**
+
+- **Plataformas de impulso:** al caer sobre el vaso o el globo del Nivel 1, Mochi sale lanzado hacia arriba; el vaso lanza más alto que el globo. El rebote reinicia el planeo.
+- **Recorridos guiados:** en el pasillo, el tubo de cartón ("¡A rodar!") y el cable de la lámpara como tirolesa llevan a Mochi de un punto a otro sin control y lo sueltan con impulso al final. En la tirolesa, `ESPACIO` lo suelta a mitad del recorrido.
+- **Plataformas móviles:** la noria del Nivel 1, cuyas cabinas giran y se mantienen horizontales; ascensores que suben y bajan; y libros colgantes que se balancean como péndulo. Mochi se mueve junto con la plataforma que pisa.
+- **Plataformas que se caen:** la nota del tutorial, algunas repisas y libros tiemblan al pisarlos, se caen y reaparecen 3 segundos después.
+
+**Entrada:**
+
+Contacto con el objeto; `ESPACIO` para soltarse de la tirolesa.
+
+**Estado inicial:**
+
+Mochi llega al objeto.
+
+**Estado final:**
+
+Mochi sale lanzado, llega al final del recorrido o se baja de la plataforma.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+Alcanzar zonas altas o lejanas.
+
+**Penalización:**
+
+Calcular mal el momento deja a Mochi en el vacío.
+
+**Interacciones con otras mecánicas:**
+
+Después de un impulso se puede planear para alargar el salto.
+
+**Casos límite:**
+
+Las plataformas que se caen vuelven a su sitio aunque Mochi no muera.
+
+### Mecánica 09
+
+Interruptores
+
+**Propósito:**
+
+Abrir el camino cambiando algo del escenario.
+
+**Activación:**
+
+Tocar el interruptor; el botón se hunde.
+
+**Reglas:**
+
+- Cada interruptor se activa una sola vez y queda activado aunque Mochi muera.
+- Puede encender o apagar objetos, cortar la corriente, cambiar el objetivo o terminar el nivel.
+- **Tutorial:** el botón dentro del laberinto de tubos abre la salida ("¡Salida abierta!") y la tecla Enter es la meta del nivel ("¡Escapaste de la jaula!").
+- **Nivel 1:** el interruptor de la regleta corta la corriente de los cables electrificados ("Corriente cortada"), otro activa un puente ("¡Puente activado!") y otro apaga el ventilador que sopla a Mochi ("¡Ventilador apagado!"). La meta del nivel también es un interruptor.
+- **Nivel 2:** la meta en la sala de estar es un interruptor que termina el nivel.
+
+**Entrada:**
+
+Contacto.
+
+**Estado inicial:**
+
+Interruptor sin pulsar.
+
+**Estado final:**
+
+Interruptor pulsado y su efecto aplicado.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+Se abre la ruta o se completa el nivel.
+
+**Penalización:**
+
+Ninguna.
+
+**Interacciones con otras mecánicas:**
+
+Mientras tienen corriente, los cables electrificados matan al tocarlos ("¡Calambre!").
+
+**Casos límite:**
+
+Un interruptor activado no se puede desactivar.
+
+### Mecánica 10
+
+Trampas de Leo
+
+**Propósito:**
+
+Sorprender al jugador con el humor absurdo de las bromas de Leo.
+
+**Activación:**
+
+Tocar la trampa o acercarse a ella.
+
+**Reglas:**
+
+- **Semillas trampa:** parecen semillas; al tocarlas lanzan a Mochi por los aires y le quitan el control un momento ("¡Moneda trampa!"). Están en los tres niveles.
+- **Checkpoints falsos:** parecen checkpoints y lanzan a Mochi ("¡Checkpoint falso!"). Están en el Nivel 1 y en el pasillo.
+- **Objetos que huyen:** en el Nivel 1, una semilla, un libro y la meta se apartan cuando Mochi se acerca. La semilla y el libro regresan después de unos segundos; la meta se queda en su nuevo sitio.
+- **Bloques ocultos:** son invisibles hasta que Mochi los golpea saltando desde abajo; entonces aparecen y le cortan el salto ("¡Bloque oculto!").
+- **Libro con resorte:** al pisarlo se abre de golpe y lanza a Mochi ("¡Boing! Ese libro tenía resorte").
+- **Libros que se caen encima:** tiemblan y caen sobre Mochi; matan mientras caen y luego quedan tumbados como escalón ("¡Plaf!").
+- **Objetos que caen desde arriba:** la grapadora y el pisapapeles caen cuando Mochi pasa debajo, matan al caer y vuelven a subir.
+- **Pinchos que salen del suelo** cuando Mochi se acerca ("¡Pinchos!"), en el Nivel 1 y en el pasillo.
+- **Ventilador que sopla y barra giratoria:** lanzan a Mochi lejos ("¡Fiuuuuu!", "¡Zas!").
+- **Plataformas falsas:** un libro, un tablón, una tabla y un zócalo se caen al pisarlos sin temblar antes.
+
+**Entrada:**
+
+Contacto con la trampa o acercarse a ella.
+
+**Estado inicial:**
+
+La trampa parece un objeto inofensivo.
+
+**Estado final:**
+
+Mochi sale lanzado, pierde el salto, cae o muere, según la trampa.
+
+**Recursos utilizados:**
+
+Ninguno.
+
+**Recompensa:**
+
+No aplica.
+
+**Penalización:**
+
+Mochi puede caer al vacío o morir.
+
+**Interacciones con otras mecánicas:**
+
+Cada trampa avisa con un mensaje en el centro del HUD. Las que lanzan a Mochi le quitan el control entre 0.9 y 1.5 segundos.
+
+**Casos límite:**
+
+Los libros que cayeron se vuelven a poner de pie si Mochi muere.
+
 ## Mecánicas secundarias
 
-No hay
+### Ver objetivo
 
-Avisos contextuales:
+Con `TAB`, o al pulsar la bandera del HUD, vuelve a aparecer la tarjeta con el objetivo actual. Cada objetivo nuevo se anuncia solo y después la tarjeta se reduce a la bandera.
 
-   En desafíos complejos aparece un consejo breve, como indicar que se necesitan pilas para activar un ventilador. Al obtener una pila, un indicador señala el aparato o la ranura donde debe colocarse.
+### Avisos contextuales
 
-Lista las mecánicas que complementan la experiencia pero no constituyen el núcleo.
+En desafíos complejos aparece un consejo breve, como indicar que se necesitan pilas para activar un ventilador. Al obtener una pila, un indicador señala el aparato o la ranura donde debe colocarse.
 
 > **Navegación:** [[00 - Índice]] · ← [[01 - Jugabilidad]] · [[03 - Sistemas]] →

@@ -60,7 +60,7 @@ Durante el juego
 
 **Propósito:** Mostrar la información mínima necesaria sin tapar la escena.
 
-**Elementos:** Contador de semillas (`recogidas/total` del nivel), contador de muertes, botón de objetivo con su tarjeta, barra de estamina, botón de pausa, avisos centrales y cuenta atrás del memorama. En cada nivel se suman los paneles de tutorial, los carteles de zona difícil, el marcador de entrega de la pila y el marcador del hilo. El detalle visual está en [[04 - Interfaz Visual]]. No muestra vida, munición, mapa ni retícula de apuntado.
+**Elementos:** Contador de semillas (`recogidas/total` del nivel), contador de muertes, botón de objetivo con su tarjeta, barra de estamina, botón de pausa, avisos centrales y cuenta atrás del memorama. En cada nivel se suman los paneles de tutorial, los carteles de zona difícil y el marcador de entrega de la pila. El detalle visual está en [[04 - Interfaz Visual]]. No muestra vida, munición, mapa ni retícula de apuntado.
 
 **Acciones disponibles:** Es informativo. Solo se puede pulsar el botón de pausa y la bandera del objetivo (o usar `Tab`) para volver a ver el objetivo actual.
 
@@ -109,9 +109,6 @@ Durante el juego
 | Saltar | Espacio |
 | Planear | Mantén Espacio en el aire |
 | Correr | Shift |
-| Interactuar / cargar | E |
-| Lanzar hilo | F / clic derecho |
-| Agacharse / deslizarse | C |
 | Ver objetivo | Tab |
 | Pausa | Esc |
 
