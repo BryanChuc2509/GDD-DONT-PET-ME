@@ -10,9 +10,9 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Tipo:** Principal / tutorial.
 
-**Objetivo:** Aprender los controles básicos, salir de la jaula y completar el tutorial (Nivel 0) para comenzar el recorrido por la habitación de Leo (Nivel 1).
+**Objetivo:** Aprender los controles básicos, salir de la jaula y completar el tutorial (Nivel 0) para comenzar el recorrido por la habitación de Reo (Nivel 1).
 
-**Contexto:** Mochi despierta cautivo después de que Leo lo captura durante un picnic familiar.
+**Contexto:** Mochi despierta cautivo después de que Reo lo captura durante un picnic familiar.
 
 **Requisitos:** Movimiento y salto.
 
@@ -52,7 +52,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Personajes relacionados:** Mochi y el minijefe de las hormigas.
 
-**Escenario relacionado:** La habitación de Leo.
+**Escenario relacionado:** La habitación de Reo.
 
 **Cantidad y transporte:** Son 3 pilas. Mochi carga una a la vez, más despacio, y la suelta si una hormiga lo aturde. Con las 3 colocadas, el ventilador aspira a las hormigas y se cae.
 
@@ -74,7 +74,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Personajes relacionados:** Mochi y la araña lanzadora.
 
-**Escenario relacionado:** La habitación de Leo, después de los libros colgantes.
+**Escenario relacionado:** La habitación de Reo, después de los libros colgantes.
 
 ### Recordar y repetir la secuencia de baldosas
 
@@ -101,7 +101,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Personaje relacionado:** Mochi.
 
-**Escenario relacionado:** La habitación de Leo, después de la estantería de la araña.
+**Escenario relacionado:** La habitación de Reo, después de la estantería de la araña.
 
 ### Escapar de la aspiradora por el pasillo
 
@@ -109,7 +109,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Objetivo:** Llegar a la sala de estar antes que la aspiradora, sin caer en las trampas del pasillo.
 
-**Contexto:** Los padres de Leo buscan un ratón y programaron la aspiradora para cazarlo. El aparato confunde a Mochi con su objetivo.
+**Contexto:** Los padres de Reo buscan un ratón y programaron la aspiradora para cazarlo. El aparato confunde a Mochi con su objetivo.
 
 **Requisitos:** Leer la ruta de persecución y los peligros del escenario.
 

@@ -505,11 +505,11 @@ Un interruptor activado no se puede desactivar.
 
 ### Mecánica 10
 
-Trampas de Leo
+Trampas de Reo
 
 **Propósito:**
 
-Sorprender al jugador con el humor absurdo de las bromas de Leo.
+Sorprender al jugador con el humor absurdo de las bromas de Reo.
 
 **Activación:**
 

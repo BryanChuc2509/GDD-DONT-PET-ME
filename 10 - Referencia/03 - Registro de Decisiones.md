@@ -32,6 +32,6 @@ Las solicitudes, su impacto y su seguimiento se consultan en [[05 - Gestión de 
 
 ## D-06 · Tutorial como nivel propio
 
-**12 de noviembre de 2026 · Aprobado.** El recorrido jugable se organiza en tres niveles: el tutorial de la jaula (Nivel 0), la habitación de Leo (Nivel 1) y el pasillo (Nivel 2). La jaula deja de ser la primera zona de la habitación y pasa a ser un nivel propio, como ya está implementado en el juego. Reemplaza la parte de D-01 que integraba la jaula en la habitación y la zona de jaula de D-03.
+**12 de noviembre de 2026 · Aprobado.** El recorrido jugable se organiza en tres niveles: el tutorial de la jaula (Nivel 0), la habitación de Reo (Nivel 1) y el pasillo (Nivel 2). La jaula deja de ser la primera zona de la habitación y pasa a ser un nivel propio, como ya está implementado en el juego. Reemplaza la parte de D-01 que integraba la jaula en la habitación y la zona de jaula de D-03.
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Referencias e Inspiración]] · [[04 - Historial de Versiones]] →

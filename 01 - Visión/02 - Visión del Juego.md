@@ -8,7 +8,7 @@ Aquí se define la **idea central** del videojuego. Esta sección funciona como 
 
 **El videojuego trata sobre:**
 
-Mochi, un pequeño hámster capturado durante un picnic familiar, debe escapar de la casa de Leo y encontrar el camino de regreso al bosque con su familia. Desde su pequeña perspectiva, los muebles y objetos cotidianos se convierten en enormes plataformas y peligros. Para avanzar, el jugador recorre la habitación y el pasillo, salta, trepa por algunas superficies, interactúa con el entorno y resuelve acertijos mientras evita trampas y amenazas. La aventura combina plataformas 3D, exploración y humor absurdo.
+Mochi, un pequeño hámster capturado durante un picnic familiar, debe escapar de la casa de Reo y encontrar el camino de regreso al bosque con su familia. Desde su pequeña perspectiva, los muebles y objetos cotidianos se convierten en enormes plataformas y peligros. Para avanzar, el jugador recorre la habitación y el pasillo, salta, trepa por algunas superficies, interactúa con el entorno y resuelve acertijos mientras evita trampas y amenazas. La aventura combina plataformas 3D, exploración y humor absurdo.
 
 > Explica la fantasía principal que el jugador debe experimentar.
 
