@@ -75,10 +75,10 @@ Esta ficha identifica el proyecto de forma rápida. Debe permitir que alguien qu
 - [X] Alcance inicial definido
 - [X] Mecánica principal definida
 - [X] Prototipo funcional
-- [ ] Vertical slice
-- [ ] Producción
-- [ ] Pruebas
-- [ ] Versión final
+- [X] Vertical slice
+- [X] Producción
+- [X] Pruebas
+- [X] Versión final
 
 ## Criterio de éxito del proyecto
 

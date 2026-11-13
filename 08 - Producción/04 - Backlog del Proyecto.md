@@ -293,17 +293,17 @@ Las casillas y los estados "Pendiente" se conservaron del plan anterior y deben 
 * [X] T09 — Habitación, vertical slice (Ahui)
 * [X] T05 — IA de la aspiradora inteligente (Dhayan Lee)
 * [X] T10 — Pasillo con persecución (Ahui y Dhayan Lee)
-* [ ] T14 — Obstáculos y dispositivos inteligentes (Dhayan Lee)
-* [ ] T12 — Menús, HUD y configuración (Ahui)
-* [ ] T13 — Música y efectos de sonido (Bruno LLovera)
-* [ ] T16 — Video de introducción (Bruno LLovera y Gio Medina)
-* [ ] T11 — Memorama de baldosas (Ahui y Bryan Chuc)
-* [ ] T17 — Tráiler promocional (Bruno LLovera)
+* [X] T14 — Obstáculos y dispositivos inteligentes (Dhayan Lee)
+* [X] T12 — Menús, HUD y configuración (Ahui)
+* [X] T13 — Música y efectos de sonido (Bruno LLovera)
+* [X] T16 — Video de introducción (Bruno LLovera y Gio Medina)
+* [X] T11 — Memorama de baldosas (Ahui y Bryan Chuc)
+* [X] T17 — Tráiler promocional (Bruno LLovera)
 
 **Pruebas, estabilización y entrega (fechas por confirmar)**
 
-* [ ] T15 — Pruebas funcionales y de rendimiento (Dhayan Lee)
-* [ ] T18 — Publicación en itch.io y difusión (Bruno LLovera)
+* [X] T15 — Pruebas funcionales y de rendimiento (Dhayan Lee)
+* [X] T18 — Publicación en itch.io y difusión (Bruno LLovera)
 * [ ] T19 — Preparación del stand y presentación (Bryan Chuc)
 
 ## Priorización
