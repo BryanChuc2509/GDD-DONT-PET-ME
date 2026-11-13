@@ -42,7 +42,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Rol:** Protagonista principal jugable.
 
-**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint, planeo breve independiente del combustible del sprint, escalada de superficies de tela e interacción con objetos del entorno.
+**Función jugable:** Control directo del jugador: recorrer plataformas mediante movimiento, saltos, sprint y planeo breve (ambos gastan el mismo combustible), escalada de superficies de tela e interacción con objetos del entorno.
 
 **Función narrativa:** El héroe reacio atrapado en una comedia trágica. Su convicción y dignidad chocan constantemente con la ridiculez de su tamaño y las trampas domésticas.
 
@@ -60,7 +60,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Arco del personaje:** Pasa de despertar cautivo en un entorno desconocido a usar su agilidad e ingenio para superar las trampas de la casa y acercarse a su hogar.
 
-**Habilidades:** Salto y doble salto elástico, sprint en el suelo con combustible propio, planeo de hasta 1 segundo por tramo en el aire sin consumir ni depender de ese combustible, escalada de superficies designadas y capacidad para empujar objetos. Puede aplastar desde arriba a los enemigos designados como vulnerables.
+**Habilidades:** Salto elástico, sprint y planeo de hasta 0.6 segundos por tramo en el aire, que gastan el mismo combustible, escalada de superficies designadas y capacidad para empujar objetos.
 
 **Debilidades:** Fragilidad absoluta ante cualquier daño ambiental o animal (**muerte de un solo golpe**) e ingenuidad ante la tecnología humana.
 
@@ -139,14 +139,11 @@ Documenta qué NPC existen, qué hacen y cómo interactúan con el jugador:
 - **Nido de hormigas (Reto de zona - escritorio):**
   El nido bloquea el avance hacia los libros colgantes. Para superar el reto, Mochi consigue las pilas necesarias y enciende un ventilador; las pistas del entorno indican el objetivo y dónde colocar las pilas.
 - **Arañas de Rincón (Enemigos menores - Nivel 1):**  
-  Arácnidos que custodian grietas y rincones del escritorio. Representan un peligro que Mochi debe leer y superar con movimiento, saltos y rutas seguras; las semillas no se usan para atacarlas.
+  Una araña que persigue a Mochi cuando se acerca y le escupe telarañas que lo frenan; tocarla es mortal. Mochi debe esquivarla con movimiento, saltos y rutas seguras; las semillas no se usan para atacarla.
 - **Aspiradora inteligente (Amenaza de persecución - Pasillo):**
   Los padres de Leo la programaron para cazar al ratón que ronda la casa. Al detectar a Mochi, lo confunde con el ratón y lo persigue. Mochi debe escapar de ella mientras esquiva las trampas del pasillo.
-- **Ratoneras, escobas y pelotas (Peligros del escenario - Pasillo):**
-  Las ratoneras fueron colocadas por los padres de Leo; las escobas caen y las pelotas ruedan por el recorrido. Son obstáculos ambientales, no personajes.
-- **Silueta del águila (Amenaza narrativa futura):**
-  Aparece cuando Mochi sale de la casa, como presagio de un peligro posterior. No es un encuentro jugable en la versión actual.
-
+- **Ratoneras, escobas y otras trampas (Peligros del escenario - Pasillo):**
+  Las ratoneras fueron colocadas por los padres de Leo; además, las escobas caen y hay cables electrificados, Legos, una rejilla y tablas falsas. Son obstáculos ambientales, no personajes.
 
 
 > **Navegación:** [[00 - Índice]] · ← [[02 - Mundo]] · [[04 - Diálogos y Narrativa]] →

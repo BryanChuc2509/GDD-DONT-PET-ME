@@ -23,7 +23,7 @@ Para ahorrar trabajo conviene reutilizar casi todo:
 
 ## Iluminación
 
-La idea general es una luz direccional suave con sombras simples y luz horneada ( *baked* ) siempre que se pueda. La cámara fija ayuda mucho a eso.
+La idea general es una luz direccional suave con sombras simples y luz horneada ( *baked* ) siempre que se pueda. Como el jugador puede girar la cámara con el ratón, la iluminación de cada zona debe verse bien desde distintos ángulos.
 
 | Zona       | Luz principal                                                               | Qué queremos lograr                                             |
 | ---------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------- |

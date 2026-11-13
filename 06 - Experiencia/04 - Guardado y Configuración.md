@@ -8,38 +8,30 @@ Define cómo se conserva el progreso y qué opciones puede modificar el jugador.
 
 **Tipo:** Automático.
 
-**Cuándo se guarda:**
-
-* Al activar los checkpoints definidos en la habitación y el pasillo.
-* Al completar un puzzle importante o actualizar el punto de reaparición, si el diseño técnico lo requiere.
+**Cuándo se guarda:** Cada vez que se carga un nivel (el tutorial, la habitación o el pasillo). El menú principal y la introducción no cuentan.
 
 **Qué datos se guardan:**
 
-* Nivel y checkpoint actuales.
-* Estado de los puzzles necesarios para la progresión.
-* Saldo de semillas, si debe conservarse entre sesiones.
-* Preferencias de configuración.
+* El último nivel al que se entró.
+* El volumen general, el de la música y el de los efectos, al cerrar la ventana de ajustes.
 
-**Cantidad de ranuras:**
+No se guardan el checkpoint, las semillas recogidas, el contador de muertes ni el estado de los puzzles: al continuar, el nivel empieza desde el principio.
 
-Una sola ranura local, suficiente para el recorrido lineal y el alcance actual.
+**Cantidad de ranuras:** Una sola partida.
 
-**Qué ocurre si el guardado falla:**
+**Continuar y Nueva partida:** Si hay una partida guardada, el menú principal muestra "Continuar", que carga el inicio de ese nivel, y "Nueva partida", que pide confirmación y borra la partida guardada.
 
-* Se muestra un aviso breve si no se puede guardar.
-* El fallo no debe presentarse como un guardado exitoso; se conserva el último guardado válido cuando sea posible.
+**Si el guardado no se puede usar:** No se muestra ningún aviso. Si el nivel guardado no se puede cargar, el menú lo ignora y muestra "Jugar".
 
 ## Configuración
 
 | Categoría | Opciones |
 | --- | --- |
-| Audio | Volumen general, música y efectos. |
-| Video | Resolución y modo pantalla completa o ventana. La calidad gráfica se mantendrá adecuada para el 3D sencillo del proyecto. |
-| Controles | Sensibilidad de cámara y referencia de controles de teclado y ratón. |
-| Accesibilidad | Tamaño del texto y señales visuales legibles para instrucciones y peligros. |
+| Audio | Volumen general, música y efectos de sonido, con deslizadores en porcentaje. Se guardan al cerrar la ventana de ajustes. |
+| Controles | Ventana de consulta con la tecla de cada acción. |
 
 ## Restablecimiento
 
-¿Qué opciones pueden volver a valores predeterminados?
+El botón "Restablecer ajustes" devuelve el volumen general, la música y los efectos al 100%.
 
 > **Navegación:** [[00 - Índice]] · ← [[03 - Accesibilidad]] · [[01 - Arquitectura Técnica]] →

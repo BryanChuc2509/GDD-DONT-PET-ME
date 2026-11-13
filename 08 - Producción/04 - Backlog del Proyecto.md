@@ -10,7 +10,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T01 — Movimiento y salto de Mochi
 
-**Descripción:** Implementar en Unity el desplazamiento, salto y doble salto de Mochi según los controles definidos. El sprint consume combustible propio; el planeo no lo consume ni depende de esa reserva.
+**Descripción:** Implementar en Unity el desplazamiento y el salto de Mochi según los controles definidos. El sprint y el planeo gastan la misma reserva de combustible, que solo se recarga en el suelo.
 
 **Responsable:** Bryan Chuc
 
@@ -18,7 +18,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** Ninguna (es la primera tarea).
 
-**Criterio de aceptación:** Mochi se mueve, salta y realiza el doble salto de forma fluida; el sprint consume su combustible y el planeo, si se conserva tras la evaluación, funciona sin depender de esa reserva.
+**Criterio de aceptación:** Mochi se mueve y salta de forma fluida; el sprint y el planeo (hasta 0.6 segundos por tramo) gastan la misma reserva de combustible.
 
 **Estado:** Pendiente
 
@@ -46,7 +46,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T01.
 
-**Criterio de aceptación:** Mochi completa la interacción definida y activa el ventilador para despejar el paso del encuentro de las hormigas. Las semillas se contabilizan como moneda, no como munición.
+**Criterio de aceptación:** Mochi completa la interacción definida y activa el ventilador para despejar el paso del encuentro de las hormigas. Las semillas solo guían el recorrido; no son munición.
 
 **Estado:** Pendiente
 
@@ -80,7 +80,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T06 — Bocetos y estilo visual
 
-**Descripción:** Dibujar a Mochi y los dos niveles jugables (habitación y pasillo), incluyendo la jaula como zona inicial de la habitación; definir el estilo visual y la lista de recursos.
+**Descripción:** Dibujar a Mochi y los tres niveles jugables (tutorial de la jaula, habitación y pasillo); definir el estilo visual y la lista de recursos.
 
 **Responsable:** Gio Medina
 
@@ -102,13 +102,13 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T06.
 
-**Criterio de aceptación:** Los recursos se importan en Unity sin errores y funcionan dentro de los objetivos de rendimiento propuestos; Mochi cuenta con las animaciones necesarias para movimiento, salto y doble salto.
+**Criterio de aceptación:** Los recursos se importan en Unity sin errores y funcionan dentro de los objetivos de rendimiento propuestos; Mochi cuenta con las animaciones necesarias para movimiento y salto.
 
 **Estado:** Pendiente
 
 #### T08 — Jaula con tutorial integrado
 
-**Descripción:** Integrar la jaula como zona inicial de la habitación y enseñar movimiento y salto. Las semillas no forman parte del tutorial como munición ni disparo.
+**Descripción:** Armar la jaula como nivel tutorial (Nivel 0), previo a la habitación, y enseñar movimiento y salto. Las semillas no forman parte del tutorial como munición ni disparo.
 
 **Responsable:** Gio Medina (diseño) y Ahui (armado en Unity)
 
@@ -122,7 +122,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T09 — Habitación (vertical slice)
 
-**Descripción:** Preparar las cuatro zonas de la habitación en este orden: jaula, escritorio con el minijefe de las hormigas, libros colgantes y tramo de pelotas de tenis con huecos de refugio. El memorama se integra como reto de cierre de la cuarta zona. Incluir checkpoints y los objetos definidos para el recorrido; el puzzle se implementa en T11.
+**Descripción:** Preparar las zonas de la habitación (Nivel 1) en este orden: escritorio con el minijefe de las hormigas, libros colgantes y estantería de la araña con bolas de telaraña. El memorama se integra como reto de cierre de la última zona. Incluir checkpoints y los objetos definidos para el recorrido; el puzzle se implementa en T11.
 
 **Responsable:** Ahui
 
@@ -130,13 +130,13 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T01, T04, T08.
 
-**Criterio de aceptación:** La habitación presenta todas las zonas en el orden establecido y permite recorrerlas; el minijefe se supera con pilas y ventilador, y las pelotas se evitan usando los huecos. El memorama queda integrado y funcional con T11.
+**Criterio de aceptación:** La habitación presenta todas las zonas en el orden establecido y permite recorrerlas; el minijefe se supera con pilas y ventilador, y las bolas de telaraña se esquivan mientras se sube la estantería. El memorama queda integrado y funcional con T11.
 
 **Estado:** Pendiente
 
 #### T10 — Pasillo con persecución
 
-**Descripción:** Armar el pasillo como segundo nivel, con la persecución de la aspiradora, ratoneras, escobas que caen y pelotas rodantes.
+**Descripción:** Armar el pasillo como Nivel 2 (último nivel), con la persecución de la aspiradora, ratoneras, escobas que caen, cables electrificados, Legos, rejilla, tablas falsas y tachuelas.
 
 **Responsable:** Ahui (nivel) y Dhayan Lee (persecución)
 
@@ -150,7 +150,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T11 — Memorama de baldosas
 
-**Descripción:** Implementar el puzzle de memoria al final de la habitación: mostrar una secuencia de cuadros que se iluminan en distintos colores y permitir que Mochi la repita saltando sobre los cuadros en el mismo orden.
+**Descripción:** Implementar la sala de memoria al final de la habitación: 16 baldosas (4×4) y 5 rondas. La secuencia se ilumina con un solo color y una nota musical por baldosa, y Mochi la repite cayendo con un salto sobre cada baldosa, con tiempo límite. Si falla, las paredes lo aplastan.
 
 **Responsable:** Ahui (diseño e integración) y Bryan Chuc (programación)
 
@@ -164,7 +164,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T12 — Menús, HUD y configuración
 
-**Descripción:** Programar menú principal, pausa, HUD con saldo de semillas, indicaciones contextuales, checkpoints y configuración esencial. No incluir contador de munición ni retícula para disparar.
+**Descripción:** Programar menú principal, pausa, HUD con contador de semillas, indicaciones contextuales, checkpoints y configuración esencial. No incluir contador de munición ni retícula para disparar.
 
 **Responsable:** Ahui
 
@@ -172,7 +172,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 **Dependencias:** T03, T04.
 
-**Criterio de aceptación:** Se puede navegar con teclado y ratón; las opciones de configuración implementadas y el saldo de semillas se muestran de forma coherente con el diseño.
+**Criterio de aceptación:** Se puede navegar con teclado y ratón; las opciones de configuración implementadas y el contador de semillas se muestran de forma coherente con el diseño.
 
 **Estado:** Pendiente
 
@@ -192,7 +192,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T14 — Obstáculos y dispositivos inteligentes
 
-**Descripción:** Integrar los mecanismos y peligros definidos para los niveles, incluido el ventilador del escritorio, las pelotas de tenis de la estantería y las trampas del pasillo. No añadir dispositivos ni encuentros fuera del alcance acordado.
+**Descripción:** Integrar los mecanismos y peligros definidos para los niveles, incluido el ventilador del escritorio, las bolas de telaraña de la estantería y las trampas del pasillo. No añadir dispositivos ni encuentros fuera del alcance acordado.
 
 **Responsable:** Dhayan Lee
 
@@ -220,7 +220,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T16 — Introducción narrativa
 
-**Descripción:** Escribir e ilustrar una introducción breve tipo cómic que muestre la captura de Mochi durante el picnic y establezca su motivación para volver con Copo y Trufa. El bosque no es un nivel jugable.
+**Descripción:** Crear un video breve de introducción que muestre la captura de Mochi durante el picnic y establezca su motivación para volver con Copo y Trufa. El bosque no es un nivel jugable.
 
 **Responsable:** Bruno LLovera (guion) y Gio Medina (ilustraciones)
 
@@ -296,7 +296,7 @@ Las casillas y los estados "Pendiente" se conservaron del plan anterior y deben 
 * [ ] T14 — Obstáculos y dispositivos inteligentes (Dhayan Lee)
 * [ ] T12 — Menús, HUD y configuración (Ahui)
 * [ ] T13 — Música y efectos de sonido (Bruno LLovera)
-* [ ] T16 — Introducción narrativa tipo cómic (Bruno LLovera y Gio Medina)
+* [ ] T16 — Video de introducción (Bruno LLovera y Gio Medina)
 * [ ] T11 — Memorama de baldosas (Ahui y Bryan Chuc)
 * [ ] T17 — Tráiler promocional (Bruno LLovera)
 

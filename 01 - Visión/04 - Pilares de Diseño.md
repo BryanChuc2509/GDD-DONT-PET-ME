@@ -22,7 +22,7 @@ Mochi no vence a los peligros por la fuerza, sino usando con astucia lo que tien
 
 **¿Cómo se refleja en el juego?**
 
-Cada escenario ofrece objetos que pueden resolver el camino o convertirse en una ayuda, como una canica que activa un interruptor, un ventilador que impulsa un salto o un cable que sirve de puente. Los retos se plantean como pequeños acertijos de observación, donde el jugador debe mirar el espacio y pensar cómo aprovecharlo. Mochi no tiene un sistema de combate: normalmente esquiva o engaña a los enemigos y usa el entorno a su favor. Como excepción de movimiento, puede matar aplastando desde arriba a enemigos específicamente vulnerables.
+Cada escenario ofrece objetos que pueden resolver el camino o convertirse en una ayuda, como unas pilas que encienden un ventilador, un interruptor que corta la corriente o un vaso que sirve de trampolín. Los retos se plantean como pequeños acertijos de observación, donde el jugador debe mirar el espacio y pensar cómo aprovecharlo. Mochi no tiene un sistema de combate: normalmente esquiva o engaña a los enemigos y usa el entorno a su favor.
 
 ## Pilar 3 — Humor absurdo
 

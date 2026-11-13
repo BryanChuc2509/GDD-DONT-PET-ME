@@ -6,8 +6,8 @@ Define cómo se presenta la historia al jugador y cómo funcionan los diálogos.
 
 ## Métodos narrativos
 
-- **Cómic introductorio:** Una secuencia breve de viñetas muestra la vida de Mochi con sus hermanos en el bosque y su captura por Leo durante un picnic familiar. No hay gameplay en el bosque; al terminar, el juego inicia con Mochi en la jaula.
-- **Transiciones narrativas:** Los cambios importantes, como el descubrimiento de que la supuesta salida sigue dentro de la casa y la llegada a la sala, se presentan con recursos breves de imagen, sonido y corte, manteniendo el tono de comedia física.
+- **Video de introducción:** Un video breve muestra la vida de Mochi con sus hermanos en el bosque y su captura por Leo durante un picnic familiar. Se puede saltar con `ESPACIO`. No hay gameplay en el bosque; al terminar, el juego inicia con Mochi en la jaula.
+- **Transiciones narrativas:** Los cambios importantes, como el paso de un nivel a otro y la llegada a la sala de estar, se presentan con recursos breves de imagen, sonido y corte, manteniendo el tono de comedia física.
 - **Texto y narrativa ambiental:** Los objetos de la habitación cuentan que Leo graba bromas y prepara trampas anti-escape porque otras mascotas lograron huir. En el pasillo, las ratoneras revelan que los padres intentan atrapar a un ratón.
 - **Audio diegético contrastado:** Oposición entre la calma del bosque (pájaros, brisa, hojas) y los sonidos de la casa (voces lejanas, mecanismos de las trampas, motor de la aspiradora y crujido de la jaula).
 - **Vocalizaciones Animales:** Mochi y sus hermanos no hablan; comunican emoción, esfuerzo y frustración mediante chillidos, resoplidos y castañeo de dientes.
@@ -15,21 +15,21 @@ Define cómo se presenta la historia al jugador y cómo funcionan los diálogos.
 
 ## Estructura de diálogo
 
-### Cómic: La captura en el bosque
+### Video de introducción: la captura en el bosque
 
 **Personajes:** Mochi, Copo, Trufa y Leo. La madre de Leo puede escucharse brevemente fuera de campo.
 
 **Objetivo:** Presentar el hogar de Mochi, su vínculo con Copo y Trufa, la captura durante el picnic y el inicio de su cautiverio.
 
-**Formato:** Viñetas ilustradas con narración y subtítulos sincronizados. Las expresiones y acciones de los hámsteres cuentan la parte visual; el texto explica los cambios de escena y la captura.
+**Formato:** Video que se reproduce antes del tutorial. Se puede saltar con `ESPACIO`; un aviso en pantalla lo indica ("Presiona ESPACIO para saltar la historia").
 
-**Desarrollo:** La secuencia muestra a Mochi con Copo y Trufa en el bosque, la llegada de la familia de Leo al picnic y la captura de Mochi. Las viñetas presentan el traslado a la casa y el encierro en la jaula. El motivo de Leo para convertir la habitación en una carrera de obstáculos se revela después mediante su entorno: otras mascotas ya habían escapado y él prepara bromas y trampas para sus videos.
+**Desarrollo:** La secuencia muestra a Mochi con Copo y Trufa en el bosque, la llegada de la familia de Leo al picnic y la captura de Mochi. El video presenta el traslado a la casa y el encierro en la jaula. El motivo de Leo para convertir la habitación en una carrera de obstáculos se revela después mediante su entorno: otras mascotas ya habían escapado y él prepara bromas y trampas para sus videos.
 
-**Interacción:** No hay control del personaje ni recolección en el bosque. Al terminar el cómic, Mochi despierta en la jaula y comienza el gameplay con el tutorial.
+**Interacción:** No hay control del personaje ni recolección en el bosque. Al terminar el video, Mochi despierta en la jaula y comienza el gameplay con el tutorial.
 
 ## Tono
 
-- **Comedia física y humor absurdo:** Las trampas caseras de Leo y la escala de los objetos cotidianos convierten la fuga en una sucesión de sorpresas. La salida que parece prometer libertad revela que Mochi sigue dentro de la casa.
+- **Comedia física y humor absurdo:** Las trampas caseras de Leo y la escala de los objetos cotidianos convierten la fuga en una sucesión de sorpresas.
 - **Sátira de las bromas sin medir consecuencias:** Leo no actúa con intención de lastimar, pero sus retos y mecanismos anti-escape son peligrosos para un animal tan pequeño.
 - **Lenguaje Visual y Slapstick:** La historia se entiende universalmente sin necesidad de textos densos ni diálogos explicativos.
 
@@ -37,9 +37,7 @@ Define cómo se presenta la historia al jugador y cómo funcionan los diálogos.
 
 | Decisión      | Opciones                                            | Consecuencia                                                                                                   |
 | -------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| La falsa salida | Llegar al espacio que parece conducir al exterior | Mochi descubre que aún sigue dentro de la casa y debe continuar su recorrido. |
 | La aspiradora confunde a Mochi | Entrar al pasillo vigilado por la aspiradora | La aspiradora, programada para cazar al ratón, persigue a Mochi al confundirlo con él. |
-| La silueta del águila | Alcanzar la salida después de superar el pasillo | La silueta anticipa una amenaza futura y deja claro que el regreso al bosque todavía no está asegurado. |
 
 ## Localización
 
