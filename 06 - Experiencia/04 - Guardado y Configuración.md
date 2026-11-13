@@ -33,13 +33,11 @@ Una sola ranura local, suficiente para el recorrido lineal y el alcance actual.
 
 | Categoría | Opciones |
 | --- | --- |
-| Audio | Volumen general, música y efectos. |
-| Video | Resolución y modo pantalla completa o ventana. La calidad gráfica se mantendrá adecuada para el 3D sencillo del proyecto. |
-| Controles | Sensibilidad de cámara y referencia de controles de teclado y ratón. |
-| Accesibilidad | Tamaño del texto y señales visuales legibles para instrucciones y peligros. |
+| Audio | Volumen general, música y efectos de sonido, con deslizadores en porcentaje. Se guardan al cerrar la ventana de ajustes. |
+| Controles | Ventana de consulta con la tecla de cada acción. |
 
 ## Restablecimiento
 
-¿Qué opciones pueden volver a valores predeterminados?
+El botón "Restablecer ajustes" devuelve el volumen general, la música y los efectos al 100%.
 
 > **Navegación:** [[00 - Índice]] · ← [[03 - Accesibilidad]] · [[01 - Arquitectura Técnica]] →

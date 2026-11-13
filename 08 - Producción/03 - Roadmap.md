@@ -53,7 +53,7 @@ Construir el juego completo, empezando por el vertical slice (jaula y habitació
 * Pasillo con la persecución de la aspiradora inteligente.
 * Sala como cierre del juego.
 * Menú principal, pausa, HUD, guardado por checkpoint y configuración esencial.
-* Introducción narrativa, escena final, música y efectos de sonido.
+* Introducción narrativa, música y efectos de sonido.
 * Tráiler promocional con material del vertical slice.
 
 ### Pruebas

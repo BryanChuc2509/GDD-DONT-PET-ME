@@ -27,7 +27,7 @@ Guardado local
 | Jugador y cámara | Movimiento, salto, respuesta de cámara y estados de Mochi | Entrada, físicas del motor |
 | Escenario | Niveles lineales, plataformas y peligros | Jugador, físicas |
 | Enemigos y mecanismos | Patrullas y persecución, ventilador, memorama y elementos interactuables | Escenario, jugador |
-| Interfaz | Menús, HUD de semillas, indicaciones y pausa | Estado del juego |
+| Interfaz | Menú principal; HUD (semillas, muertes, objetivo, estamina, avisos); ventanas de pausa, ajustes, controles y muerte; indicaciones del nivel | Estado del juego |
 | Checkpoints y guardado | Reaparición y persistencia local del progreso y configuración | Estado del nivel, datos guardados |
 
 ## Comunicación

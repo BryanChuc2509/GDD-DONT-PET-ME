@@ -18,9 +18,9 @@ La aventura comienza cuando Mochi despierta en la jaula de Leo y logra escapar. 
 
 Un cómic breve presenta el bosque como el hogar de Mochi y sus hermanos menores Copo y Trufa. Durante un picnic familiar, Leo encuentra a Mochi y se lo lleva para tenerlo como mascota. La secuencia establece el vínculo entre los hermanos y la motivación del protagonista. El bosque aparece solo en esta introducción: no es un nivel jugable. Al terminar el cómic, el juego comienza con Mochi dentro de la jaula de Leo.
 
-### Acto / Etapa 2: La Fuga de la Jaula y el Cuarto (Nivel 1)
+### Acto / Etapa 2: La Fuga de la Jaula y el Cuarto (Tutorial y Nivel 1)
 
-Mochi despierta en la jaula y aprende los movimientos básicos mientras busca cómo escapar. En la habitación, los muebles y objetos cotidianos se vuelven obstáculos enormes; las trampas caseras de Leo pueden activarse de forma inesperada. En el escritorio, un nido de hormigas bloquea el avance: Mochi debe conseguir las pilas y encender un ventilador para superar el reto. Después cruza la zona de libros colgantes y llega a un lugar que parece una salida, pero descubre que todavía está dentro de la casa.
+Mochi despierta en la jaula y aprende los movimientos básicos mientras busca cómo escapar; la jaula es el nivel tutorial (Nivel 0). Ya en la habitación (Nivel 1), los muebles y objetos cotidianos se vuelven obstáculos enormes; las trampas caseras de Leo pueden activarse de forma inesperada. En el escritorio, un nido de hormigas bloquea el avance: Mochi debe conseguir las pilas y encender un ventilador para superar el reto. Después cruza la zona de libros colgantes y llega a un lugar que parece una salida, pero descubre que todavía está dentro de la casa.
 
 ### Acto / Etapa 3: La persecución del pasillo (Nivel 2)
 
@@ -31,7 +31,7 @@ En el pasillo, los padres de Leo llevan semanas intentando atrapar a un ratón y
 | Orden | Zona / evento | Resumen narrativo y participación del jugador |
 |---|---|---|
 | 1 | Cómic introductorio: el bosque y la captura | Se presenta la vida de Mochi con Copo y Trufa y la captura durante el picnic familiar de Leo. El bosque no tiene gameplay. |
-| 2 | Jaula y habitación de Leo | Mochi aprende a moverse, escapa de la jaula y cruza la habitación, llena de objetos enormes y trampas caseras. |
+| 2 | Jaula (Tutorial) y habitación de Leo (Nivel 1) | Mochi aprende a moverse en el tutorial, escapa de la jaula y cruza la habitación, llena de objetos enormes y trampas caseras. |
 | 3 | Escritorio y nido de hormigas | Para superar el reto del nido que bloquea el avance, Mochi consigue pilas y enciende un ventilador. |
 | 4 | Libros colgantes y falsa salida | Mochi supera la zona de libros y las trampas de Leo; el lugar que parece conducir a la libertad resulta seguir dentro de la casa. |
 | 5 | Pasillo | La aspiradora confunde a Mochi con el ratón que buscan los padres de Leo. Mochi esquiva la persecución, las ratoneras, las escobas que caen y las pelotas rodantes. |

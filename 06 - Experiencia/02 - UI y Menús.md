@@ -8,112 +8,134 @@ Define la estructura funcional de las interfaces y menús.
 
 ```text
 Menú principal
-├── Nueva partida
-├── Continuar
-├── Configuración
-│   ├── Audio
-│   ├── Video
-│   ├── Controles
-│   └── Accesibilidad básica
-└── Salir
+├── Jugar (sin partida guardada) / Continuar (con partida guardada)
+├── Nueva partida (solo con partida guardada; pide confirmación)
+├── Ajustes
+│   ├── Volumen general, música y efectos de sonido
+│   ├── Ver controles
+│   └── Restablecer ajustes
+└── Salir del juego
 
 Durante el juego
-└── Pausa
+├── HUD
+├── Ventana de muerte
+└── Pausa (botón del HUD o Esc)
     ├── Continuar
-    ├── Configuración
-    ├── Reiniciar desde checkpoint
-    └── Volver al menú principal
+    ├── Ajustes
+    │   └── Ver controles
+    └── Salir del juego
 ```
 
 ## Pantallas
 
 ### - Menú principal
 
-**Propósito:** La vista principal al iniciar el Juego. Permite que el usuario pueda comenzar el juego o continuarlo.
+**Propósito:** La vista principal al iniciar el juego. Permite comenzar el juego o continuarlo.
 
-**Elementos:** Mochi como imagen, fondo con un detalle de la habitación, botones grandes (Nueva partida, Continuar, Configuración, Salir) y número de versión.
+**Elementos:** Logo "Don't Pet Me" arriba a la izquierda y, debajo, la columna de botones. A la derecha, una escena 3D de la habitación (pared, ventana, cuadro, taza, libros y una pila) con Mochi animado de pie sobre la pila. Suena la música del menú. No muestra número de versión.
 
-**Acciones disponibles:** Iniciar una nueva partida, continuar desde el último checkpoint, abrir la configuración o salir del juego. Se navega con teclado y ratón.
+**Acciones disponibles:** Jugar o Continuar, Nueva partida, Ajustes y Salir del juego. Se navega con ratón y teclado; `Esc` cierra los ajustes o la confirmación.
 
-**Estados:** “Continuar” aparece deshabilitado si no existe un progreso guardado. El botón seleccionado se resalta con un cambio de tamaño o brillo.
+**Estados:**
 
-**Transiciones:** “Nueva partida” lleva a la introducción narrativa y luego a la jaula. “Continuar” carga directamente el último checkpoint. “Configuración” abre la pantalla de opciones.
+* **Sin partida guardada:** el botón principal dice "Jugar" y "Nueva partida" no aparece.
+* **Con partida guardada:** el botón principal dice "Continuar" y aparece "Nueva partida". La partida guardada es el último nivel que se cargó (`GameProgress` lo guarda al entrar a cada nivel; no cuentan el menú ni la introducción).
+* El botón bajo el ratón o seleccionado crece y suena.
+
+**Transiciones:** "Jugar" lleva a la introducción y luego al tutorial de la jaula. "Continuar" carga el **inicio** del último nivel guardado, no el último checkpoint. "Nueva partida" abre la confirmación; si se acepta, borra la partida guardada y empieza desde la introducción. Al empezar a jugar, Mochi festeja y la pantalla se funde a negro. "Salir del juego" cierra el juego tras un fundido. "Ajustes" abre la ventana de ajustes.
 
 #### - Introducción narrativa
 
 **Propósito:** Contar la captura de Mochi en el picnic y su objetivo de volver al bosque, sin necesidad de jugar ese nivel.
 
-**Elementos:** Viñetas con poco texto y una indicación para avanzar u omitir la introducción.
+**Elementos:** Video de la cinemática de inicio y el aviso "Presiona ESPACIO para saltar la historia" abajo a la derecha, que aparece con un fundido tras un momento.
 
-**Acciones disponibles:** Avanzar las viñetas u omitir la introducción.
+**Acciones disponibles:** Ver la introducción o saltarla con `Espacio`. Durante el primer medio segundo no se puede saltar, para evitar saltos accidentales.
 
-**Estados:** La indicación para avanzar u omitir debe ser visible y fácil de entender.
+**Estados:** El aviso para saltar queda visible durante el video.
 
-**Transiciones:** Al terminar, entra directamente a la jaula (tutorial).
+**Transiciones:** Al terminar o saltarla, entra directamente al tutorial de la jaula. Si el video no se puede reproducir, se pasa al tutorial.
 
 #### HUD (interfaz en juego)
 
 **Propósito:** Mostrar la información mínima necesaria sin tapar la escena.
 
-**Elementos:** Saldo de semillas, indicador contextual al acercarse a un objeto interactuable, indicaciones breves del tutorial y señal de activación del checkpoint. No muestra munición ni retícula de apuntado.
+**Elementos:** Contador de semillas (`recogidas/total` del nivel), contador de muertes, botón de objetivo con su tarjeta, barra de estamina, botón de pausa, avisos centrales y cuenta atrás del memorama. En cada nivel se suman los paneles de tutorial, los carteles de zona difícil, el marcador de entrega de la pila y el marcador del hilo. El detalle visual está en [[04 - Interfaz Visual]]. No muestra vida, munición, mapa ni retícula de apuntado.
 
-**Acciones disponibles:** Es informativo. Solo muestra la información, el jugador no interactúa con él.
+**Acciones disponibles:** Es informativo. Solo se puede pulsar el botón de pausa y la bandera del objetivo (o usar `Tab`) para volver a ver el objetivo actual.
 
-**Estados:** El saldo cambia al recoger semillas. Las indicaciones del tutorial aparecen en el momento oportuno y desaparecen una vez que dejan de ser necesarias.
+**Estados:** El contador de semillas cambia al recoger una. La tarjeta del objetivo se anuncia cada vez que cambia y luego se reduce a la bandera. La barra de estamina avisa cuando se agota. Las indicaciones del tutorial aparecen en su zona y desaparecen al salir de ella.
 
-**Transiciones:** Se oculta durante las cinemáticas y en la pantalla de pausa.
+**Transiciones:** Aparece al cargar cada nivel. Sigue visible detrás de las ventanas de pausa y de muerte, que oscurecen la escena. Al completar un nivel, la tarjeta muestra **¡OBJETIVO CUMPLIDO!** con el mensaje del nivel (por ejemplo, "¡Nivel 1 completado!") y, unos 6 s después, se carga el siguiente nivel.
 
 #### - Menú de pausa
 
-**Propósito:** Detener el juego para que el jugador pueda ajustar opciones, reiniciar o salir.
+**Propósito:** Detener el juego para que el jugador pueda ajustar opciones o salir.
 
-**Elementos:** Fondo semitransparente sobre la escena congelada y botones de Continuar, Configuración, Reiniciar desde checkpoint y Volver al menú principal.
+**Elementos:** Ventana **MENÚ** sobre la escena oscurecida, con botón de cerrar (X) y los botones Continuar (principal), Ajustes y Salir del juego.
 
-**Acciones disponibles:** Reanudar, abrir la configuración, reiniciar desde el último checkpoint o salir al menú.
+**Acciones disponibles:** Reanudar (Continuar, la X o `Esc`), abrir los ajustes o salir del juego.
 
-**Estados:** El juego queda detenido mientras el menú está abierto. Si no hay un checkpoint previo, se reinicia desde el inicio del nivel.
+**Estados:** El juego queda detenido mientras el menú está abierto. No se abre si la ventana de muerte ya está en pantalla.
 
-**Transiciones:** `ESC` abre y cierra la pausa. “Volver al menú principal” pide confirmación.
+**Transiciones:** `Esc` o el botón de pausa del HUD abren y cierran la pausa. Dentro de Ajustes o Controles, `Esc` regresa un paso. "Salir del juego" cierra el juego directamente.
 
-#### - Configuración
+#### - Ajustes
 
-**Propósito:** Permitir que cada jugador ajuste el juego a su equipo y a sus preferencias.
+**Propósito:** Permitir que cada jugador ajuste el sonido y consulte los controles.
 
-**Elementos:** Pestañas de Audio, Video, Controles y Accesibilidad.
+**Elementos:** Ventana **AJUSTES** con botón de cerrar (X):
 
-* **Audio:** deslizadores de volumen general, música y efectos de sonido.
-* **Video:** resolución y modo pantalla completa o ventana.
-* **Controles:** Consultar y, si se conserva en el alcance, reasignar los controles de teclado y ratón.
-* **Accesibilidad:** Tamaño del texto y opciones básicas confirmadas para la versión final.
+* **Volumen general, Música y Efectos de sonido:** deslizadores con su porcentaje.
+* **Controles:** botón "Ver controles", que abre la ventana de controles.
+* **Restablecer ajustes:** devuelve los tres volúmenes al 100%.
 
-**Acciones disponibles:** Cambiar valores, restablecer a valores por defecto, aplicar y volver.
+**Acciones disponibles:** Cambiar los volúmenes, ver los controles, restablecer y cerrar.
 
-**Estados:** Los cambios de audio se aplican al instante, mientras que los de video pueden pedir confirmación. Se recuerdan las preferencias entre sesiones.
+**Estados:** Los cambios de volumen se aplican al instante y se guardan al cerrar la ventana, así que se recuerdan entre sesiones.
 
-**Transiciones:** Se puede abrir desde el menú principal o desde la pausa, y siempre regresa a la pantalla de origen.
+**Transiciones:** Se abre desde el menú principal o desde la pausa y, al cerrarse, regresa a la pantalla de origen.
 
-#### Pantalla de final
+#### - Controles
 
-**Propósito:** Cerrar el recorrido jugable actual con la salida de Mochi del pasillo.
+**Propósito:** Consultar qué tecla hace cada acción.
 
-**Elementos:** Cierre breve y botones para volver al menú o salir. La continuación narrativa fuera de la casa no se presenta como un nivel jugable de esta versión.
+**Elementos:** Ventana **CONTROLES** con dos columnas, acción y tecla:
 
-**Acciones disponibles:** Volver al menú principal o salir.
+| Acción | Tecla |
+| --- | --- |
+| Moverse | WASD / flechas |
+| Cámara | Ratón |
+| Saltar | Espacio |
+| Planear | Mantén Espacio en el aire |
+| Correr | Shift |
+| Interactuar / cargar | E |
+| Lanzar hilo | F / clic derecho |
+| Agacharse / deslizarse | C |
+| Ver objetivo | Tab |
+| Pausa | Esc |
 
-**Estados:** La transición de cierre no debe ocultar el estado final del recorrido.
+**Acciones disponibles:** Solo consulta.
 
-**Transiciones:** Regresa al menú principal.
+**Transiciones:** Al cerrarla (X o `Esc`) se vuelve a Ajustes.
+
+#### - Ventana de muerte
+
+**Propósito:** Decir por qué murió Mochi y volver a jugar rápido.
+
+**Elementos:** Insignia de calavera con el contador de muertes, el título **HAS MUERTO**, la causa (por ejemplo, "¡Trampa de ratón! Ten cuidado con las trampas de ratón" o "¡Aplastado!"), el botón **Revivir** y el texto "Reviviendo en 3s".
+
+**Acciones disponibles:** Pulsar "Revivir" o esperar la cuenta atrás.
+
+**Estados:** El juego queda en pausa mientras la ventana está abierta; Mochi ya está colocado en el último checkpoint.
+
+**Transiciones:** A los 3 s, o al pulsar "Revivir", la ventana se cierra y el juego continúa desde el último checkpoint.
 
 ## Confirmaciones
 
-Documenta acciones destructivas o irreversibles y cómo se confirman.
-
-| Acción                                           | Confirmación                                                                                                                 | Razón                          |
-| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| Nueva partida (si ya existe un progreso guardado) | Mensaje: “Ya tienes una partida guardada. Si empiezas una nueva, perderás tu progreso. ¿Continuar?” con opciones Sí / No | Sobrescribe el guardado         |
-| Volver al menú principal desde la pausa          | Mensaje: “¿Volver al menú? Se perderá el progreso desde el último checkpoint.” con opciones Sí / No                    | Evita salir por accidente       |
-| Salir del juego                                   | Mensaje breve de confirmación con opciones Sí / No                                                                          | Evita cerrar el juego por error |
-| Restablecer configuración                        | Mensaje: “¿Restablecer todos los valores por defecto?”                                                                     | Cambia varios ajustes a la vez  |
+| Acción | Confirmación | Razón |
+| --- | --- | --- |
+| Nueva partida (si ya existe una partida guardada) | Ventana **¿NUEVA PARTIDA?** con el mensaje "Se borrará tu progreso guardado." y los botones "Sí, empezar" / "Cancelar". "Cancelar" queda seleccionado por defecto. | Borra la partida guardada |
 
 >
 > **Navegación:** [[00 - Índice]] · ← [[01 - UX y Flujo del Jugador]] · [[03 - Accesibilidad]] →

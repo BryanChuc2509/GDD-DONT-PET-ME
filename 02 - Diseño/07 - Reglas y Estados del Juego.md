@@ -13,23 +13,21 @@ Define las reglas globales y los estados que puede atravesar el videojuego.
 - Planeo activo
 - Pausa
 - Muerte / Fracaso (One-hit Kill)
-- Cinemática de transición
 - Victoria de Nivel
-- Créditos
 
 ## Transiciones
 
 | Estado origen | Evento | Estado destino | Condición |
 |---|---|---|---|
-| Menú principal | Seleccionar "Comenzar" | Cinemática de introducción | Nueva partida |
+| Menú principal | Seleccionar "Jugar" o "Nueva partida" | Cinemática de introducción | Empieza una partida desde el inicio |
 | Jugando en el suelo | Mantener `SHIFT` | Sprint activo | Hay combustible disponible |
 | Jugando en el aire | Mantener `ESPACIO` | Planeo activo | No se ha agotado el máximo de 1 segundo en ese tramo en el aire |
 | Sprint activo | Soltar `SHIFT` o agotar combustible | Jugando | Se detiene el sprint; la reserva se regenera mientras no se esprinta |
 | Planeo activo | Soltar `ESPACIO` o alcanzar 1 segundo de planeo | Jugando | Se detiene el planeo; no depende del combustible |
 | Jugando | Colisión con peligro mortal (agua, corriente, enemigo) | Muerte / Fracaso | One-Hit Kill; excepción: caer desde arriba sobre un enemigo vulnerable lo mata |
-| Muerte / Fracaso | Finaliza animación cómica de muerte | Jugando | Reaparición en el último checkpoint |
-| Jugando | Activar salida del nivel | Cinemática de transición | Objetivo del nivel completado |
-| Jugando | Presionar `ESC` | Pausa | En cualquier momento jugable |
+| Muerte / Fracaso | Se pulsa "Revivir" o pasan 3 s en la ventana de muerte | Jugando | Mochi ya reapareció en el último checkpoint |
+| Jugando | Llegar a la meta del nivel | Victoria de Nivel | Se muestra **¡OBJETIVO CUMPLIDO!** y, unos 6 s después, se carga el siguiente nivel |
+| Jugando | Presionar `ESC` o el botón de pausa del HUD | Pausa | En cualquier momento jugable, salvo con la ventana de muerte abierta |
 
 ## Reglas globales
 

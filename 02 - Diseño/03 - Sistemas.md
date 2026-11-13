@@ -77,7 +77,7 @@ Usar las semillas como moneda coleccionable y como guía visual del recorrido, s
 
 **Procesamiento / reglas:**
 
-- Al tocar una semilla, esta se recoge automáticamente y aumenta el saldo mostrado en el HUD.
+- Al tocar una semilla, esta se recoge automáticamente y aumenta el contador de semillas del HUD (recogidas/total del nivel).
 - El saldo se conserva al morir y reaparecer en un checkpoint; las semillas recogidas no reaparecen.
 - Una skin básica se compra con semillas; otra skin se desbloquea al recolectar todas las semillas del juego.
 - El precio de la skin comprable se ajustará durante el balance.

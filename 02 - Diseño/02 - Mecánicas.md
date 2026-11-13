@@ -63,7 +63,7 @@ Contacto con una semilla.
 
 **Estado inicial:**
 
-Semillas disponibles en el escenario; saldo visible en el HUD.
+Semillas disponibles en el escenario; el contador del HUD muestra las recogidas y el total del nivel.
 
 **Estado final:**
 
@@ -173,7 +173,7 @@ Mochi vuelve a su velocidad normal al soltar `SHIFT` o agotar el combustible.
 
 **Recursos utilizados:**
 
-La reserva de combustible del sprint, mostrada mediante un indicador en el HUD.
+La reserva de combustible del sprint, mostrada en la barra con un rayo de la esquina inferior izquierda del HUD.
 
 **Recompensa:**
 

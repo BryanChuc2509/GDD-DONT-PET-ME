@@ -39,6 +39,8 @@ Para cada cambio, esta nota registra la solicitud, su impacto y su estado. En el
 
 **Decisión:** Aprobado. El bosque se mantiene como parte de la historia, pero no es un nivel jugable de esta versión. La introducción presenta la captura y el tutorial inicia en la jaula, dentro de la habitación.
 
+**Actualización (12 de noviembre de 2026):** Con [[03 - Registro de Decisiones#D-06 · Tutorial como nivel propio\|D-06]], la jaula deja de ser la zona inicial de la habitación y pasa a ser un nivel tutorial propio. El recorrido jugable queda en tres niveles: tutorial, habitación y pasillo.
+
 **Responsable:** Bryan Chuc (líder de proyecto), con apoyo de todo el equipo.
 
 ### Registro
@@ -51,6 +53,7 @@ Para cada cambio, esta nota registra la solicitud, su impacto y su estado. En el
 | 3 nov 2026 | [[03 - Registro de Decisiones#D-03 · Recorrido y ayudas\|D-03]] · Organizar la habitación en cuatro zonas e incluir checkpoints, encuadre inicial de la jaula y pistas contextuales. | Hacer legibles la ruta y los retos. | Niveles y UX. | Documentado en el GDD |
 | 3 nov 2026 | [[03 - Registro de Decisiones#D-04 · Planeo\|D-04]] · Evaluar si se conserva, se reduce o se elimina el planeo. | Validar cuánto control aéreo necesita el recorrido. | Movimiento, tutorial y diseño de saltos. | Pendiente |
 | 4 nov 2026 | [[03 - Registro de Decisiones#D-05 · Alcance narrativo\|D-05]] · Limitar el recorrido narrado al alcance actual. | Alinear la historia con la versión jugable. | Historia y referencias a entornos. | Documentado en el GDD |
+| 12 nov 2026 | [[03 - Registro de Decisiones#D-06 · Tutorial como nivel propio\|D-06]] · Separar la jaula como nivel tutorial (Nivel 0). | Reflejar el juego implementado, donde la jaula es un nivel propio. | Recorrido de tres niveles: tutorial, habitación y pasillo. Afecta estructura, niveles, UX, alcance y producción. | Aprobado |
 
 Consulta el [[03 - Registro de Decisiones]] para ver qué se resolvió y qué sigue abierto.
 

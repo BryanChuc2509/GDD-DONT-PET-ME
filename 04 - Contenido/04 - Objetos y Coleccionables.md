@@ -30,7 +30,7 @@ Semillas de Girasol
 
 **Restricciones:** No son necesarias para completar los niveles. Las semillas recogidas se conservan al morir y no reaparecen.
 
-**Interacciones:** Se añaden al saldo del HUD al recogerlas.
+**Interacciones:** Al recogerlas suman al contador de semillas del HUD (recogidas/total del nivel).
 
 **Representación visual:** Semillas de girasol con cáscara rayada blanca y negra.
 

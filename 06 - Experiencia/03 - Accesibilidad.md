@@ -9,7 +9,6 @@ La accesibilidad busca que el mayor número posible de jugadores pueda comprende
 - Tamaño de texto legible en menús e indicaciones.
 - Subtítulos para cualquier diálogo o texto narrado que se incluya.
 - Ajuste de volumen de música y efectos.
-- Sensibilidad de cámara y controles de teclado y ratón según las opciones confirmadas para la versión final.
 - Señales visuales claras para peligros, interacciones y secuencias de colores.
 
 ## Consideraciones

@@ -12,10 +12,10 @@ Define qué se va a construir y, sobre todo, qué queda fuera del proyecto.
 - Protagonista Mochi con movimiento, salto y doble salto
 - Puzzles de encendido/apagado de interruptores
 - Semillas como moneda coleccionable y guía visual del recorrido; pilas y objetos del entorno se usan en los puzzles mediante interacción contextual.
-- Dos niveles jugables en orden lineal: habitación (con la jaula como inicio y tutorial) y pasillo.
+- Tres niveles jugables en orden lineal: tutorial de la jaula (Nivel 0), habitación (Nivel 1) y pasillo (Nivel 2).
 - Secuencia de persecución por la aspiradora en el pasillo.
 - Cinemática breve sobre como mochi es capturado en el bosque durante un Picnic Familiar
-- Menú principal, pausa y configuración esencial (volumen, resolución, sensibilidad de cámara y tamaño de texto)
+- Menú principal, HUD, pausa, ventana de muerte y ajustes esenciales (volumen general, música, efectos y consulta de controles)
 - Algunos coleccionables
 
 ### No incluido

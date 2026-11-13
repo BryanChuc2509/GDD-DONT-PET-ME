@@ -10,7 +10,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Tipo:** Principal / tutorial.
 
-**Objetivo:** Aprender los controles básicos y salir de la jaula para comenzar el recorrido por la habitación de Leo.
+**Objetivo:** Aprender los controles básicos, salir de la jaula y completar el tutorial (Nivel 0) para comenzar el recorrido por la habitación de Leo (Nivel 1).
 
 **Contexto:** Mochi despierta cautivo después de que Leo lo captura durante un picnic familiar.
 
@@ -18,7 +18,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Pasos:** Seguir las señales del tutorial, superar los primeros obstáculos de la jaula y alcanzar la salida.
 
-**Condición de éxito:** Mochi sale de la jaula y entra en la habitación.
+**Condición de éxito:** Mochi escapa de la jaula y alcanza la meta del tutorial, lo que da paso al Nivel 1.
 
 **Condición de fracaso:** Caer en un peligro letal; reaparecer en el checkpoint disponible según las reglas generales.
 
@@ -26,7 +26,7 @@ Las misiones y los desafíos convierten las mecánicas y la progresión de los e
 
 **Personaje relacionado:** Mochi.
 
-**Escenario relacionado:** La jaula (tutorial).
+**Escenario relacionado:** Tutorial (Nivel 0): la jaula.
 
 ### Superar al minijefe de las hormigas
 

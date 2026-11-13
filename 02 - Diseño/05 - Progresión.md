@@ -9,11 +9,11 @@ Explica cómo cambia la experiencia desde el inicio hasta el final. La progresi�
 Describe las etapas principales del juego:
 
 1. **Introducción narrativa:** La captura de Mochi en el bosque se presenta en una breve secuencia; el juego no incluye un nivel jugable en el bosque.
-2. **Zona 1 — La jaula:** El jugador aprende el movimiento y el salto en un encuadre amplio que presenta el espacio; al tomar control, el lado de la jaula más cercano a la cámara se vuelve transparente.
-3. **Zona 2 — El escritorio:** Se introducen el sprint y su combustible propio, la recolección de semillas-moneda y la interacción contextual con objetos y mecanismos.
-4. **Zona 3 — Libros colgantes:** El jugador aprende a reconocer y escalar superficies con textura tejida y combina la escalada con saltos, sprint y planeo.
-5. **Zona 4 — Pelotas que caen:** Tramo de avance bajo presión, con pelotas que ruedan o caen por un pasillo; el jugador lee sus patrones, administra el combustible del sprint y usa el planeo independiente durante un máximo de 1 segundo para alcanzar un hueco seguro.
-6. **Continuación del recorrido:** Las zonas posteriores combinan las habilidades aprendidas con nuevos peligros y checkpoints.
+2. **Tutorial (Nivel 0) — La jaula:** Nivel propio de tutorial. El jugador aprende el movimiento y el salto en un encuadre amplio que presenta el espacio; al tomar control, el lado de la jaula más cercano a la cámara se vuelve transparente. Al escapar de la jaula y alcanzar la meta del tutorial, comienza el Nivel 1.
+3. **Nivel 1, zona 1 — El escritorio:** Se introducen el sprint y su combustible propio, la recolección de semillas-moneda y la interacción contextual con objetos y mecanismos.
+4. **Nivel 1, zona 2 — Libros colgantes:** El jugador aprende a reconocer y escalar superficies con textura tejida y combina la escalada con saltos, sprint y planeo.
+5. **Nivel 1, zona 3 — Pelotas que caen:** Tramo de avance bajo presión, con pelotas que ruedan o caen por un pasillo; el jugador lee sus patrones, administra el combustible del sprint y usa el planeo independiente durante un máximo de 1 segundo para alcanzar un hueco seguro.
+6. **Nivel 2 — El pasillo:** El último nivel combina las habilidades aprendidas con nuevos peligros y checkpoints mientras la aspiradora persigue a Mochi.
 
 ## Progresión del jugador
 
@@ -47,7 +47,7 @@ Se coloca un checkpoint en pausas seguras entre desafíos, en particular al sali
 
 ## Curva de dificultad
 
-La jaula es segura y presenta controles básicos. El escritorio introduce obstáculos y enseña el sprint; los libros colgantes enseñan a escalar y usar el planeo; el pasillo de pelotas combina velocidad, planeo, observación y elección de refugios. Las zonas posteriores aumentan la presión y combinan habilidades ya aprendidas.
+El tutorial de la jaula es seguro y presenta los controles básicos. El escritorio introduce obstáculos y enseña el sprint; los libros colgantes enseñan a escalar y usar el planeo; el pasillo de pelotas combina velocidad, planeo, observación y elección de refugios. Las zonas posteriores aumentan la presión y combinan habilidades ya aprendidas.
 
 ## Curva de aprendizaje
 

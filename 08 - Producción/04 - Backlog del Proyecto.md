@@ -80,7 +80,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T06 — Bocetos y estilo visual
 
-**Descripción:** Dibujar a Mochi y los dos niveles jugables (habitación y pasillo), incluyendo la jaula como zona inicial de la habitación; definir el estilo visual y la lista de recursos.
+**Descripción:** Dibujar a Mochi y los tres niveles jugables (tutorial de la jaula, habitación y pasillo); definir el estilo visual y la lista de recursos.
 
 **Responsable:** Gio Medina
 
@@ -108,7 +108,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T08 — Jaula con tutorial integrado
 
-**Descripción:** Integrar la jaula como zona inicial de la habitación y enseñar movimiento y salto. Las semillas no forman parte del tutorial como munición ni disparo.
+**Descripción:** Armar la jaula como nivel tutorial (Nivel 0), previo a la habitación, y enseñar movimiento y salto. Las semillas no forman parte del tutorial como munición ni disparo.
 
 **Responsable:** Gio Medina (diseño) y Ahui (armado en Unity)
 
@@ -122,7 +122,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T09 — Habitación (vertical slice)
 
-**Descripción:** Preparar las cuatro zonas de la habitación en este orden: jaula, escritorio con el minijefe de las hormigas, libros colgantes y tramo de pelotas de tenis con huecos de refugio. El memorama se integra como reto de cierre de la cuarta zona. Incluir checkpoints y los objetos definidos para el recorrido; el puzzle se implementa en T11.
+**Descripción:** Preparar las zonas de la habitación (Nivel 1) en este orden: escritorio con el minijefe de las hormigas, libros colgantes y tramo de pelotas de tenis con huecos de refugio. El memorama se integra como reto de cierre de la última zona. Incluir checkpoints y los objetos definidos para el recorrido; el puzzle se implementa en T11.
 
 **Responsable:** Ahui
 
@@ -136,7 +136,7 @@ El backlog contiene el trabajo necesario para convertir el diseño en un videoju
 
 #### T10 — Pasillo con persecución
 
-**Descripción:** Armar el pasillo como segundo nivel, con la persecución de la aspiradora, ratoneras, escobas que caen y pelotas rodantes.
+**Descripción:** Armar el pasillo como Nivel 2 (último nivel), con la persecución de la aspiradora, ratoneras, escobas que caen y pelotas rodantes.
 
 **Responsable:** Ahui (nivel) y Dhayan Lee (persecución)
 
